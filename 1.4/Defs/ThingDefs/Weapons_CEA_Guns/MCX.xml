@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== SKS ==================== -->
+  <!-- ==================== SIG MCX ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
-    <defName>CE_Gun_SKS</defName>
-    <label>SKS</label>
-    <description>Ancient battle rifle. Fires an intermediate rifle cartridge and is a popular choice for long-range engagements.</description>
-    <possessionCount>1</possessionCount>
+    <defName>CE_Gun_SigMCX</defName>
+    <label>MCX</label>
+    <description>An outdated carbine design, featuring a short-stroke gas piston system to improve reliability and reduce recoil.</description>
     <graphicData>
-      <texPath>Things/Weapons/SKS</texPath>
+      <texPath>Things/Weapons/MCX</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
-      <WorkToMake>15000</WorkToMake>
-      <SightsEfficiency>1</SightsEfficiency>
-      <ShotSpread>0.06</ShotSpread>
-      <SwayFactor>1.41</SwayFactor>
-      <Bulk>10.2</Bulk>
-      <Mass>3.85</Mass>
+      <WorkToMake>32000</WorkToMake>
+      <Mass>2.61</Mass>
+      <Bulk>7.30</Bulk>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.17</SwayFactor>
+      <SightsEfficiency>1.00</SightsEfficiency>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>50</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-      <WoodLog>15</WoodLog>
+      <Steel>40</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.73</recoilAmount>
+        <recoilAmount>2.03</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
+        <defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <warmupTime>1.1</warmupTime>
         <range>48</range>
-        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCast>Shot_CE_AssaultRifleSlow</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -49,16 +50,18 @@
     </weaponTags>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>10</magazineSize>
-        <reloadTime>4.3</reloadTime>
-        <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+        <magazineSize>30</magazineSize>
+        <reloadTime>4.0</reloadTime>
+        <ammoSet>AmmoSet_300AACBlackout</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>true</aiUseBurstMode>
         <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
       </li>
     </comps>
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
@@ -95,8 +98,8 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.18,1.12</DrawSize>
-        <DrawOffset>0.05,-0.05</DrawOffset>
+        <DrawSize>0.82,0.88</DrawSize>
+        <DrawOffset>-0.05,-0.05</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
