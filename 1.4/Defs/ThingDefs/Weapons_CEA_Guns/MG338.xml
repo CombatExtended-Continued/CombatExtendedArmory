@@ -41,7 +41,7 @@
         <burstShotCount>8</burstShotCount>
         <soundCast>Shot_CE_BattleRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>3</muzzleFlashScale>
+        <muzzleFlashScale>6</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -70,11 +70,7 @@
       <li>Bipod_LMG</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite Inherit="false" />
-      <researchPrerequisites>
-        <li>PrecisionRifling</li>
-        <li>MultiAnalyzer</li>
-      </researchPrerequisites>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
