@@ -3,7 +3,7 @@
 
   <!-- ==================== AKS-74U ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_AKSSeventyFourU</defName>
     <label>AKS-74U</label>
     <description>Ancient sub-carbine design, combining the compactness of an SMG with the armor-piercing capabilities of a rifle round.</description>

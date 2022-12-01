@@ -3,7 +3,7 @@
 
   <!-- ==================== Tac-50 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_TacFifty</defName>
     <label>Tac-50</label>
     <description>Ancient bolt-action anti-materiel rifle. Combines a large caliber cartridge with a high-magnification scope for sniping at extreme range.</description>

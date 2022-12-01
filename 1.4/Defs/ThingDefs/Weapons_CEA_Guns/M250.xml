@@ -3,7 +3,7 @@
 
   <!-- ==================== M250 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_MTwoFifty</defName>
     <label>M250</label>
     <description>Ancient belt-fed general-purpose machine gun. Lots of firepower firing a full-power rifle cartridge.</description>

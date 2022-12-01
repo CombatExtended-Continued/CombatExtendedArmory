@@ -3,7 +3,7 @@
 
   <!-- ==================== Sawed Off ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_SawedOff</defName>
     <label>Sawed Off</label>
     <description>A double-barrel shotgun with a cut-off barrel for easier concealment and indoor deployment in urban areas.</description>

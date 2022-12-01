@@ -3,7 +3,7 @@
 
   <!-- ==================== SIG MCX ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_SigMCX</defName>
     <label>MCX</label>
     <description>An outdated carbine design, featuring a short-stroke gas piston system to improve reliability and reduce recoil.</description>

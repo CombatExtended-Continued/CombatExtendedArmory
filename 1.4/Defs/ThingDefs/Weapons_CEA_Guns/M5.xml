@@ -3,7 +3,7 @@
 
   <!-- ==================== M5 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_MFive</defName>
     <label>M5</label>
     <description>Ancient military battle rifle firing a full-power rifle cartridge.</description>

@@ -3,7 +3,7 @@
 
   <!-- ==================== SRS ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_SRS</defName>
     <label>SRS</label>
     <description>Ancient bolt-action sniper rifle in bullpup design. Combines a powerful cartridge with a high-magnification scope for sniping at long range.</description>

@@ -3,7 +3,7 @@
 
   <!-- ==================== Taurus Judge ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_TaurusJudge</defName>
     <label>Taurus Judge</label>
     <description>Ancient revolver designed for self-defense. Fires a powerful pistol cartridge as well as small shotgun shells.</description>

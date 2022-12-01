@@ -3,7 +3,7 @@
 
   <!-- ==================== AK-74 GL ==================== -->
 
-  <ThingDef ParentName="BaseMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_AK74GL</defName>
     <label>AK-74 + GP-25</label>
     <description>Ancient military weapon chambered for an intermediate cartridge with an underbarrel 40mm grenade launcher. The simple design makes it easy to assemble and highly reliable.</description>

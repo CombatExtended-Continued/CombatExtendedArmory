@@ -3,7 +3,7 @@
 
 	<!-- ==================== FN P90 ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun_CE">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CE_Gun_PNinety</defName>
 		<label>P90</label>
 		<description>A personal defense weapon which uses a specialized round to penetrate lightly armored opponents.</description>

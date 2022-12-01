@@ -3,7 +3,7 @@
 
   <!-- ==================== Mini-14 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_MiniFourteen</defName>
     <label>Mini-14</label>
     <description>An ancient lightweight semi-automatic rifle design, widely popular in rimworlds due to it's venerable simplicity and accuracy.</description>

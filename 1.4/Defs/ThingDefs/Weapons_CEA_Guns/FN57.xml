@@ -3,7 +3,7 @@
 
 	<!-- ==================== FN Five-seveN ==================== -->
 
-	<ThingDef ParentName="BaseHumanMakeableGun_CE">
+	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CE_Gun_FNFiveSeven</defName>
 		<label>Five-seveN</label>
 		<description>A lightweight pistol that utilizes specialized rounds to eliminate lightly armored opponents.</description>

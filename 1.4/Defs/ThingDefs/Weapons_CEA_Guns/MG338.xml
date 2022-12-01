@@ -3,7 +3,7 @@
 
   <!-- ==================== MG338 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_MGThreeThreeEight</defName>
     <label>MG338</label>
     <description>Ancient lightweight medium machine gun. The MG 338 is designed to bridge the gap between light machine gun and heavy machine gun calibers making use of a bigger cartridge while being lighter than other machine gun designs.</description>

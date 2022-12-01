@@ -3,7 +3,7 @@
 
   <!-- ==================== SKS ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_SKS</defName>
     <label>SKS</label>
     <description>Ancient battle rifle. Fires an intermediate rifle cartridge and is a popular choice for long-range engagements.</description>

@@ -3,7 +3,7 @@
 
   <!-- ==================== DP-28 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_DPtwentyEight</defName>
     <label>DP-28</label>
     <description>Ancient gas-operated light machine gun design.</description>
