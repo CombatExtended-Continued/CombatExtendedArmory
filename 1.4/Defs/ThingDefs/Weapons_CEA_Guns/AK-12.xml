@@ -3,7 +3,7 @@
 
   <!-- ==================== AK-12 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_AKTwelve</defName>
     <label>AK-12</label>
     <description>Ancient assault rifle design with a special high capacity magazine.</description>

@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Taurus Judge ==================== -->
+  <!-- ==================== Sawed Off ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_TaurusJudge</defName>
-    <label>Taurus Judge</label>
-    <description>Ancient revolver designed for self-defense. Fires a powerful pistol cartridge as well as small shotgun shells.</description>
+    <defName>CE_Gun_SawedOff</defName>
+    <label>Sawed Off</label>
+    <description>A double-barrel shotgun with a cut-off barrel for easier concealment and indoor deployment in urban areas.</description>
     <graphicData>
-      <texPath>Things/Weapons/TaurusJudge</texPath>
+      <texPath>Things/Weapons/SawedOff</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <possessionCount>1</possessionCount>
-    <soundInteract>Interact_Revolver</soundInteract>
+    <soundInteract>Interact_Autopistol</soundInteract>
     <weaponClasses>
       <li>RangedLight</li>
+      <li>ShortShots</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>4500</WorkToMake>
-      <SightsEfficiency>0.7</SightsEfficiency>
-      <ShotSpread>0.19</ShotSpread>
-      <SwayFactor>0.91</SwayFactor>
-      <Bulk>1.90</Bulk>
-      <Mass>0.82</Mass>
-      <RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>2.35</Mass>
+      <Bulk>5.84</Bulk>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.81</SwayFactor>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>25</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>30</Steel>
+      <WoodLog>5</WoodLog>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>3.17</recoilAmount>
+        <recoilAmount>3.58</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_45Colt_FMJ</defaultProjectile>
+        <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
-        <soundCast>Shot_Revolver</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <range>14</range>
+        <soundCast>Shot_Shotgun_NoRack</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>5</magazineSize>
-        <reloadTime>4.6</reloadTime>
-        <ammoSet>AmmoSet_45Colt410Bore_SB</ammoSet>
+        <magazineSize>2</magazineSize>
+        <reloadTime>0.85</reloadTime>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <ammoSet>AmmoSet_12Gauge</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiAimMode>Snapshot</aiAimMode>
@@ -58,7 +61,7 @@
     <weaponTags>
       <li>SimpleGun</li>
       <li>CE_Sidearm</li>
-      <li>Revolver</li>
+      <li>CE_AI_AssaultWeapon</li>
       <li>CE_OneHandedWeapon</li>
       <li>CE_AI_BROOM</li>
     </weaponTags>
@@ -87,8 +90,8 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>0.92,0.92</DrawSize>
-        <DrawOffset>0.0,0.0</DrawOffset>
+        <DrawSize>0.95,0.95</DrawSize>
+        <DrawOffset>-0.05,-0.05</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>

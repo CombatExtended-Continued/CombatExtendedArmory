@@ -3,7 +3,7 @@
 
   <!-- ==================== SKS ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_SKS</defName>
     <label>SKS</label>
     <description>Ancient battle rifle. Fires an intermediate rifle cartridge and is a popular choice for long-range engagements.</description>
@@ -27,9 +27,6 @@
       <ComponentIndustrial>2</ComponentIndustrial>
       <WoodLog>15</WoodLog>
     </costList>
-    <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
-    </recipeMaker>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <recoilAmount>1.73</recoilAmount>
@@ -43,6 +40,9 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
       <li>CE_AI_AR</li>
@@ -57,6 +57,9 @@
         <aiAimMode>AimedShot</aiAimMode>
       </li>
     </comps>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+    </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
         <label>stock</label>

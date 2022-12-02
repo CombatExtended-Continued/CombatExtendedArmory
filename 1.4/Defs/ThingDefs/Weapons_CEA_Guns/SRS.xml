@@ -1,41 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Tac-50 ==================== -->
+  <!-- ==================== SRS ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_TacFifty</defName>
-    <label>Tac-50</label>
-    <description>Ancient bolt-action anti-materiel rifle. Combines a large caliber cartridge with a high-magnification scope for sniping at extreme range.</description>
+    <defName>CE_Gun_SRS</defName>
+    <label>SRS</label>
+    <description>Ancient bolt-action sniper rifle in bullpup design. Combines a powerful cartridge with a high-magnification scope for sniping at long range.</description>
+    <soundInteract>Interact_Rifle</soundInteract>
     <graphicData>
-      <texPath>Things/Weapons/Tac50</texPath>
+      <texPath>Things/Weapons/SRS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>44500</WorkToMake>
-      <SightsEfficiency>3.5</SightsEfficiency>
-      <ShotSpread>0.02</ShotSpread>
-      <SwayFactor>1.92</SwayFactor>
-      <Bulk>15.48</Bulk>
-      <Mass>11.80</Mass>
-      <RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
+      <WorkToMake>36000</WorkToMake>
+      <SightsEfficiency>3.0</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>1.13</SwayFactor>
+      <Bulk>10.50</Bulk>
+      <Mass>5.60</Mass>
+      <RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>90</Steel>
+      <Steel>60</Steel>
       <ComponentIndustrial>6</ComponentIndustrial>
-      <Chemfuel>20</Chemfuel>
+      <Chemfuel>10</Chemfuel>
     </costList>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>SniperRifle</li>
+      <li>Bipod_DMR</li>
+      <li>CE_AI_SR</li>
+    </weaponTags>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-        <warmupTime>4.05</warmupTime>
+        <defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
         <range>86</range>
         <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -46,21 +54,12 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>5</magazineSize>
         <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_50BMG</ammoSet>
+        <ammoSet>AmmoSet_338Norma</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
         <aiAimMode>AimedShot</aiAimMode>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <weaponTags Inherit="False">
-      <li>SniperRifle</li>
-      <li>Bipod_DMR</li>
-      <li>CE_AI_SR</li>
-    </weaponTags>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
     </recipeMaker>
@@ -99,8 +98,8 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.55,1.40</DrawSize>
-        <DrawOffset>0.25,0.0</DrawOffset>
+        <DrawSize>1.12,1.12</DrawSize>
+        <DrawOffset>0.05,-0.07</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>

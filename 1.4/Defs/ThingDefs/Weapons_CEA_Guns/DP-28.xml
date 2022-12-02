@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== AKS-74U ==================== -->
+  <!-- ==================== DP-28 ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_AKSSeventyFourU</defName>
-    <label>AKS-74U</label>
-    <description>Ancient sub-carbine design, combining the compactness of an SMG with the armor-piercing capabilities of a rifle round.</description>
+    <defName>CE_Gun_DPtwentyEight</defName>
+    <label>DP-28</label>
+    <description>Ancient gas-operated light machine gun design.</description>
     <graphicData>
-      <texPath>Things/Weapons/AKS74U</texPath>
+      <texPath>Things/Weapons/DP-28</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
-      <WorkToMake>29000</WorkToMake>
+      <Mass>9.12</Mass>
+      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
       <SightsEfficiency>1</SightsEfficiency>
-      <ShotSpread>0.14</ShotSpread>
-      <SwayFactor>1.01</SwayFactor>
-      <Bulk>4.9</Bulk>
-      <Mass>2.7</Mass>
-      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.53</SwayFactor>
+      <Bulk>14.7</Bulk>
+      <WorkToMake>32000</WorkToMake>
     </statBases>
     <costList>
-      <Steel>40</Steel>
+      <Steel>85</Steel>
+      <WoodLog>10</WoodLog>
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.53</recoilAmount>
-        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
-        <burstShotCount>6</burstShotCount>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <warmupTime>0.9</warmupTime>
-        <range>40</range>
-        <soundCast>Shot_AssaultRifle</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+      <recoilAmount>1.30</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
+      <warmupTime>1.3</warmupTime>
+      <range>62</range>
+      <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+      <burstShotCount>10</burstShotCount>
+      <soundCast>Shot_CE_BattleRifle</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <recoilPattern>Mounted</recoilPattern>
       </li>
     </verbs>
     <thingSetMakerTags>
@@ -45,22 +50,24 @@
     </thingSetMakerTags>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
-      <li>CE_AI_AR</li>
+      <li>CE_MachineGun</li>
+      <li>CE_AI_LMG</li>
+      <li>Bipod_LMG</li>
     </weaponTags>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>30</magazineSize>
-        <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+        <magazineSize>47</magazineSize>
+        <reloadTime>4.9</reloadTime>
+        <ammoSet>AmmoSet_762x54mmR</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>false</aiUseBurstMode>
-        <aiAimMode>Snapshot</aiAimMode>
-        <aimedBurstShotCount>3</aimedBurstShotCount>
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>5</aimedBurstShotCount>
       </li>
     </comps>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
@@ -97,8 +104,8 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>0.82,0.88</DrawSize>
-        <DrawOffset>-0.05,-0.05</DrawOffset>
+        <DrawSize>1.35,1.18</DrawSize>
+        <DrawOffset>0.13,-0.03</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>

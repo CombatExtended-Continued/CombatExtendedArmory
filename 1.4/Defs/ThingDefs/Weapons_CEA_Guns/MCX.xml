@@ -1,66 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Tac-50 ==================== -->
+  <!-- ==================== SIG MCX ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_TacFifty</defName>
-    <label>Tac-50</label>
-    <description>Ancient bolt-action anti-materiel rifle. Combines a large caliber cartridge with a high-magnification scope for sniping at extreme range.</description>
+    <defName>CE_Gun_SigMCX</defName>
+    <label>MCX</label>
+    <description>An outdated carbine design, featuring a short-stroke gas piston system to improve reliability and reduce recoil.</description>
     <graphicData>
-      <texPath>Things/Weapons/Tac50</texPath>
+      <texPath>Things/Weapons/MCX</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>LongShots</li>
-      <li>RangedHeavy</li>
-    </weaponClasses>
     <statBases>
-      <WorkToMake>44500</WorkToMake>
-      <SightsEfficiency>3.5</SightsEfficiency>
-      <ShotSpread>0.02</ShotSpread>
-      <SwayFactor>1.92</SwayFactor>
-      <Bulk>15.48</Bulk>
-      <Mass>11.80</Mass>
-      <RangedWeapon_Cooldown>1.38</RangedWeapon_Cooldown>
+      <WorkToMake>32000</WorkToMake>
+      <Mass>2.61</Mass>
+      <Bulk>7.30</Bulk>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.17</SwayFactor>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>90</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
-      <Chemfuel>20</Chemfuel>
+      <Steel>40</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.03</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-        <warmupTime>4.05</warmupTime>
-        <range>86</range>
-        <soundCast>Shot_SniperRifle</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <warmupTime>1.1</warmupTime>
+        <range>48</range>
+        <soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <comps>
-      <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>5</magazineSize>
-        <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_50BMG</ammoSet>
-      </li>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
-        <aiAimMode>AimedShot</aiAimMode>
-      </li>
-    </comps>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
-    <weaponTags Inherit="False">
-      <li>SniperRifle</li>
-      <li>Bipod_DMR</li>
-      <li>CE_AI_SR</li>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>CE_AI_AR</li>
     </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>30</magazineSize>
+        <reloadTime>4.0</reloadTime>
+        <ammoSet>AmmoSet_300AACBlackout</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>true</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+      </li>
+    </comps>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
     </recipeMaker>
@@ -99,8 +98,8 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.55,1.40</DrawSize>
-        <DrawOffset>0.25,0.0</DrawOffset>
+        <DrawSize>0.82,0.88</DrawSize>
+        <DrawOffset>-0.05,-0.05</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
