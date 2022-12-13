@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== DP-28 ==================== -->
+  <!-- ==================== DP-27 ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_DPtwentyEight</defName>
+    <defName>CE_Gun_DPtwentySeven</defName>
     <label>DP-28</label>
     <description>Ancient gas-operated light machine gun design.</description>
     <graphicData>
