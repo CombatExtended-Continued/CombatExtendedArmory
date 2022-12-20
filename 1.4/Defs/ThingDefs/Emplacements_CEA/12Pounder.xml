@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== 12 Pounder Cannon ==================== -->
+
+  <ThingDef ParentName="BaseTurretGun">
+    <defName>Gun_TwelvePounder</defName>
+    <label>12 pounder cannon</label>
+    <graphicData>
+      <texPath>Things/Building/Security/12Pounder/12Pounder_gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>12 pounder cannon mounted on a carriage.</description>
+    <statBases>
+      <SightsEfficiency>0.7</SightsEfficiency>
+      <ShotSpread>0.10</ShotSpread>
+      <SwayFactor>0.75</SwayFactor>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+      <Mass>100</Mass>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>5.34</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CannonBall_Round</defaultProjectile>
+        <warmupTime>3.3</warmupTime>
+        <range>62</range>
+        <minRange>14</minRange>
+        <soundCast>120mm</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>9.8</reloadTime>
+        <ammoSet>AmmoSet_CannonBall</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="TurretMannedBuildableBase">
+    <defName>Turret_TwelvePounder</defName>
+    <label>12 pounder cannon</label>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <graphicData>
+      <texPath>Things/Building/Security/12Pounder/12Pounder_base</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/12Pounder/12Pounder_uiIcon</uiIconPath>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>200</Mass>
+      <Bulk>120</Bulk>
+    </statBases>
+    <description>12 pounder cannon mounted on a carriage.</description>
+    <costList>
+      <Steel>200</Steel>
+      <WoodLog>200</WoodLog>
+    </costList>
+    <building>
+      <turretGunDef>Gun_TwelvePounder</turretGunDef>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretBurstCooldownTime>2.5</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <researchPrerequisites>
+      <li>CE_Gunpowder</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>
