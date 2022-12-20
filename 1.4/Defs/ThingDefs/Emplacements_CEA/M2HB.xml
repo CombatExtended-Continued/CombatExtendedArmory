@@ -28,7 +28,7 @@
         <range>75</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
-        <soundCast>HeavyMG</soundCast>
+        <soundCast>50Cal_Browning</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
         <recoilPattern>Mounted</recoilPattern>
