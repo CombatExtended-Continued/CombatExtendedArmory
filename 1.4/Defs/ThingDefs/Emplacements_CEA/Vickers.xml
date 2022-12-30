@@ -10,7 +10,7 @@
       <texPath>Things/Building/Security/Vickers/Vickers_gun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <description>Vickers water cooled machine gun mounted on a sled.</description>
+    <description>Vickers water cooled machine gun mounted on a tripod.</description>
     <statBases>
       <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.04</ShotSpread>
@@ -60,7 +60,6 @@
     </graphicData>
     <uiIconPath>Things/Building/Security/Vickers/Vickers_uiIcon</uiIconPath>
     <statBases>
-      <Flammability>1.0</Flammability>
       <WorkToBuild>31500</WorkToBuild>
       <Mass>35</Mass>
       <Bulk>45</Bulk>

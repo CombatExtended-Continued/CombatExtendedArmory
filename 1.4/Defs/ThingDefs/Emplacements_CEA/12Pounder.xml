@@ -58,7 +58,6 @@
     </graphicData>
     <uiIconPath>Things/Building/Security/12Pounder/12Pounder_uiIcon</uiIconPath>
     <statBases>
-      <Flammability>1.0</Flammability>
       <WorkToBuild>4000</WorkToBuild>
       <Mass>200</Mass>
       <Bulk>120</Bulk>
