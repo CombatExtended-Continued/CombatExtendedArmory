@@ -4,7 +4,7 @@
   <!-- ==================== M1919 ==================== -->
 
   <ThingDef ParentName="BaseTurretGun">
-    <defName>Gun_M1919</defName>
+    <defName>Gun_M1919Browning</defName>
     <label>M1919 machine gun</label>
     <graphicData>
       <texPath>Things/Building/Security/M1919/M1919_gun</texPath>
@@ -51,7 +51,7 @@
   </ThingDef>
 
   <ThingDef ParentName="TurretMannedBuildableBase">
-    <defName>Turret_M1919</defName>
+    <defName>Turret_M1919Browning</defName>
     <label>M1919 machine gun</label>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <graphicData>
@@ -70,7 +70,7 @@
       <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <building>
-      <turretGunDef>Gun_M1919</turretGunDef>
+      <turretGunDef>Gun_M1919Browning</turretGunDef>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretBurstCooldownTime>0.36</turretBurstCooldownTime>
     </building>

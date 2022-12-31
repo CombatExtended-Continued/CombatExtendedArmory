@@ -4,7 +4,7 @@
   <!-- ==================== M1903 Springfield ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_M1903</defName>
+    <defName>CE_Gun_M1903Springfield</defName>
     <label>M1903 Springfield</label>
     <description>Ancient bolt-action rifle. Fires a full-power rifle cartridge and is a popular choice in the rimworlds due to its shear firepower and simplicity.</description>
     <possessionCount>1</possessionCount>

@@ -94,7 +94,7 @@
       <li>CE_Turret</li>
     </tradeTags>
     <building>
-      <turretGunDef>cet_LightMortar_gun</turretGunDef>
+      <turretGunDef>Gun_PortabletMortar</turretGunDef>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretBurstCooldownTime>2.7</turretBurstCooldownTime>
       <spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
