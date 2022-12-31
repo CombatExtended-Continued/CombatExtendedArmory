@@ -5,13 +5,16 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_DPtwentySeven</defName>
-    <label>DP-28</label>
-    <description>Ancient gas-operated light machine gun design.</description>
+    <label>DP-27</label>
+    <description>Ancient gas-operated light machine gun design equipped with an iconic pan magazine.</description>
     <graphicData>
-      <texPath>Things/Weapons/DP-28</texPath>
+      <texPath>Things/Weapons/DP-27</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <statBases>
       <Mass>9.12</Mass>
       <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
@@ -28,21 +31,21 @@
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-      <recoilAmount>1.30</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
-      <warmupTime>1.3</warmupTime>
-      <range>62</range>
-      <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-      <burstShotCount>10</burstShotCount>
-      <soundCast>Shot_CE_BattleRifle</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
-      <recoilPattern>Mounted</recoilPattern>
+        <recoilAmount>1.30</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>62</range>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>Shot_CE_BattleRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <recoilPattern>Mounted</recoilPattern>
       </li>
     </verbs>
     <thingSetMakerTags>
