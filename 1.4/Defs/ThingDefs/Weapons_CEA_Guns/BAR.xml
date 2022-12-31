@@ -1,51 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Lewis gun ==================== -->
+  <!-- ==================== BAR ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_Lewis</defName>
-    <label>Lewis gun</label>
-    <description>Ancient gas-operated light machine gun equipped with an iconic barrel cooling shroud.</description>
+    <defName>CE_Gun_BAR</defName>
+    <label>Browning Automatic Rifle</label>
+    <description>Ancient fully automatic battle rifle firing a full power cartridge.</description>
     <graphicData>
-      <texPath>Things/Weapons/Lewis</texPath>
+      <texPath>Things/Weapons/BAR</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
     <statBases>
-      <Mass>12.7</Mass>
-      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+      <WorkToMake>30500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
-      <ShotSpread>0.04</ShotSpread>
-      <SwayFactor>1.79</SwayFactor>
-      <Bulk>14.8</Bulk>
-      <WorkToMake>34000</WorkToMake>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>2.10</SwayFactor>
+      <Bulk>12.15</Bulk>
+      <Mass>8.8</Mass>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>100</Steel>
-      <WoodLog>10</WoodLog>
+      <Steel>75</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.14</recoilAmount>
+        <recoilAmount>1.42</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
-        <warmupTime>1.3</warmupTime>
-        <range>75</range>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <burstShotCount>10</burstShotCount>
+        <warmupTime>1.1</warmupTime>
+        <range>62</range>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
         <soundCast>Shot_CE_BattleRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <recoilPattern>Mounted</recoilPattern>
       </li>
     </verbs>
     <thingSetMakerTags>
@@ -53,24 +46,23 @@
     </thingSetMakerTags>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
-      <li>CE_MachineGun</li>
-      <li>CE_AI_LMG</li>
-      <li>Bipod_LMG</li>
+      <li>CE_AI_AR</li>
+      <li>Bipod_Rifle</li>
     </weaponTags>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>47</magazineSize>
-        <reloadTime>4.9</reloadTime>
+        <magazineSize>20</magazineSize>
+        <reloadTime>4</reloadTime>
         <ammoSet>AmmoSet_3006Springfield</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
-        <aiAimMode>SuppressFire</aiAimMode>
-        <aimedBurstShotCount>5</aimedBurstShotCount>
+        <aiUseBurstMode>TRUE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>2</aimedBurstShotCount>
       </li>
     </comps>
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
@@ -107,8 +99,8 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.3,1.3</DrawSize>
-        <DrawOffset>0.1,-0.05</DrawOffset>
+        <DrawSize>1.1,1.1</DrawSize>
+        <DrawOffset>0.1,-0.02</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
