@@ -13,22 +13,22 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
-      <WorkToMake>30500</WorkToMake>
+      <WorkToMake>30000</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.05</ShotSpread>
-      <SwayFactor>2.10</SwayFactor>
-      <Bulk>12.15</Bulk>
-      <Mass>8.8</Mass>
+      <SwayFactor>1.92</SwayFactor>
+      <Bulk>11.94</Bulk>
+      <Mass>7.25</Mass>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>75</Steel>
+      <Steel>70</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
       <WoodLog>10</WoodLog>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.42</recoilAmount>
+        <recoilAmount>1.57</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
@@ -47,7 +47,6 @@
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
       <li>CE_AI_AR</li>
-      <li>Bipod_Rifle</li>
     </weaponTags>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -62,7 +61,7 @@
       </li>
     </comps>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
