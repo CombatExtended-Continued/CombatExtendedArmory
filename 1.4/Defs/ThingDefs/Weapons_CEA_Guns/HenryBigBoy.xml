@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Temporary AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_45Colt_HV</defName>
+		<label>.45 Colt</label>
+		<ammoTypes>
+			<Ammo_45Colt_FMJ>Bullet_45Colt_HV_FMJ</Ammo_45Colt_FMJ>
+			<Ammo_45Colt_AP>Bullet_45Colt_HV_AP</Ammo_45Colt_AP>
+			<Ammo_45Colt_HP>Bullet_45Colt_HV_HP</Ammo_45Colt_HP>
+		</ammoTypes>
+		<similarTo>AmmoSet_Pistol</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef ParentName="Base45ColtBullet">
+		<defName>Bullet_45Colt_HV_FMJ</defName>
+		<label>.45 Colt bullet (FMJ)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationBlunt>26.58</armorPenetrationBlunt>
+			<speed>86</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base45ColtBullet">
+		<defName>Bullet_45Colt_HV_AP</defName>
+		<label>.45 Colt bullet (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationSharp>8</armorPenetrationSharp>
+			<armorPenetrationBlunt>26.58</armorPenetrationBlunt>
+			<speed>86</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base45ColtBullet">
+		<defName>Bullet_45Colt_HV_HP</defName>
+		<label>.45 Colt bullet (HP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>21</damageAmountBase>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>26.58</armorPenetrationBlunt>
+			<speed>86</speed>
+		</projectile>
+	</ThingDef>
+
+  <!-- ==================== Henry Big Boy ==================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>CE_Gun_BigBoy</defName>
+    <label>Big Boy</label>
+    <description>An archaic design, this lever-action repeating rifle is quite popular among rimworld herders.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Weapons/HenryBigBoy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>15500</WorkToMake>
+      <Mass>4.30</Mass>
+      <Bulk>12.50</Bulk>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>1.69</SwayFactor>
+      <SightsEfficiency>1.50</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <WoodLog>10</WoodLog>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.68</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_45Colt_HV_FMJ</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>40</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>10</magazineSize>
+        <reloadOneAtATime>True</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_45Colt_HV</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.15,1.28</DrawSize>
+        <DrawOffset>0.05,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>
