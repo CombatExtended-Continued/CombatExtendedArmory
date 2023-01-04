@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== M1 Garand ==================== -->
+  <!-- ==================== SR-25 ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_SRTweintyFive</defName>
