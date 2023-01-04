@@ -7,46 +7,13 @@
 		</mods>
 		<match Class="PatchOperationSequence">	
 		<operations>
-
-            <!--Trooper-->
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/PawnKindDef[@Name ="ImperialTrooperBase"]/apparelRequired</xpath>
-                <value>
-                    <apparelRequired>
-                        <li>Apparel_AdvancedHelmet</li>
-						<li>CE_Armor_BallisticGoggles</li>
-                        <li>CE_Armor_FragSuit</li>
-                        <li>CE_Apparel_CompositeVest</li>
-                        <li>Apparel_Backpack</li>
-						<li>CE_Apparel_TacVest</li>
-                        <li>CE_Armor_Balaclava</li>
-                    </apparelRequired>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace" MayRequire="ceteam.combatextendedarmors">
-                <xpath>Defs/PawnKindDef[@Name ="ImperialTrooperBase"]/apparelRequired</xpath>
-                <value>
-                    <apparelRequired>
-                        <li>Apparel_AdvancedHelmet</li>
-						<li>CE_Armor_BallisticGoggles</li>
-                        <li>CE_Armor_FragSuit</li>
-                        <li>CE_Apparel_CompositeVest</li>
-                        <li>CE_Armor_LargeBackpack</li>
-						<li>CE_Apparel_TacVest</li>
-                        <li>CE_Armor_Balaclava</li>
-                    </apparelRequired>
-                </value>
-            </li>
-
+		
             <!--Champion-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/PawnKindDef[defName ="Empire_Fighter_Champion"]/apparelRequired</xpath>
                 <value>
                     <apparelRequired>
                         <li>Apparel_AdvancedHelmet</li>
-						<li>CE_Armor_BallisticGoggles</li>
-						<li>CE_Armor_Jumpsuit</li>
                         <li>CE_Apparel_CompositeArmor</li>
                         <li>Apparel_ShieldBelt</li>
                     </apparelRequired>
