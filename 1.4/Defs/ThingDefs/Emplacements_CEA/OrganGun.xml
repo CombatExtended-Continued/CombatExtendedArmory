@@ -200,6 +200,8 @@
         <warmupTime>2.0</warmupTime>
         <range>62</range>
         <minRange>4.9</minRange>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>9</burstShotCount>
         <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -213,11 +215,12 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>9</magazineSize>
         <reloadOneAtATime>True</reloadOneAtATime>
-        <reloadTime>2.0</reloadTime>
+        <reloadTime>4.0</reloadTime>
         <ammoSet>AmmoSet_MiniCannonBall</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+        <aiAimMode>SuppressFire</aiAimMode>
       </li>
     </comps>
   </ThingDef>
