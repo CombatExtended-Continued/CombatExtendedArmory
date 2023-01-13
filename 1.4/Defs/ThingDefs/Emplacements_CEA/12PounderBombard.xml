@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== 60mm Mortar ==================== -->
+  <!-- ==================== 12 Pounder Bombard ==================== -->
 
   <ThingDef ParentName="BaseArtilleryWeapon">
-    <defName>Gun_PortabletMortar</defName>
-    <label>60mm mortar</label>
+    <defName>Gun_12PounderBombard</defName>
+    <label>12 pounder bombard</label>
     <graphicData>
-      <texPath>Things/Building/Security/PortableMortar/PortableMortar_turret</texPath>
+      <texPath>Things/Building/Security/12PounderBombard/12PounderBombard_turret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <description>60mm mortar gun.</description>
+    <description>12 pounder siege mortar mounted on a carriage.</description>
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <SightsEfficiency>0.5</SightsEfficiency>
-      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>TurretGun</li>
@@ -26,15 +26,15 @@
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
-        <defaultProjectile>Bullet_60mmMortarShell_HE</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-        <minRange>20</minRange>
-        <range>400</range>
-        <soundCast>Mortar_LaunchA</soundCast>
+        <defaultProjectile>Bullet_CannonBall_Bursting_Mortar</defaultProjectile>
+        <warmupTime>5.5</warmupTime>
+        <minRange>14.9</minRange>
+        <range>100</range>
+        <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
-        <indirectFirePenalty>0.3</indirectFirePenalty>
-        <circularError>1</circularError>
+        <indirectFirePenalty>0.25</indirectFirePenalty>
+        <circularError>1.1</circularError>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -51,49 +51,35 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_60mmMortarShell</ammoSet>
+        <reloadTime>8.6</reloadTime>
+        <ammoSet>AmmoSet_CannonBall_Mortar</ammoSet>
       </li>
     </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseArtilleryBuilding">
-    <defName>Turret_PortableMortar</defName>
-    <label>60mm portable mortar</label>
-    <description>A compact small caliber field mortar for indirect fire at medium ranges.</description>
+    <defName>Turret_12PounderBombard</defName>
+    <label>12 pounder bombard</label>
+    <description>12 pounder siege mortar mounted on a carriage.</description>
     <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-    <uiIconPath>Things/Building/Security/PortableMortar/PortableMortar_uiIcon</uiIconPath>
-    <uiIconScale>0.90</uiIconScale>
+    <uiIconPath>Things/Building/Security/12PounderBombard/12PounderBombard_uiIcon</uiIconPath>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <graphicData>
-      <texPath>Things/Building/Security/PortableMortar/PortableMortar_base</texPath>
+      <texPath>Things/Building/Security/12PounderBombard/12PounderBombard_base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>2000</WorkToBuild>
-      <Mass>15</Mass>
-      <Bulk>20</Bulk>
+      <WorkToBuild>4000</WorkToBuild>
+      <Mass>200</Mass>
+      <Bulk>120</Bulk>
     </statBases>
     <costList>
-      <Steel>110</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <Steel>200</Steel>
+      <WoodLog>200</WoodLog>
     </costList>
-    <costListForDifficulty>
-      <difficultyVar>classicMortars</difficultyVar>
-      <invert>true</invert>
-      <costList>
-        <ComponentIndustrial>3</ComponentIndustrial>
-        <ReinforcedBarrel>1</ReinforcedBarrel>
-        <Steel>50</Steel>
-      </costList>
-    </costListForDifficulty>
-    <tradeTags>
-      <li>CE_Turret</li>
-    </tradeTags>
     <building>
-      <turretGunDef>Gun_PortabletMortar</turretGunDef>
+      <turretGunDef>Gun_12PounderBombard</turretGunDef>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretBurstCooldownTime>2.0</turretBurstCooldownTime>
       <spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
@@ -107,7 +93,7 @@
     <fillPercent>0.60</fillPercent>
     <stuffCategories Inherit="False"/>
     <researchPrerequisites>
-      <li>Mortars</li>
+      <li>CE_Gunpowder</li>
     </researchPrerequisites>
     <minifiedDef>MinifiedThing</minifiedDef>
     <designationCategory>Security</designationCategory>

@@ -178,7 +178,7 @@
 
   <ThingDef ParentName="BaseTurretGun">
     <defName>Gun_OrganGun</defName>
-    <label>Organ Gun</label>
+    <label>organ gun</label>
     <graphicData>
       <texPath>Things/Building/Security/OrganGun/OrganGun_gun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -227,7 +227,7 @@
 
   <ThingDef ParentName="TurretMannedBuildableBase">
     <defName>Turret_OrganGun</defName>
-    <label>Organ Gun</label>
+    <label>organ gun</label>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <graphicData>
       <texPath>Things/Building/Security/OrganGun/OrganGun_base</texPath>
