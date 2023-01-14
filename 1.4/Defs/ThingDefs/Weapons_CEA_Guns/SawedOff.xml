@@ -14,7 +14,6 @@
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Autopistol</soundInteract>
     <weaponClasses>
-      <li>RangedLight</li>
       <li>ShortShots</li>
     </weaponClasses>
     <statBases>
@@ -55,9 +54,6 @@
         <aiAimMode>Snapshot</aiAimMode>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <weaponTags>
       <li>SimpleGun</li>
       <li>CE_Sidearm</li>
