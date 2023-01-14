@@ -7,14 +7,14 @@
     <defName>Gun_PortabletMortar</defName>
     <label>60mm mortar</label>
     <graphicData>
-      <texPath>Things/Building/Security/PortableMortar/PortableMortar_Turret</texPath>
+      <texPath>Things/Building/Security/PortableMortar/PortableMortar_turret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <description>60mm mortar gun.</description>
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <SightsEfficiency>0.5</SightsEfficiency>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>TurretGun</li>
@@ -30,10 +30,9 @@
         <warmupTime>3.5</warmupTime>
         <minRange>20</minRange>
         <range>400</range>
-        <burstShotCount>1</burstShotCount>
         <soundCast>Mortar_LaunchA</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>50</muzzleFlashScale>
+        <muzzleFlashScale>16</muzzleFlashScale>
         <indirectFirePenalty>0.3</indirectFirePenalty>
         <circularError>1</circularError>
         <targetParams>
@@ -63,11 +62,11 @@
     <label>60mm portable mortar</label>
     <description>A compact small caliber field mortar for indirect fire at medium ranges.</description>
     <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-    <uiIconPath>Things/Building/Security/PortableMortar/PortableMortar</uiIconPath>
+    <uiIconPath>Things/Building/Security/PortableMortar/PortableMortar_uiIcon</uiIconPath>
     <uiIconScale>0.90</uiIconScale>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <graphicData>
-      <texPath>Things/Building/Security/PortableMortar/PortableMortar_Base</texPath>
+      <texPath>Things/Building/Security/PortableMortar/PortableMortar_base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
@@ -96,7 +95,7 @@
     <building>
       <turretGunDef>Gun_PortabletMortar</turretGunDef>
       <ai_combatDangerous>true</ai_combatDangerous>
-      <turretBurstCooldownTime>2.7</turretBurstCooldownTime>
+      <turretBurstCooldownTime>2.0</turretBurstCooldownTime>
       <spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
     </building>
     <placeWorkers>
