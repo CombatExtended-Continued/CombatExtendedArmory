@@ -11,6 +11,8 @@
       <texPath>Things/Apparel/Gorka/Gorka</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <techLevel>Industrial</techLevel>
+    <generateCommonality>0.4</generateCommonality>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -18,8 +20,6 @@
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <techLevel>Industrial</techLevel>
-    <generateCommonality>0.4</generateCommonality>
     <costList>
       <DevilstrandCloth>30</DevilstrandCloth>
     </costList>

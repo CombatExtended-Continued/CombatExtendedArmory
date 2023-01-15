@@ -7,7 +7,12 @@
     <defName>CE_Apparel_CompositeArmor</defName>
     <label>composite armor</label>
     <description>Ceramic armor vest with all the available coverage extension addon parts, covering the user from neck to toe. It's rather heavy, impractical for prolonged use, mainly for turret gunners and entrance teams.</description>
+    <graphicData>
+      <texPath>Things/Apparel/CompositeVestExtended/CompositeVestExtended</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <techLevel>Industrial</techLevel>
+    <generateCommonality>0.25</generateCommonality>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <skillRequirements>
@@ -15,10 +20,6 @@
       </skillRequirements>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Apparel/CompositeVestExtended/CompositeVestExtended</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
     <statBases>
       <WorkToMake>18000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
@@ -38,7 +39,6 @@
       <DevilstrandCloth>40</DevilstrandCloth>
       <Cloth>40</Cloth>
     </costList>
-    <generateCommonality>0.25</generateCommonality>
     <equippedStatOffsets>
       <CarryBulk>30</CarryBulk>
       <ReloadSpeed>0.1</ReloadSpeed>
