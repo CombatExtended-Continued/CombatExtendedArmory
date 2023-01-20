@@ -99,7 +99,7 @@
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
         <DrawSize>1.1,1.1</DrawSize>
-        <DrawOffset>0.1,-0.02</DrawOffset>
+        <DrawOffset>0.1,0.0</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
