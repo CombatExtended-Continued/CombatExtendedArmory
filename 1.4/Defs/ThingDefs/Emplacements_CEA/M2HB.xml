@@ -68,7 +68,7 @@
     <description>M2 Browning heavy machine gun mounted on a tripod.</description>
     <costList>
       <Steel>210</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <building>
       <turretGunDef>Gun_M2HB</turretGunDef>
