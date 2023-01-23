@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_SawedOff</defName>
-    <label>Sawed Off</label>
+    <label>sawed-off shotgun</label>
     <description>A double-barrel shotgun with a cut-off barrel for easier concealment and indoor deployment in urban areas.</description>
     <graphicData>
       <texPath>Things/Weapons/SawedOff</texPath>
