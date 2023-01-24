@@ -20,7 +20,7 @@
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.1</recoilAmount>
+        <recoilAmount>0.87</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
