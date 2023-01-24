@@ -107,10 +107,10 @@
     <comps>
       <li Class="CombatExtended.CompProperties_Charges">
         <chargeSpeeds>
+          <li>20</li>
           <li>30</li>
           <li>50</li>
           <li>70</li>
-          <li>90</li>
         </chargeSpeeds>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -156,7 +156,7 @@
     <size>(1,1)</size>
     <fillPercent>0.60</fillPercent>
     <stuffCategories Inherit="False"/>
-    <researchPrerequisites>
+    <researchPrerequisites Inherit="False">
       <li>CE_Gunpowder</li>
     </researchPrerequisites>
     <minifiedDef>MinifiedThing</minifiedDef>
