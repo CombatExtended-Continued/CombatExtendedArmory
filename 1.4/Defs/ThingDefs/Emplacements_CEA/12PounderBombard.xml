@@ -107,10 +107,10 @@
     <comps>
       <li Class="CombatExtended.CompProperties_Charges">
         <chargeSpeeds>
+          <li>20</li>
           <li>30</li>
           <li>50</li>
           <li>70</li>
-          <li>90</li>
         </chargeSpeeds>
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
