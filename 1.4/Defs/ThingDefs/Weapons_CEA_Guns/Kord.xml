@@ -17,7 +17,7 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>56000</WorkToMake>
+      <WorkToMake>59500</WorkToMake>
       <SightsEfficiency>2.12</SightsEfficiency>
       <ShotSpread>0.02</ShotSpread>
       <SwayFactor>3.19</SwayFactor>
@@ -27,7 +27,7 @@
     </statBases>
     <costList>
       <Steel>150</Steel>
-      <ComponentIndustrial>7</ComponentIndustrial>
+      <ComponentIndustrial>9</ComponentIndustrial>
       <Chemfuel>20</Chemfuel>
     </costList>
     <verbs>
@@ -68,7 +68,7 @@
       <li>IndustrialGunAdvanced</li>
       <li>CE_MachineGun</li>
       <li>CE_AI_LMG</li>
-      <li>Bipod_AMR</li>
+      <li>Bipod_ATR</li>
     </weaponTags>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
