@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_KordPortable</defName>
-    <label>Kord portable HMG</label>
+    <label>Kord 6P50-1 HMG</label>
     <description>Ancient heavy machine gun in (somewhat) portable configuration.</description>
     <graphicData>
       <texPath>Things/Weapons/Kord</texPath>
