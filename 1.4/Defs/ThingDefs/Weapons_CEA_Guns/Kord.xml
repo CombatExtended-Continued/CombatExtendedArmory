@@ -5,8 +5,8 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_KordPortable</defName>
-    <label>Kord 6P50-1 HMG</label>
-    <description>Ancient heavy machine gun in (somewhat) portable configuration.</description>
+    <label>Kord 6P50 machine gun</label>
+    <description>Ancient heavy machine gun in a portable configuration.</description>
     <graphicData>
       <texPath>Things/Weapons/Kord</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -17,26 +17,26 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>56500</WorkToMake>
-      <SightsEfficiency>2.0</SightsEfficiency>
+      <WorkToMake>56000</WorkToMake>
+      <SightsEfficiency>2.12</SightsEfficiency>
       <ShotSpread>0.02</ShotSpread>
-      <SwayFactor>1.51</SwayFactor>
-      <Bulk>22.80</Bulk>
+      <SwayFactor>3.19</SwayFactor>
+      <Bulk>20.80</Bulk>
       <Mass>25.5</Mass>
-      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>160</Steel>
+      <Steel>150</Steel>
       <ComponentIndustrial>7</ComponentIndustrial>
       <Chemfuel>20</Chemfuel>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.69</recoilAmount>
+        <recoilAmount>1.76</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-        <warmupTime>1.45</warmupTime>
+        <warmupTime>1.4</warmupTime>
         <range>75</range>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <burstShotCount>5</burstShotCount>
@@ -52,7 +52,7 @@
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>50</magazineSize>
-        <reloadTime>7</reloadTime>
+        <reloadTime>7.8</reloadTime>
         <ammoSet>AmmoSet_50BMG</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
@@ -65,9 +65,10 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <weaponTags>
+      <li>IndustrialGunAdvanced</li>
       <li>CE_MachineGun</li>
       <li>CE_AI_LMG</li>
-      <li>Bipod_ATR</li>
+      <li>Bipod_AMR</li>
     </weaponTags>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
