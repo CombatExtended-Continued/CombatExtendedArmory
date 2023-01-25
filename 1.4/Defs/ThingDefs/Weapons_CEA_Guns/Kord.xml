@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Kord ==================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>CE_Gun_KordPortable</defName>
+    <label>Kord portable HMG</label>
+    <description>Ancient heavy machine gun in (somewhat) portable configuration.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Kord</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>56500</WorkToMake>
+      <SightsEfficiency>2.0</SightsEfficiency>
+      <ShotSpread>0.02</ShotSpread>
+      <SwayFactor>1.51</SwayFactor>
+      <Bulk>22.80</Bulk>
+      <Mass>25.5</Mass>
+      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+      <Chemfuel>20</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.69</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+        <warmupTime>1.45</warmupTime>
+        <range>75</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>Shot_CE_BattleRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>50</magazineSize>
+        <reloadTime>7</reloadTime>
+        <ammoSet>AmmoSet_50BMG</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>TRUE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>2</aimedBurstShotCount>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <weaponTags>
+      <li>CE_MachineGun</li>
+      <li>CE_AI_LMG</li>
+      <li>Bipod_ATR</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite Inherit="false" />
+      <researchPrerequisites>
+        <li>CE_TurretHeavyWeapons</li>
+        <li>PrecisionRifling</li>
+      </researchPrerequisites>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.25,1.25</DrawSize>
+        <DrawOffset>0.2,0.25</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>
