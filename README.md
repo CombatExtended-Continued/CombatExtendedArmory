@@ -36,7 +36,12 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 ### Apparel
 - Composite Armor
 - Gorka Combat Bodysuit
-- Heavy Composite Armor
+- Heavy Composite Helmet
+#### Shields
+- Wickers
+- Pavise
+- Buckler
+- Assault
 
 ### Emplacements
 - 12 Pounder cannon
