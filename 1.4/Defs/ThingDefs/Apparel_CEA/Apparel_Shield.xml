@@ -18,7 +18,7 @@
 
     <!-- Wicker Shield -->
  <ThingDef ParentName="ShieldBase_Plus">
-    <defName>Apparel_WickerShield</defName>
+    <defName>CE_Apparel_WickerShield</defName>
     <label>wicker shield</label>
     <description>A lightweight shield made of wicker, once used by infantry of the ancient Persian empire. While effective against arrows and other projectiles, it is not sturdy enough to stop the thrust of a spear or sword.</description>
     <graphicData>
@@ -77,7 +77,7 @@
 
     <!-- Pavise -->
   <ThingDef ParentName="ShieldBase_Plus">
-    <defName>Apparel_Pavise</defName>
+    <defName>CE_Apparel_Pavise</defName>
     <label>pavise</label>
     <description>A large, heavy shield made of rough-hewn planks. Designed to protect archers and crossbowmen from incoming projectiles, it is extremely cumbersome in hand-to-hand combat.</description>
     <techLevel>Industrial</techLevel>
@@ -138,7 +138,7 @@
 
     <!-- Buckler -->
   <ThingDef ParentName="ShieldBase_Plus">
-    <defName>Apparel_Buckler</defName>
+    <defName>CE_Apparel_Buckler</defName>
     <label>buckler</label>
     <description>An extremely small metal shield, usually paired with a rapier or similiarly light sword. Too small to offer any meaningful protection from incoming projectiles, the buckler is instead designed to deflect and trap a foe's weaopon in close-quarters combat.</description>
     <techLevel>Medieval</techLevel>
@@ -192,7 +192,7 @@
   
 	<!-- Assault Shield -->
   <ThingDef ParentName="ShieldBase_Plus">
-    <defName>Apparel_AssaultShield</defName>
+    <defName>CE_Apparel_AssaultShield</defName>
     <label>assault shield</label>
     <description>An advanced shield with integrated sensors to assist with balancing to make it easier to handle. Smaller and lighter than a full-sized ballistic shield, it is designed to protect the user from gunfire. Favoring speed and reduced weight over protection, it is less cumbersome than most shields.</description>
     <techLevel>Industrial</techLevel>
