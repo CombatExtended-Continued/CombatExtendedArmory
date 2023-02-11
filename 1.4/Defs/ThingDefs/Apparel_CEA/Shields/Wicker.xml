@@ -5,13 +5,14 @@
 		<defName>CE_Apparel_WickerShield</defName>
 		<label>wicker shield</label>
 		<description>A lightweight shield made of wicker, once used by infantry of the ancient Persian empire. While effective against arrows and other projectiles, it is not sturdy enough to stop the thrust of a spear or sword.</description>
+		<techLevel>Neolithic</techLevel>
 		<graphicData>
 			<texPath>Things/Apparel/Shields/Wicker_Shield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<possessionCount>1</possessionCount>
 		<costStuffCount>60</costStuffCount>
-		<techLevel>Neolithic</techLevel>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -38,6 +39,7 @@
 			<MeleeParryChance>0.70</MeleeParryChance>
 		</equippedStatOffsets>
 		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<tags>
 				<li>TribalShield</li>
 			</tags>

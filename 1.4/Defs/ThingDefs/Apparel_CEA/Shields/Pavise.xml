@@ -5,26 +5,25 @@
 		<defName>CE_Apparel_Pavise</defName>
 		<label>pavise</label>
 		<description>A large, heavy shield made of rough-hewn planks. Designed to protect archers and crossbowmen from incoming projectiles, it is extremely cumbersome in hand-to-hand combat.</description>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Medieval</techLevel>
 		<graphicData>
 			<texPath>Things/Apparel/Shields/Pavise_Shield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<possessionCount>1</possessionCount>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>Smithing</researchPrerequisite>
 			<recipeUsers>
-				<li>FueledSmithy</li>
-				<li>ElectricSmithy</li>
+				<li>CraftingSpot</li>
 			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
-			<MaxHitPoints>300</MaxHitPoints>
+			<MaxHitPoints>150</MaxHitPoints>
 			<StuffEffectMultiplierArmor>15</StuffEffectMultiplierArmor><!--1.5 mm Rha wood-->
 			<Mass>8</Mass>
 			<Bulk>15</Bulk>

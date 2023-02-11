@@ -30,7 +30,7 @@
 			<StuffEffectMultiplierArmor>8</StuffEffectMultiplierArmor>
 			<Mass>9</Mass>
 			<Bulk>10</Bulk>
-			<WornBulk>8</WornBulk>
+			<WornBulk>7</WornBulk>
 		</statBases>
 		<equippedStatOffsets>
 			<ReloadSpeed>-0.05</ReloadSpeed>
