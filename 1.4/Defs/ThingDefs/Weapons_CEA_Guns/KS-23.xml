@@ -37,7 +37,7 @@
         <defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>20</range>
-        <soundCast>Shot_Shotgun_NoRack</soundCast>
+        <soundCast>Shot_Shotgun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
