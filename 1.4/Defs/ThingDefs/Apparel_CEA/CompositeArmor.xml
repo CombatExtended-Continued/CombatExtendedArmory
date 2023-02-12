@@ -27,7 +27,7 @@
       <ArmorRating_Blunt>22</ArmorRating_Blunt>
       <Mass>18</Mass>
       <Bulk>20</Bulk>
-      <WornBulk>3</WornBulk>
+      <WornBulk>8</WornBulk>
       <EquipDelay>5</EquipDelay>
       <Insulation_Cold>20</Insulation_Cold>
     </statBases>
@@ -144,6 +144,7 @@
         </stats>
       </li>
     </modExtensions>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
     <tradeTags>
       <li>Armor</li>
     </tradeTags>
