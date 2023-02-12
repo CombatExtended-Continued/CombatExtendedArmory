@@ -144,6 +144,7 @@
         </stats>
       </li>
     </modExtensions>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
     <tradeTags>
       <li>Armor</li>
     </tradeTags>
