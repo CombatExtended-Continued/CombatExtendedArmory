@@ -22,9 +22,9 @@
 			</recipeUsers>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
+			<WorkToMake>7000</WorkToMake>
 			<MaxHitPoints>80</MaxHitPoints>
-			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
 			<Mass>5</Mass>
 			<Bulk>11</Bulk>
 			<WornBulk>8</WornBulk>
@@ -36,7 +36,7 @@
 			<AimingAccuracy>-0.05</AimingAccuracy>
 			<Suppressability>-0.25</Suppressability>
 			<MeleeCritChance>-0.09</MeleeCritChance>
-			<MeleeParryChance>0.70</MeleeParryChance>
+			<MeleeParryChance>0.80</MeleeParryChance>
 		</equippedStatOffsets>
 		<apparel>
 			<developmentalStageFilter>Child, Adult</developmentalStageFilter>

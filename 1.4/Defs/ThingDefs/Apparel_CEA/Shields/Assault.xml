@@ -13,7 +13,7 @@
 		</graphicData>
 		<costStuffCount>60</costStuffCount>
 		<costList>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<recipeMaker>
 			<researchPrerequisite>Machining</researchPrerequisite>

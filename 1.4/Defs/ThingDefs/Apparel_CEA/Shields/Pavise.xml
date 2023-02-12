@@ -24,7 +24,7 @@
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
-			<StuffEffectMultiplierArmor>15</StuffEffectMultiplierArmor><!--1.5 mm Rha wood-->
+			<StuffEffectMultiplierArmor>15</StuffEffectMultiplierArmor><!--1.5mm RHA wood-->
 			<Mass>8</Mass>
 			<Bulk>15</Bulk>
 			<WornBulk>10</WornBulk>
