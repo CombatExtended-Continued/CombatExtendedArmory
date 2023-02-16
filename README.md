@@ -16,6 +16,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - FN Five-seveN
 - FN P90
 - Henry Big Boy
+- Henry Side Gate
 - KS-23
 - Lewis gun
 - M1 Garand
