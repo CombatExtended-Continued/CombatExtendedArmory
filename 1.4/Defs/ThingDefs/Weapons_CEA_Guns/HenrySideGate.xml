@@ -1,73 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ==================== American-180 ==================== -->
-
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_AmericanOneEighty</defName>
-		<label>American-180</label>
-		<description>Ancient submachine gun design, fires a small cartridge at a very fast rate and holds a lot of ammunition in a pan magazine.</description>
-		<soundInteract>Interact_SMG</soundInteract>
+		<defName>CE_Gun_HenrySideGate</defName>
+		<label>Henry Side Gate</label>
+		<description>Ancient lever-action repeating shotgun chambered in small shatgun shells designed for self-defense.</description>
+		<possessionCount>1</possessionCount>
 		<graphicData>
-			<texPath>Things/Weapons/American-180</texPath>
+			<texPath>Things/Weapons/HenrySideGate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
-			<li>RangedLight</li>
+			<li>ShortShots</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>27000</WorkToMake>
-			<Mass>2.80</Mass>
-			<Bulk>8.62</Bulk>
-			<ShotSpread>0.11</ShotSpread>
-			<SwayFactor>1.02</SwayFactor>
-			<SightsEfficiency>1.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+			<WorkToMake>10000</WorkToMake>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>1.29</SwayFactor>
+			<Bulk>9.6</Bulk>
+			<Mass>3.25</Mass>
+			<RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
 		</statBases>
-		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
-		</recipeMaker>
 		<costList>
-			<Steel>45</Steel>
+			<Steel>55</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 			<WoodLog>10</WoodLog>
-			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>0.81</recoilAmount>
+				<recoilAmount>2.20</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
-				<burstShotCount>10</burstShotCount>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<defaultProjectile>Bullet_410Bore_Buck</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
-				<range>25</range>
-				<soundCast>Shot_MachinePistol</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
+				<range>16</range>
+				<soundCast>Shot_BoltActionRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>275</magazineSize>
-				<reloadTime>4.9</reloadTime>
-				<ammoSet>AmmoSet_22LR</ammoSet>
+				<magazineSize>7</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.85</reloadTime>
+				<ammoSet>AmmoSet_410Bore</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>False</aiUseBurstMode>
 				<aiAimMode>Snapshot</aiAimMode>
-				<aimedBurstShotCount>5</aimedBurstShotCount>
 			</li>
 		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
-		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
-			<li>CE_OneHandedWeapon</li>
-			<li>CE_SMG</li>
-			<li>CE_AI_BROOM</li>
-		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+		</recipeMaker>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>stock</label>
@@ -103,8 +93,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.15,1.15</DrawSize>
-				<DrawOffset>0.03,0.0</DrawOffset>
+				<DrawSize>1.25,1.25</DrawSize>
+				<DrawOffset>0.08,0.0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
