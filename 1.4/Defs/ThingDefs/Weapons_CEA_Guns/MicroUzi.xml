@@ -16,13 +16,13 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>27500</WorkToMake>
-			<Mass>2.5</Mass>
-			<Bulk>1.5</Bulk>
+			<WorkToMake>24500</WorkToMake>
+			<Mass>1.3</Mass>
+			<Bulk>2.5</Bulk>
 			<ShotSpread>0.17</ShotSpread>
-			<SwayFactor>2.03</SwayFactor>
+			<SwayFactor>1.27</SwayFactor>
 			<SightsEfficiency>1.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -33,11 +33,11 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.75</recoilAmount>
+				<recoilAmount>1.88</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_9x19mmParaSD_FMJ</defaultProjectile>
-				<burstShotCount>5</burstShotCount>
+				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<warmupTime>0.6</warmupTime>
 				<range>16</range>
@@ -48,14 +48,14 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>20</magazineSize>
+				<magazineSize>30</magazineSize>
 				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_9x19mmParaSD</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>False</aiUseBurstMode>
 				<aiAimMode>Snapshot</aiAimMode>
-				<noSingleShot>true</noSingleShot>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
 			</li>
 		</comps>
 		<thingSetMakerTags>
