@@ -20,9 +20,9 @@
 			<Mass>1.8</Mass>
 			<Bulk>2.5</Bulk>
 			<ShotSpread>0.17</ShotSpread>
-			<SwayFactor>2.03</SwayFactor>
+			<SwayFactor>1.27</SwayFactor>
 			<SightsEfficiency>0.7</SightsEfficiency>
-			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -33,11 +33,11 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.75</recoilAmount>
+				<recoilAmount>1.88</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_9x19mmParaSD_FMJ</defaultProjectile>
-				<burstShotCount>5</burstShotCount>
+				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<warmupTime>0.6</warmupTime>
 				<range>13</range>
@@ -55,7 +55,7 @@
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>False</aiUseBurstMode>
 				<aiAimMode>Snapshot</aiAimMode>
-				<noSingleShot>true</noSingleShot>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
 			</li>
 		</comps>
 		<thingSetMakerTags>
