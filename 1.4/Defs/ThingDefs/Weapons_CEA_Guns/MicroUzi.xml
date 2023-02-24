@@ -17,8 +17,8 @@
 		</weaponClasses>
 		<statBases>
 			<WorkToMake>27500</WorkToMake>
-			<Mass>2.5</Mass>
-			<Bulk>1.5</Bulk>
+			<Mass>1.8</Mass>
+			<Bulk>2.5</Bulk>
 			<ShotSpread>0.17</ShotSpread>
 			<SwayFactor>2.03</SwayFactor>
 			<SightsEfficiency>0.7</SightsEfficiency>
@@ -40,7 +40,7 @@
 				<burstShotCount>5</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<warmupTime>0.6</warmupTime>
-				<range>16</range>
+				<range>13</range>
 				<soundCast>Shot_MachinePistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -48,7 +48,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>20</magazineSize>
+				<magazineSize>32</magazineSize>
 				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_9x19mmParaSD</ammoSet>
 			</li>
@@ -92,7 +92,7 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>0.75,0.75</DrawSize>
+				<DrawSize>0.85,0.85</DrawSize>
 				<DrawOffset>0.0,0.0</DrawOffset>
 			</li>
 		</modExtensions>
