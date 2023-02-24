@@ -16,8 +16,8 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>27500</WorkToMake>
-			<Mass>1.8</Mass>
+			<WorkToMake>24500</WorkToMake>
+			<Mass>1.3</Mass>
 			<Bulk>2.5</Bulk>
 			<ShotSpread>0.17</ShotSpread>
 			<SwayFactor>1.27</SwayFactor>
@@ -40,7 +40,7 @@
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<warmupTime>0.6</warmupTime>
-				<range>13</range>
+				<range>12</range>
 				<soundCast>Shot_MachinePistol</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
