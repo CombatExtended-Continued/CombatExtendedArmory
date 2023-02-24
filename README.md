@@ -11,20 +11,24 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - AT4
 - AVB-762
 - BAR
+- Desert Eagle
 - DP-27
 - FightLite MCR
 - FN Five-seveN
 - FN P90
 - Henry Big Boy
 - Henry Side Gate
+- Jericho 941
+- Kord
 - KS-23
 - Lewis gun
 - M1 Garand
 - M5
 - M250
 - M1903
-- SIG MCX
-- SIG MG 338
+- MCX
+- MG 338
+- Micro Uzi
 - Mini-14
 - RPK-16
 - Sawed-off shotgun
@@ -33,6 +37,8 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - SRS
 - TAC-50
 - Taurus Judge
+- Tavor 7
+- Uzi
 
 ### Apparel
 - Composite Armor
