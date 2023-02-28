@@ -92,13 +92,13 @@
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Bullet_CannonBall_Bursting_Mortar</defaultProjectile>
         <warmupTime>5.5</warmupTime>
-        <minRange>14.9</minRange>
+        <minRange>11.9</minRange>
         <range>100</range>
         <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
-        <indirectFirePenalty>0.25</indirectFirePenalty>
-        <circularError>1.1</circularError>
+        <indirectFirePenalty>0.3</indirectFirePenalty>
+        <circularError>1</circularError>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -115,7 +115,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>8.6</reloadTime>
+        <reloadTime>4.9</reloadTime>
         <ammoSet>AmmoSet_CannonBall_Mortar</ammoSet>
       </li>
     </comps>
