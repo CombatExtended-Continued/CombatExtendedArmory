@@ -25,8 +25,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_MiniCannonBall_Round</defaultProjectile>
         <warmupTime>2.0</warmupTime>
-        <range>55</range>
-        <minRange>2.9</minRange>
+        <range>48</range>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <burstShotCount>9</burstShotCount>
         <soundCast>Shot_CE_Musket</soundCast>
