@@ -25,8 +25,8 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_CannonBall_Round</defaultProjectile>
         <warmupTime>3.3</warmupTime>
-        <range>62</range>
-        <minRange>14</minRange>
+        <range>75</range>
+        <minRange>7.9</minRange>
         <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
@@ -39,7 +39,7 @@
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>9.8</reloadTime>
+        <reloadTime>5.2</reloadTime>
         <ammoSet>AmmoSet_CannonBall</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">

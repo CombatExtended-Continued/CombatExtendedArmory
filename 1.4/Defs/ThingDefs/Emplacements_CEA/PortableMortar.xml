@@ -14,7 +14,7 @@
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <SightsEfficiency>0.5</SightsEfficiency>
-      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>TurretGun</li>
@@ -33,7 +33,7 @@
         <soundCast>Mortar_LaunchA</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
-        <indirectFirePenalty>0.3</indirectFirePenalty>
+        <indirectFirePenalty>0.2</indirectFirePenalty>
         <circularError>1</circularError>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>

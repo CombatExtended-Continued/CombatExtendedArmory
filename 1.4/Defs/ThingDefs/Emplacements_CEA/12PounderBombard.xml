@@ -1,70 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== TEMPORARY PROJECTILE ==================== -->
-
-	<ThingDef Name="BaseCannonBall_Mortar" ParentName="BaseExplosiveBullet" Abstract="true">
-		<graphicData>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>0</speed>
-			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
-			<flyOverhead>true</flyOverhead>
-			<dropsCasings>false</dropsCasings>
-			<gravityFactor>5</gravityFactor>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseCannonBall_Mortar">
-		<defName>Bullet_CannonBall_Bursting_Mortar</defName>
-		<label>bursting shell</label>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Big</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Bomb</damageDef>
-			<damageAmountBase>82</damageAmountBase>
-			<armorPenetrationSharp>0</armorPenetrationSharp>
-			<armorPenetrationBlunt>0</armorPenetrationBlunt>
-			<explosionRadius>2</explosionRadius>
-			<soundExplode>MortarBomb_Explode</soundExplode>
-			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-		</projectile>
-		<comps>
-		<li Class="CombatExtended.CompProperties_Fragments">
-			<fragments>
-				<Fragment_Large>19</Fragment_Large>
-				<Fragment_Small>9</Fragment_Small>
-			</fragments>
-		</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseCannonBall_Mortar">
-		<defName>Bullet_CannonBall_Incendiary_Mortar</defName>
-		<label>flaming shell</label>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Big</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>PrometheumFlame</damageDef>
-			<damageAmountBase>0</damageAmountBase>
-			<armorPenetrationSharp>0</armorPenetrationSharp>
-			<armorPenetrationBlunt>0</armorPenetrationBlunt>
-			<explosionRadius>1.5</explosionRadius>
-			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
-			<soundExplode>MortarIncendiary_Explode</soundExplode>
-		</projectile>
-	</ThingDef>
-
   <!-- ==================== 12 Pounder Bombard ==================== -->
 
   <ThingDef ParentName="BaseArtilleryWeapon">
@@ -92,13 +28,13 @@
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Bullet_CannonBall_Bursting_Mortar</defaultProjectile>
         <warmupTime>5.5</warmupTime>
-        <minRange>14.9</minRange>
+        <minRange>11.9</minRange>
         <range>100</range>
         <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
-        <indirectFirePenalty>0.25</indirectFirePenalty>
-        <circularError>1.1</circularError>
+        <indirectFirePenalty>0.3</indirectFirePenalty>
+        <circularError>1</circularError>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -115,7 +51,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>8.6</reloadTime>
+        <reloadTime>4.9</reloadTime>
         <ammoSet>AmmoSet_CannonBall_Mortar</ammoSet>
       </li>
     </comps>
