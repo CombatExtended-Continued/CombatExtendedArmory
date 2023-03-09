@@ -70,11 +70,7 @@
       <li>Bipod_LMG</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite Inherit="false" />
-      <researchPrerequisites>
-        <li>PrecisionRifling</li>
-        <li>MultiAnalyzer</li>
-      </researchPrerequisites>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
