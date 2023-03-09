@@ -62,13 +62,14 @@
     <uiIconPath>Things/Building/Security/OrganGun/OrganGun_uiIcon</uiIconPath>
     <statBases>
       <WorkToBuild>6000</WorkToBuild>
+      <MaxHitPoints>125</MaxHitPoints>
       <Mass>100</Mass>
       <Bulk>80</Bulk>
     </statBases>
     <description>Organ Gun mounted on a carriage.</description>
     <costList>
       <Steel>125</Steel>
-      <WoodLog>100</WoodLog>
+      <WoodLog>80</WoodLog>
     </costList>
     <building>
       <turretGunDef>Gun_OrganGun</turretGunDef>

@@ -71,12 +71,13 @@
     </graphicData>
     <statBases>
       <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
       <Mass>200</Mass>
       <Bulk>120</Bulk>
     </statBases>
-    <costList>
+    <costList Inherit="False">
       <Steel>200</Steel>
-      <WoodLog>200</WoodLog>
+      <WoodLog>150</WoodLog>
     </costList>
     <building>
       <turretGunDef>Gun_12PounderBombard</turretGunDef>

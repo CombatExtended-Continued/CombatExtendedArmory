@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!-- ==================== Gatling Gun ==================== -->
+
+  <ThingDef ParentName="BaseTurretGun">
+    <defName>Gun_GatlingGun</defName>
+    <label>Gatling gun</label>
+    <graphicData>
+      <texPath>Things/Building/Security/GatlingGun/GatlingGun_gun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <description>Gatling gun mounted on a carriage.</description>
+    <statBases>
+      <SightsEfficiency>0.7</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>1.22</SwayFactor>
+      <RangedWeapon_Cooldown>0.15</RangedWeapon_Cooldown>
+      <Mass>30</Mass>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.6</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_4570GovTrapdoor_FMJ</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>40</range>
+        <soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>40</magazineSize>
+        <reloadTime>3.0</reloadTime>
+        <ammoSet>AmmoSet_4570GovTrapdoor</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="TurretMannedBuildableBase">
+    <defName>Turret_GatlingGun</defName>
+    <label>Gatling gun</label>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <graphicData>
+      <texPath>Things/Building/Security/GatlingGun/GatlingGun_base</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/GatlingGun/GatlingGun_uiIcon</uiIconPath>
+    <statBases>
+      <WorkToBuild>20000</WorkToBuild>
+      <Mass>70</Mass>
+      <Bulk>70</Bulk>
+    </statBases>
+    <description>A rapid-firing multi-barrel Gatling gun mounted on a carriage.</description>
+    <costList>
+      <Steel>90</Steel>
+      <WoodLog>60</WoodLog>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <building>
+      <turretGunDef>Gun_GatlingGun</turretGunDef>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretBurstCooldownTime>0.15</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <researchPrerequisites>
+      <li>Gunsmithing</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>
