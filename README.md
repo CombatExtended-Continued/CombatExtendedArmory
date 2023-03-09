@@ -53,6 +53,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 ### Emplacements
 - 12 Pounder cannon
 - 12 Pounder Bombard
+- Gatling gun
 - M2HB
 - M1919
 - Mk-19 grenade launcher

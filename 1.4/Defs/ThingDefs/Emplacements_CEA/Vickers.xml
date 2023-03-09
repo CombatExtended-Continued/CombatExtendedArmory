@@ -66,7 +66,7 @@
     </statBases>
     <description>Vickers water cooled machine gun mounted on a tripod.</description>
     <costList>
-      <Steel>200</Steel>
+      <Steel>170</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <building>

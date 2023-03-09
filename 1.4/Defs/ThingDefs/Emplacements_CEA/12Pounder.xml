@@ -59,13 +59,14 @@
     <uiIconPath>Things/Building/Security/12Pounder/12Pounder_uiIcon</uiIconPath>
     <statBases>
       <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
       <Mass>200</Mass>
       <Bulk>120</Bulk>
     </statBases>
     <description>12 pounder cannon mounted on a carriage.</description>
     <costList>
       <Steel>200</Steel>
-      <WoodLog>200</WoodLog>
+      <WoodLog>150</WoodLog>
     </costList>
     <building>
       <turretGunDef>Gun_TwelvePounder</turretGunDef>
