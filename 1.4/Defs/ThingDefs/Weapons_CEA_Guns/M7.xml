@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== M5 ==================== -->
+  <!-- ==================== M7 ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_MFive</defName>
-    <label>M5</label>
+    <defName>CE_Gun_MSeven</defName>
+    <label>M7</label>
     <description>Ancient military battle rifle firing a full-power rifle cartridge.</description>
     <soundInteract>Interact_Rifle</soundInteract>
     <graphicData>
