@@ -13,26 +13,26 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>39000</WorkToMake>
+      <WorkToMake>36000</WorkToMake>
       <SightsEfficiency>1.1</SightsEfficiency>
-      <ShotSpread>0.04</ShotSpread>
-      <SwayFactor>1.50</SwayFactor>
-      <Bulk>10.50</Bulk>
+      <ShotSpread>0.11</ShotSpread>
+      <SwayFactor>1.36</SwayFactor>
+      <Bulk>7.65</Bulk>
       <Mass>4.46</Mass>
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>55</Steel>
+      <Steel>50</Steel>
       <ComponentIndustrial>6</ComponentIndustrial>
-      <Chemfuel>15</Chemfuel>
+      <Chemfuel>5</Chemfuel>
     </costList>
-    <weaponTags Inherit="False">
+    <weaponTags>
       <li>CE_AI_AR</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.9</recoilAmount>
+        <recoilAmount>1.89</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>

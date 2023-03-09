@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_MGThreeThreeEight</defName>
-    <label>SIG MG338</label>
+    <label>MG 338</label>
     <description>Ancient lightweight medium machine gun. The MG 338 is designed to bridge the gap between light machine gun and heavy machine gun calibers making use of a bigger cartridge while being lighter than other machine gun designs.</description>
     <graphicData>
       <texPath>Things/Weapons/MG338</texPath>
@@ -16,22 +16,22 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>56500</WorkToMake>
+      <WorkToMake>48000</WorkToMake>
       <SightsEfficiency>1.1</SightsEfficiency>
-      <ShotSpread>0.06</ShotSpread>
-      <SwayFactor>1.51</SwayFactor>
-      <Bulk>14.00</Bulk>
-      <Mass>9.5</Mass>
+      <ShotSpread>0.03</ShotSpread>
+      <SwayFactor>1.57</SwayFactor>
+      <Bulk>13.7</Bulk>
+      <Mass>9.7</Mass>
       <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>95</Steel>
+      <Steel>85</Steel>
       <ComponentIndustrial>7</ComponentIndustrial>
-      <Chemfuel>20</Chemfuel>
+      <Chemfuel>10</Chemfuel>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.8</recoilAmount>
+        <recoilAmount>1.78</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
