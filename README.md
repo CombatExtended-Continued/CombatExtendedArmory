@@ -23,7 +23,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - KS-23
 - Lewis gun
 - M1 Garand
-- M5
+- M7
 - M250
 - M1903
 - MCX

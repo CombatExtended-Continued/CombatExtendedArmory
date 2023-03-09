@@ -15,7 +15,7 @@
       <SightsEfficiency>0.7</SightsEfficiency>
       <ShotSpread>0.04</ShotSpread>
       <SwayFactor>1.22</SwayFactor>
-      <RangedWeapon_Cooldown>0.15</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
       <Mass>30</Mass>
     </statBases>
     <verbs>
@@ -24,7 +24,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_4570GovTrapdoor_FMJ</defaultProjectile>
-        <warmupTime>0.1</warmupTime>
+        <warmupTime>0.15</warmupTime>
         <range>40</range>
         <soundCast>Shot_CE_AssaultRifleSlow</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
