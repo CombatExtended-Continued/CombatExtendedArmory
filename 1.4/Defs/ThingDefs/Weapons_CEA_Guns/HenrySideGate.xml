@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CE_Gun_HenrySideGate</defName>
 		<label>Henry Side Gate</label>
-		<description>Ancient lever-action repeating shotgun chambered in small shatgun shells designed for self-defense.</description>
+		<description>Ancient lever-action repeating shotgun chambered in small shotgun shells designed for self-defense.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
 			<texPath>Things/Weapons/HenrySideGate</texPath>
