@@ -57,6 +57,7 @@
     </comps>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>ShortShots</li>
       <li>CE_Sidearm</li>
       <li>CE_AI_AssaultWeapon</li>
       <li>CE_OneHandedWeapon</li>

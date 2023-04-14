@@ -39,11 +39,13 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - Taurus Judge
 - Tavor 7
 - Uzi
+- Winchester 1886
 
 ### Apparel
 - Composite Armor
 - Gorka Combat Bodysuit
 - Heavy Composite Helmet
+
 #### Shields
 - Wickers
 - Pavise
