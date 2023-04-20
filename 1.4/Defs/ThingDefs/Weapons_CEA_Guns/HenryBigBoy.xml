@@ -34,7 +34,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45Colt_HV_FMJ</defaultProjectile>
         <warmupTime>1.15</warmupTime>
-        <range>40</range>
+        <range>35</range>
         <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
