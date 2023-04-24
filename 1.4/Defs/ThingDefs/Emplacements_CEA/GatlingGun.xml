@@ -26,7 +26,7 @@
         <defaultProjectile>Bullet_4570Gov_FMJ</defaultProjectile>
         <warmupTime>0.15</warmupTime>
         <range>40</range>
-        <soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+        <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <recoilPattern>Mounted</recoilPattern>
