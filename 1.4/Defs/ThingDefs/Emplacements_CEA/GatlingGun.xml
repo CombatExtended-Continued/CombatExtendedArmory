@@ -23,7 +23,7 @@
         <recoilAmount>0.6</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_4570GovTrapdoor_FMJ</defaultProjectile>
+        <defaultProjectile>Bullet_4570Gov_FMJ</defaultProjectile>
         <warmupTime>0.15</warmupTime>
         <range>40</range>
         <soundCast>Shot_CE_AssaultRifleSlow</soundCast>
@@ -39,7 +39,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>40</magazineSize>
         <reloadTime>3.0</reloadTime>
-        <ammoSet>AmmoSet_4570GovTrapdoor</ammoSet>
+        <ammoSet>AmmoSet_4570Gov</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiAimMode>Snapshot</aiAimMode>
