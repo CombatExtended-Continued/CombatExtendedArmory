@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Mk-19 ==================== -->
+  <!-- ==================== SPG-9 ==================== -->
 
   <ThingDef ParentName="BaseTurretGun">
     <defName>Gun_SPGNine</defName>
@@ -24,7 +24,7 @@
         <defaultProjectile>Bullet_PG15VRocket_HEAT</defaultProjectile>
         <warmupTime>2.5</warmupTime>
         <minRange>8</minRange>
-        <range>92</range>
+        <range>86</range>
         <burstShotCount/>
         <soundCast>120mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
