@@ -21,7 +21,7 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_PG15VRocket_HEAT</defaultProjectile>
+        <defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
         <warmupTime>2.5</warmupTime>
         <minRange>8</minRange>
         <range>86</range>
@@ -40,7 +40,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>5</reloadTime>
-        <ammoSet>AmmoSet_PG15VRocket</ammoSet>
+        <ammoSet>AmmoSet_SPG9Rocket</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiAimMode>AimedShot</aiAimMode>
