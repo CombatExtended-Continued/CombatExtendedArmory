@@ -55,7 +55,6 @@
 			</li>
 		</comps>
 		<weaponTags>
-			<li>SimpleGun</li>
 			<li>Autopistol</li>
 			<li>CE_OneHandedWeapon</li>
 			<li>CE_Sidearm</li>
