@@ -14,27 +14,27 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
-      <WorkToMake>11500</WorkToMake>
-      <SightsEfficiency>1</SightsEfficiency>
+      <WorkToMake>19500</WorkToMake>
+      <SightsEfficiency>2.48</SightsEfficiency>
       <ShotSpread>0.05</ShotSpread>
-      <SwayFactor>1.49</SwayFactor>
+      <SwayFactor>1.64</SwayFactor>
       <Bulk>11.0</Bulk>
-      <Mass>3.9</Mass>
+      <Mass>4.6</Mass>
       <RangedWeapon_Cooldown>1.17</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>50</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>55</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
       <WoodLog>15</WoodLog>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>2.14</recoilAmount>
+        <recoilAmount>1.95</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
-        <warmupTime>1.1</warmupTime>
-        <range>55</range>
+        <warmupTime>1.5</warmupTime>
+        <range>62</range>
         <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -44,7 +44,7 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <weaponTags>
-      <li>SimpleGun</li>
+      <li>SniperRifle</li>
     </weaponTags>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -94,7 +94,7 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.2,1.2</DrawSize>
+        <DrawSize>1.15,1.15</DrawSize>
         <DrawOffset>0.1,0.0</DrawOffset>
       </li>
     </modExtensions>
