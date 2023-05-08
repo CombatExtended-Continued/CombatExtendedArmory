@@ -27,6 +27,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - M7
 - M250
 - M1903
+- M1903 (Scoped)
 - MCX
 - MG 338
 - Micro Uzi

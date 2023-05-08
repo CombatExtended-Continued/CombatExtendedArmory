@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== M1903 Springfield ==================== -->
+  <!-- ==================== M1903 Springfield (Scoped) ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_M1903Springfield</defName>
+    <defName>CE_Gun_M1903SpringfieldScoped</defName>
     <label>M1903 Springfield (Scoped)</label>
     <description>Ancient bolt-action rifle. Fires a full-power rifle cartridge and is a popular choice in the rimworlds due to its shear firepower and simplicity. Comes equipped with a scope.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Weapons/M1903</texPath>
+      <texPath>Things/Weapons/M1903Scoped</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
@@ -49,7 +49,8 @@
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>5</magazineSize>
-        <reloadTime>4.3</reloadTime>
+        <reloadTime>0.85</reloadTime>
+        <reloadOneAtATime>true</reloadOneAtATime>
         <ammoSet>AmmoSet_3006Springfield</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
