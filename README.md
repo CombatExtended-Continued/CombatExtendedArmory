@@ -30,6 +30,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - MG 338
 - Micro Uzi
 - Mini-14
+- Mosin–Nagant
 - RPK-16
 - Sawed-off shotgun
 - SKS
