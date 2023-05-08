@@ -16,6 +16,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - FightLite MCR
 - FN Five-seveN
 - FN P90
+- Hand Mortar
 - Henry Big Boy
 - Henry Side Gate
 - Jericho 941
