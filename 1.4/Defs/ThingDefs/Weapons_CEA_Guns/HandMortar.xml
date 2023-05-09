@@ -1,81 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Kord ==================== -->
+  <!-- ==================== Hand Mortar ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_KordPortable</defName>
-    <label>Kord 6P50 machine gun</label>
-    <description>Ancient heavy machine gun in a portable configuration. Comes equipped with a scope.</description>
+    <defName>CE_Gun_HandMortar</defName>
+    <label>hand mortar</label>
+    <description>A simple, locally produced break-action grenade launcher, capable of firing a variety of different projectiles.</description>
     <graphicData>
-      <texPath>Things/Weapons/Kord</texPath>
+      <texPath>Things/Weapons/HandMortar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>59500</WorkToMake>
-      <SightsEfficiency>2.12</SightsEfficiency>
-      <ShotSpread>0.02</ShotSpread>
-      <SwayFactor>3.19</SwayFactor>
-      <Bulk>20.80</Bulk>
-      <Mass>25.5</Mass>
-      <RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
+      <WorkToMake>6500</WorkToMake>
+      <SightsEfficiency>0.8</SightsEfficiency>
+      <ShotSpread>0.57</ShotSpread>
+      <SwayFactor>0.95</SwayFactor>
+      <Bulk>6.0</Bulk>
+      <Mass>3.5</Mass>
+      <RangedWeapon_Cooldown>1.06</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>150</Steel>
-      <ComponentIndustrial>9</ComponentIndustrial>
-      <Chemfuel>20</Chemfuel>
+      <Steel>35</Steel>
+      <WoodLog>10</WoodLog>
     </costList>
+    <weaponTags Inherit="False">
+      <li>GunGrenadeLauncher</li>
+      <li>SimpleGun</li>
+      <li>NeolithicRangedChief</li>
+      <li>NeolithicRangedHeavy</li>
+      <li>CE_AI_AOE</li>
+    </weaponTags>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.76</recoilAmount>
+        <recoilAmount>3.34</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+        <defaultProjectile>Bullet_MortarGrenade</defaultProjectile>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <warmupTime>1.4</warmupTime>
-        <range>75</range>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <burstShotCount>5</burstShotCount>
-        <soundCast>Shot_CE_BattleRifle</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>6</muzzleFlashScale>
+        <range>40</range>
+        <minRange>5</minRange>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-        <recoilPattern>Mounted</recoilPattern>
+        <soundCast>Shot_CE_Musket</soundCast>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
       </li>
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>50</magazineSize>
-        <reloadTime>7.8</reloadTime>
-        <ammoSet>AmmoSet_50BMG</ammoSet>
+        <magazineSize>1</magazineSize>
+        <AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
+        <reloadTime>7.9</reloadTime>
+        <ammoSet>AmmoSet_MortarGrenade</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>TRUE</aiUseBurstMode>
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
         <aiAimMode>SuppressFire</aiAimMode>
-        <aimedBurstShotCount>2</aimedBurstShotCount>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>CE_MachineGun</li>
-      <li>CE_AI_LMG</li>
-      <li>Bipod_ATR</li>
-    </weaponTags>
     <recipeMaker>
-      <researchPrerequisite Inherit="false" />
-      <researchPrerequisites>
-        <li>CE_TurretHeavyWeapons</li>
-        <li>PrecisionRifling</li>
-      </researchPrerequisites>
+      <researchPrerequisite>CE_Gunpowder</researchPrerequisite>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
@@ -112,8 +103,8 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.25,1.25</DrawSize>
-        <DrawOffset>0.2,0.25</DrawOffset>
+        <DrawSize>0.95,0.95</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>

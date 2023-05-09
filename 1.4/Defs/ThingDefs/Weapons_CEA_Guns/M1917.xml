@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== M1903 Springfield ==================== -->
+  <!-- ==================== M1917 Enfield ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_M1903Springfield</defName>
-    <label>M1903 Springfield</label>
-    <description>Ancient bolt-action rifle. Fires a full-power rifle cartridge and is a popular choice in the rimworlds due to its shear firepower and simplicity. Comes equipped with a scope.</description>
+    <defName>CE_Gun_M1917Enfield</defName>
+    <label>M1917 Enfield</label>
+    <description>Ancient bolt-action rifle. Fires a full-power rifle cartridge and is a popular choice in the rimworlds due to its shear firepower and simplicity.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Weapons/M1903</texPath>
+      <texPath>Things/Weapons/M1917</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
-      <WorkToMake>19500</WorkToMake>
-      <SightsEfficiency>2.48</SightsEfficiency>
-      <ShotSpread>0.05</ShotSpread>
+      <WorkToMake>12000</WorkToMake>
+      <SightsEfficiency>1.0</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
       <SwayFactor>1.64</SwayFactor>
-      <Bulk>11.0</Bulk>
-      <Mass>4.6</Mass>
+      <Bulk>11.8</Bulk>
+      <Mass>4.17</Mass>
       <RangedWeapon_Cooldown>1.17</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>55</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>1</ComponentIndustrial>
       <WoodLog>15</WoodLog>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.97</recoilAmount>
+        <recoilAmount>2.07</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
-        <warmupTime>1.5</warmupTime>
-        <range>62</range>
+        <warmupTime>1.1</warmupTime>
+        <range>55</range>
         <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -44,13 +44,12 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <weaponTags>
-      <li>SniperRifle</li>
+      <li>SimpleGun</li>
     </weaponTags>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>5</magazineSize>
-        <reloadTime>0.85</reloadTime>
-        <reloadOneAtATime>true</reloadOneAtATime>
+        <magazineSize>6</magazineSize>
+        <reloadTime>4.3</reloadTime>
         <ammoSet>AmmoSet_3006Springfield</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
@@ -95,7 +94,7 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.15,1.15</DrawSize>
+        <DrawSize>1.2,1.2</DrawSize>
         <DrawOffset>0.1,0.0</DrawOffset>
       </li>
     </modExtensions>

@@ -6,7 +6,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_BigBoy</defName>
     <label>Henry Big Boy</label>
-    <description>An archaic design, this lever-action repeating rifle is quite popular among rimworld herders.</description>
+    <description>An archaic design, this lever-action repeating rifle is quite popular among rimworld herders. Comes equipped with a scope.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Weapons/HenryBigBoy</texPath>
@@ -19,7 +19,7 @@
       <Bulk>12.50</Bulk>
       <ShotSpread>0.16</ShotSpread>
       <SwayFactor>1.69</SwayFactor>
-      <SightsEfficiency>1.50</SightsEfficiency>
+      <SightsEfficiency>2.12</SightsEfficiency>
       <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
     </statBases>
     <costList>
@@ -33,7 +33,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45Colt_HV_FMJ</defaultProjectile>
-        <warmupTime>1.15</warmupTime>
+        <warmupTime>1.2</warmupTime>
         <range>35</range>
         <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
