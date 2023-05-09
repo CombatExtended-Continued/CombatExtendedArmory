@@ -94,7 +94,7 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.15,1.15</DrawSize>
+        <DrawSize>1.2,1.2</DrawSize>
         <DrawOffset>0.1,0.0</DrawOffset>
       </li>
     </modExtensions>
