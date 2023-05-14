@@ -77,6 +77,7 @@
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>CE_Gunpowder</li>

@@ -96,6 +96,7 @@
     <researchPrerequisites Inherit="False">
       <li>CE_Gunpowder</li>
     </researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <minifiedDef>MinifiedThing</minifiedDef>
     <designationCategory>Security</designationCategory>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
