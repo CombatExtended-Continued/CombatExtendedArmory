@@ -66,6 +66,10 @@
       </li>
     </comps>
     <recipeMaker>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
       <researchPrerequisite>CE_Gunpowder</researchPrerequisite>
     </recipeMaker>
     <tools>
