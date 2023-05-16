@@ -5,12 +5,12 @@
 
   <ThingDef ParentName="BaseTurretGun">
     <defName>Gun_TwelvePounder</defName>
-    <label>12 pounder cannon</label>
+    <label>12-pounder cannon</label>
     <graphicData>
       <texPath>Things/Building/Security/12Pounder/12Pounder_gun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <description>12 pounder cannon mounted on a carriage.</description>
+    <description>12-pounder cannon mounted on a carriage.</description>
     <statBases>
       <SightsEfficiency>0.7</SightsEfficiency>
       <ShotSpread>0.10</ShotSpread>
@@ -24,7 +24,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_CannonBall_Round</defaultProjectile>
-        <warmupTime>3.3</warmupTime>
+        <warmupTime>3.5</warmupTime>
         <range>75</range>
         <minRange>7.9</minRange>
         <soundCast>Shot_CE_Musket</soundCast>
@@ -39,7 +39,7 @@
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>5.2</reloadTime>
+        <reloadTime>6.9</reloadTime>
         <ammoSet>AmmoSet_CannonBall</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
@@ -63,7 +63,7 @@
       <Mass>200</Mass>
       <Bulk>120</Bulk>
     </statBases>
-    <description>12 pounder cannon mounted on a carriage.</description>
+    <description>12-pounder cannon mounted on a carriage.</description>
     <costList>
       <Steel>200</Steel>
       <WoodLog>150</WoodLog>
@@ -77,6 +77,7 @@
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>CE_Gunpowder</li>

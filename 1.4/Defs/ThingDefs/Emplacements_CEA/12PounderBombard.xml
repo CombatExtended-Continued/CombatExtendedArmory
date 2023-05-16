@@ -5,12 +5,12 @@
 
   <ThingDef ParentName="BaseArtilleryWeapon">
     <defName>Gun_12PounderBombard</defName>
-    <label>12 pounder bombard</label>
+    <label>12-pounder bombard</label>
     <graphicData>
       <texPath>Things/Building/Security/12PounderBombard/12PounderBombard_turret</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <description>12 pounder siege mortar mounted on a carriage.</description>
+    <description>12-pounder siege mortar mounted on a carriage.</description>
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <SightsEfficiency>0.5</SightsEfficiency>
@@ -27,13 +27,13 @@
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Bullet_CannonBall_Bursting_Mortar</defaultProjectile>
-        <warmupTime>5.5</warmupTime>
+        <warmupTime>4.5</warmupTime>
         <minRange>11.9</minRange>
         <range>100</range>
         <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
-        <indirectFirePenalty>0.3</indirectFirePenalty>
+        <indirectFirePenalty>0.25</indirectFirePenalty>
         <circularError>1</circularError>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
@@ -51,7 +51,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
-        <reloadTime>4.9</reloadTime>
+        <reloadTime>6.9</reloadTime>
         <ammoSet>AmmoSet_CannonBall_Mortar</ammoSet>
       </li>
     </comps>
@@ -59,8 +59,8 @@
 
   <ThingDef ParentName="BaseArtilleryBuilding">
     <defName>Turret_12PounderBombard</defName>
-    <label>12 pounder bombard</label>
-    <description>12 pounder siege mortar mounted on a carriage.</description>
+    <label>12-pounder bombard</label>
+    <description>12-pounder siege mortar mounted on a carriage.</description>
     <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
     <uiIconPath>Things/Building/Security/12PounderBombard/12PounderBombard_uiIcon</uiIconPath>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -96,6 +96,7 @@
     <researchPrerequisites Inherit="False">
       <li>CE_Gunpowder</li>
     </researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <minifiedDef>MinifiedThing</minifiedDef>
     <designationCategory>Security</designationCategory>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
