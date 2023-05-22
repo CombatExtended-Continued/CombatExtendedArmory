@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase" Name="CE_ReinforcedWall">
 		<defName>CE_ReinforcedWall</defName>
 		<label>reinforced wall</label>
-		<description>A strong impassable wall made to withstand lots of abuse and direct explosions. Capable of holding up a roof.</description>
+		<description>A strong impassable wall reinforced with steel plates made to withstand lots of abuse and direct explosions. Capable of holding up a roof.</description>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
@@ -105,12 +105,15 @@
 	<ThingDef ParentName="CE_ReinforcedWall">
 		<defName>CE_ReinforcedEmbrasure</defName>
 		<label>reinforced embrasure</label>
-		<description>A strong impassable wall made to withstand lots of abuse and direct explosions. Capable of holding up a roof. Designed with tactical holes to see and fire through.</description>
+		<description>A strong impassable wall reinforced with steel plates made to withstand lots of abuse and direct explosions. Capable of holding up a roof. Designed with tactical holes to see and fire through.</description>
 		<graphicData>
 			<texPath>Things/Building/Structure/ReinforcedEmbrasure/ReinforcedEmbrasure_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconPath>Things/Building/Structure/ReinforcedEmbrasure/ReinforcedEmbrasure_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>350</WorkToBuild>
+		</statBases>
 		<fillPercent>0.7</fillPercent>
 		<building>
 			<blueprintGraphicData>
