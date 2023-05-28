@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BaseAutoTurretGun">
     <defName>Gun_ShotgunTurret</defName>
-    <label>shotgun turret gun</label>
+    <label>shotgun auto-turret gun</label>
     <graphicData>
       <texPath>Things/Building/Security/ShotgunTurret/ShotgunTurret_gun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -43,7 +43,7 @@
 
   <ThingDef ParentName="TurretAutoBase">
     <defName>Turret_ShotgunTurret</defName>
-    <label>shotgun turret</label>
+    <label>shotgun auto-turret</label>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <graphicData>
       <texPath>Things/Building/Security/ShotgunTurret/ShotgunTurret_base</texPath>
