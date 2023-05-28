@@ -58,6 +58,10 @@
     <graphicData>
       <texPath>Things/Building/Security/OrganGun/OrganGun_base</texPath>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.35,0.3,0.55)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Security/OrganGun/OrganGun_uiIcon</uiIconPath>
     <statBases>

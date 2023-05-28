@@ -68,6 +68,10 @@
       <texPath>Things/Building/Security/12PounderBombard/12PounderBombard_base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.25,0.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <statBases>
       <WorkToBuild>4000</WorkToBuild>

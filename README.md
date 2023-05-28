@@ -61,6 +61,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - Gatling gun
 - M2HB
 - M1919
+- Shotgun Turret
 - Mk-19 grenade launcher
 - Organ gun
 - PKM

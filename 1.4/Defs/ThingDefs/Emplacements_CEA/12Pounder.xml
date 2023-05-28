@@ -55,6 +55,10 @@
     <graphicData>
       <texPath>Things/Building/Security/12Pounder/12Pounder_base</texPath>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.3,0.8)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Security/12Pounder/12Pounder_uiIcon</uiIconPath>
     <statBases>

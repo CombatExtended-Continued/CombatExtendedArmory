@@ -54,6 +54,10 @@
     <graphicData>
       <texPath>Things/Building/Security/GatlingGun/GatlingGun_base</texPath>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.3,0.6)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Security/GatlingGun/GatlingGun_uiIcon</uiIconPath>
     <statBases>
