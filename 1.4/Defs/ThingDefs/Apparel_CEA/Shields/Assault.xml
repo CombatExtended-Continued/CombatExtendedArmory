@@ -20,6 +20,9 @@
 			<recipeUsers>
 				<li>TableMachining</li>
 			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<stuffCategories>
 			<li>Steeled</li>

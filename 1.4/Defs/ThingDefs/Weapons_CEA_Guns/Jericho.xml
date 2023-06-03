@@ -26,6 +26,9 @@
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>25</Steel>

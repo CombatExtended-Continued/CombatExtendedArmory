@@ -62,6 +62,9 @@
     </comps>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>

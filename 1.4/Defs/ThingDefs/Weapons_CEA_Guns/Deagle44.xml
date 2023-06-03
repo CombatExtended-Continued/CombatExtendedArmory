@@ -26,6 +26,9 @@
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>
