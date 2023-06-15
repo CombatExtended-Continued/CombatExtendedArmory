@@ -71,6 +71,9 @@
         <li>ElectricSmithy</li>
       </recipeUsers>
       <researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">

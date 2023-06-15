@@ -76,6 +76,9 @@
         <li>CE_TurretHeavyWeapons</li>
         <li>PrecisionRifling</li>
       </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">

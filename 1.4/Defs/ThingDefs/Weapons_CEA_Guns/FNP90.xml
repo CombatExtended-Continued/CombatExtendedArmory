@@ -26,6 +26,9 @@
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>

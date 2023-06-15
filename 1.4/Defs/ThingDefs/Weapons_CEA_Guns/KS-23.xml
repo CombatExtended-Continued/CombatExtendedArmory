@@ -29,6 +29,11 @@
       <WoodLog>10</WoodLog>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <recoilAmount>3.89</recoilAmount>
