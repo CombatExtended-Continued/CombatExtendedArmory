@@ -24,7 +24,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
-        <warmupTime>0.8</warmupTime>
+        <warmupTime>0.6</warmupTime>  <!-- Lowered manually from 0.8 due to how slow the turret is. -->
         <range>16</range>
         <soundCast>Shot_Shotgun_NoRack</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -70,6 +70,7 @@
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>Gun_ShotgunTurret</turretGunDef>
+      <turretBurstCooldownTime>0.5</turretBurstCooldownTime>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
