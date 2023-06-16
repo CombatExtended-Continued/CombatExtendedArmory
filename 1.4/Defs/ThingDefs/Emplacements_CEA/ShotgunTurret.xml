@@ -70,6 +70,7 @@
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>Gun_ShotgunTurret</turretGunDef>
+      <turretBurstCooldownTime>0.5</turretBurstCooldownTime>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
