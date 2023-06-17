@@ -41,8 +41,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_44Magnum_FMJ</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
-				<range>16</range>
-				<soundCast>Shot_Autopistol</soundCast>
+				<range>14</range>
+				<soundCast>Shot_Revolver</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -89,7 +89,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>0.75,0.75</DrawSize>
-				<DrawOffset>-0.05,0.0</DrawOffset>
+				<DrawOffset>0.0,0.0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
