@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	 <!-- Machete -->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>CE_MeleeWeapon_Machete</defName>
+		<label>machete</label>
+		<description>A short, broad blade suited for chopping or slashing. Though designed for agricultural purposes, it makes for a grisly weapon, commonly used in bush wars and rebellions.</description>
+		<graphicData>
+		  <texPath>Things/Weapons_Melee/Machete</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>50</costStuffCount>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.5</MeleeCritChance>
+			<MeleeParryChance>0.15</MeleeParryChance>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+		</equippedStatOffsets>		
+		<weaponTags>
+		  <li>MedievalMeleeDecent</li>
+		  <li>CE_OneHandedWeapon</li> 
+		</weaponTags>
+		<statBases>
+		  <WorkToMake>7800</WorkToMake>
+		  <Mass>1.1</Mass>
+		  <Bulk>3</Bulk>
+		  <MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<stuffCategories>
+		  <li>Steeled</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+		  <skillRequirements>
+			<Crafting>2</Crafting>
+		  </skillRequirements>
+		</recipeMaker>	
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.3</cooldownTime>
+				<chanceFactor>1.33</chanceFactor>
+				<armorPenetrationBlunt>1.125</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.70</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+		</tools>
+
+  </ThingDef>
+  
+</Defs>
+
+

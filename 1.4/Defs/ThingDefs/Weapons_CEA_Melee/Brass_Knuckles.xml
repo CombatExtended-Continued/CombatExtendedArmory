@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	 <!-- Brass Knuckles -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>CE_MeleeWeapon_Knuckles</defName>
+		<label>knuckles</label>
+		<description>A piece of metal or wood shaped to fit around the knuckles. It increases the force of a punch by concentrating it along a smaller, harder contact area. Its simplicity and small size make it popular among criminals.</description>
+		<graphicData>
+		  <texPath>Things/Weapons_Melee/BrassKnuckles</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>	  
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+		  <li>NeolithicMeleeBasic</li>
+		  <li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<costStuffCount>35</costStuffCount>
+		<statBases>
+		  <WorkToMake>800</WorkToMake>
+		  <Mass>0.2</Mass>
+      	  <Bulk>0.25</Bulk>
+      	  <MeleeCounterParryBonus>0.01</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>90</equippedAngleOffset>		
+		<equippedStatOffsets>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeParryChance>0.01</MeleeParryChance>
+			<MeleeDodgeChance>0</MeleeDodgeChance>				
+		</equippedStatOffsets>
+		<stuffCategories>
+		  <li>Woody</li>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+		  <recipeUsers>
+			<li>CraftingSpot</li>
+		  </recipeUsers>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+		</tools>	
+	  </ThingDef>
+  
+</Defs>
+
+
