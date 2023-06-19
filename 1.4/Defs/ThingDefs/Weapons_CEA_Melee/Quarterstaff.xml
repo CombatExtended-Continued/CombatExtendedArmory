@@ -10,6 +10,7 @@
 		  <texPath>Things/Weapons_Melee/Quarterstaff</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>	  
 		</graphicData>
+    <drawSize>1.2</drawSize>
 		<techLevel>Neolithic</techLevel>
 		<weaponTags>
 		  <li>NeolithicMeleeBasic</li>
