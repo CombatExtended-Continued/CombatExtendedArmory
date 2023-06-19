@@ -10,6 +10,7 @@
 		  <texPath>Things/Weapons_Melee/Machete</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+    <drawSize>0.8</drawSize>
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>50</costStuffCount>
 		<equippedStatOffsets>
