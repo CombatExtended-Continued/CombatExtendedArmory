@@ -10,6 +10,7 @@
     <graphicData>
       <texPath>Things/Apparel/HeavyCompositeHelmet/HeavyCompositeHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
     </graphicData>
     <techLevel>Industrial</techLevel>
     <generateCommonality>0.2</generateCommonality>
