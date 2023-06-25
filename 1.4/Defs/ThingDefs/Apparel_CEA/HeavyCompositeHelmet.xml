@@ -10,6 +10,7 @@
     <graphicData>
       <texPath>Things/Apparel/HeavyCompositeHelmet/HeavyCompositeHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
     </graphicData>
     <techLevel>Industrial</techLevel>
     <generateCommonality>0.2</generateCommonality>
@@ -45,7 +46,6 @@
     </thingCategories>
     <apparel>
       <wornGraphicPath>Things/Apparel/HeavyCompositeHelmet/HeavyCompositeHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
