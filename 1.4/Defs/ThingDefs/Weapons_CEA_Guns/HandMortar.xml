@@ -12,6 +12,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.33</generateCommonality>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
