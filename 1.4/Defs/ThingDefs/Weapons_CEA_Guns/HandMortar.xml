@@ -12,6 +12,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.33</generateCommonality>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -31,8 +32,6 @@
     <weaponTags Inherit="False">
       <li>GunGrenadeLauncher</li>
       <li>SimpleGun</li>
-      <li>NeolithicRangedChief</li>
-      <li>NeolithicRangedHeavy</li>
       <li>CE_AI_AOE</li>
     </weaponTags>
     <verbs>
@@ -57,7 +56,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
-        <reloadTime>7.9</reloadTime>
+        <reloadTime>6.9</reloadTime>
         <ammoSet>AmmoSet_MortarGrenade</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
