@@ -46,7 +46,6 @@
     </thingCategories>
     <apparel>
       <wornGraphicPath>Things/Apparel/HeavyCompositeHelmet/HeavyCompositeHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
