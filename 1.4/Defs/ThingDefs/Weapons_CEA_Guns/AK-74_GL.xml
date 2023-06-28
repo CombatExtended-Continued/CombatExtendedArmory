@@ -33,7 +33,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
         <warmupTime>1.1</warmupTime>
-        <range>55</range>
+        <range>51</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <soundCast>Shot_AssaultRifle</soundCast>
@@ -86,6 +86,9 @@
     </comps>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">

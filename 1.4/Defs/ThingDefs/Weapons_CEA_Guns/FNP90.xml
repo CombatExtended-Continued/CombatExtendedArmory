@@ -25,7 +25,10 @@
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
-			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>35</Steel>

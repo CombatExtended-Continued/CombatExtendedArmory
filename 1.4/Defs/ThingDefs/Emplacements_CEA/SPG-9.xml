@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Mk-19 ==================== -->
+  <!-- ==================== SPG-9 ==================== -->
 
   <ThingDef ParentName="BaseTurretGun">
     <defName>Gun_SPGNine</defName>
@@ -21,10 +21,10 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_PG15VRocket_HEAT</defaultProjectile>
+        <defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
         <warmupTime>2.5</warmupTime>
         <minRange>8</minRange>
-        <range>92</range>
+        <range>86</range>
         <burstShotCount/>
         <soundCast>120mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -40,7 +40,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>1</magazineSize>
         <reloadTime>5</reloadTime>
-        <ammoSet>AmmoSet_PG15VRocket</ammoSet>
+        <ammoSet>AmmoSet_SPG9Rocket</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiAimMode>AimedShot</aiAimMode>
@@ -55,6 +55,10 @@
     <graphicData>
       <texPath>Things/Building/Security/SPG-9/SPG-9_base</texPath>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.3,0.7)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Security/SPG-9/SPG-9_uiIcon</uiIconPath>
     <statBases>
@@ -76,7 +80,7 @@
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <size>(1,1)</size>
     <interactionCellOffset>(-1,0,0)</interactionCellOffset>
     <minifiedDef>MinifiedThing</minifiedDef>

@@ -60,6 +60,10 @@
     <graphicData>
       <texPath>Things/Building/Security/Mk19/Mk19_base</texPath>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.25,0.35)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Security/Mk19/Mk19_uiIcon</uiIconPath>
     <statBases>

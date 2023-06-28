@@ -26,6 +26,9 @@
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
 		</recipeMaker>
 		<costList>
 			<Steel>45</Steel>
@@ -63,7 +66,7 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
+			<li>ShortShots</li>
 			<li>CE_OneHandedWeapon</li>
 			<li>CE_SMG</li>
 			<li>CE_AI_BROOM</li>
@@ -104,7 +107,7 @@
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>1.15,1.15</DrawSize>
-				<DrawOffset>0.03,-0.05</DrawOffset>
+				<DrawOffset>0.03,0.0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>

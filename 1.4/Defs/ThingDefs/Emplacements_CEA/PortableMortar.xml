@@ -14,7 +14,7 @@
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <SightsEfficiency>0.5</SightsEfficiency>
-      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>TurretGun</li>
@@ -33,7 +33,7 @@
         <soundCast>Mortar_LaunchA</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
-        <indirectFirePenalty>0.3</indirectFirePenalty>
+        <indirectFirePenalty>0.2</indirectFirePenalty>
         <circularError>1</circularError>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
@@ -69,6 +69,10 @@
       <texPath>Things/Building/Security/PortableMortar/PortableMortar_base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.25,0.5)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>

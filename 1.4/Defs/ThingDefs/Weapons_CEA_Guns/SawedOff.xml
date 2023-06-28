@@ -5,7 +5,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>CE_Gun_SawedOff</defName>
-    <label>Sawed Off</label>
+    <label>sawed-off shotgun</label>
     <description>A double-barrel shotgun with a cut-off barrel for easier concealment and indoor deployment in urban areas.</description>
     <graphicData>
       <texPath>Things/Weapons/SawedOff</texPath>
@@ -30,6 +30,11 @@
       <WoodLog>5</WoodLog>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <recoilAmount>3.58</recoilAmount>
@@ -46,6 +51,7 @@
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>2</magazineSize>
+        <AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
         <reloadTime>0.85</reloadTime>
         <reloadOneAtATime>true</reloadOneAtATime>
         <ammoSet>AmmoSet_12Gauge</ammoSet>
@@ -56,6 +62,7 @@
     </comps>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>ShortShots</li>
       <li>CE_Sidearm</li>
       <li>CE_AI_AssaultWeapon</li>
       <li>CE_OneHandedWeapon</li>

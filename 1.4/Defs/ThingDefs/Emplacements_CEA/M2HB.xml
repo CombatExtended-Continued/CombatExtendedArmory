@@ -20,7 +20,7 @@
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.52</recoilAmount>
+        <recoilAmount>1.59</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
@@ -57,6 +57,10 @@
     <graphicData>
       <texPath>Things/Building/Security/M2HB/M2HB_base</texPath>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.25,0.55)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Security/M2HB/M2HB_uiIcon</uiIconPath>
     <statBases>
@@ -68,7 +72,7 @@
     <description>M2 Browning heavy machine gun mounted on a tripod.</description>
     <costList>
       <Steel>210</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <building>
       <turretGunDef>Gun_M2HB</turretGunDef>

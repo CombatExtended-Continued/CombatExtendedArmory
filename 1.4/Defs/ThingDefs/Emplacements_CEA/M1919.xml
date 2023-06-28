@@ -57,6 +57,10 @@
     <graphicData>
       <texPath>Things/Building/Security/M1919/M1919_base</texPath>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.25,0.45)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Security/M1919/M1919_uiIcon</uiIconPath>
     <statBases>
@@ -66,7 +70,7 @@
     </statBases>
     <description>M1919 air cooled machine gun mounted on a tripod.</description>
     <costList>
-      <Steel>180</Steel>
+      <Steel>160</Steel>
       <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <building>

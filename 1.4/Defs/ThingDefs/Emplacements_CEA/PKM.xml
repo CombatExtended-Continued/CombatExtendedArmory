@@ -20,7 +20,7 @@
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.25</recoilAmount>
+        <recoilAmount>1.10</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
@@ -57,6 +57,10 @@
     <graphicData>
       <texPath>Things/Building/Security/PKM/PKM_base</texPath>
       <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0.27,0.25,0.43)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
     </graphicData>
     <uiIconPath>Things/Building/Security/PKM/PKM_uiIcon</uiIconPath>
     <statBases>

@@ -33,7 +33,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
         <warmupTime>1.1</warmupTime>
-        <range>62</range>
+        <range>59</range>
         <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
         <burstShotCount>5</burstShotCount>
         <soundCast>Shot_CE_BattleRifle</soundCast>
@@ -61,7 +61,10 @@
       </li>
     </comps>
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
@@ -99,7 +102,7 @@
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
         <DrawSize>1.1,1.1</DrawSize>
-        <DrawOffset>0.1,-0.02</DrawOffset>
+        <DrawOffset>0.1,0.0</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
