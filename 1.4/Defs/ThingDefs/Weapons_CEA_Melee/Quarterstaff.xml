@@ -1,40 +1,39 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	 <!-- Quarterstaff -->
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-		<defName>CE_MeleeWeapon_QuarterStaff</defName>
+		<defName>CE_Melee_QuarterStaff</defName>
 		<label>quarterstaff</label>
 		<description>A shaped stick roughly six feet long, traditionally made from hardwood taken from the center of a tree and occasionally fitted with iron tips. While simple, it can be deadly in the right hands. Also useful when handling livestock or traversing rough terrain.</description>
 		<graphicData>
-		  <texPath>Things/Weapons_Melee/Quarterstaff</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>	  
+			<texPath>Things/Weapons_Melee/Quarterstaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
 		</graphicData>
-    <drawSize>1.2</drawSize>
 		<techLevel>Neolithic</techLevel>
 		<weaponTags>
-		  <li>NeolithicMeleeBasic</li>
+			<li>NeolithicMeleeBasic</li>
 		</weaponTags>
 		<costStuffCount>50</costStuffCount>
 		<statBases>
-		  <WorkToMake>1300</WorkToMake>
-		  <Mass>1.65</Mass>
-      	  <Bulk>4</Bulk>
-      	  <MeleeCounterParryBonus>2.18</MeleeCounterParryBonus>
+			<WorkToMake>1300</WorkToMake>
+			<Mass>1.65</Mass>
+			<Bulk>4</Bulk>
+			<MeleeCounterParryBonus>2.18</MeleeCounterParryBonus>
 		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<equippedStatOffsets>
-			<MoveSpeed>0.03</MoveSpeed>
 			<MeleeCritChance>0.83</MeleeCritChance>
 			<MeleeParryChance>1.64</MeleeParryChance>
-			<MeleeDodgeChance>0.9</MeleeDodgeChance>				
+			<MeleeDodgeChance>0.9</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<stuffCategories>
-		  <li>Woody</li>
+			<li>Woody</li>
 		</stuffCategories>
 		<recipeMaker>
-		  <recipeUsers>
-			<li>CraftingSpot</li>
-		  </recipeUsers>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
 		</recipeMaker>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -60,7 +59,5 @@
 			</li>
 		</tools>
 	</ThingDef>
-  
+
 </Defs>
-
-

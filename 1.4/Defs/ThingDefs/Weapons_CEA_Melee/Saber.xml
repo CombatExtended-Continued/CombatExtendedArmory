@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	 <!-- Saber -->
-    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>CE_MeleeWeapon_Saber</defName>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>CE_Melee_Saber</defName>
 		<label>saber</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Things/Weapons_Melee/Saber</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Weapons_Melee/Saber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
 		</graphicData>
-    <drawSize>1.1</drawSize>
 		<equippedAngleOffset>-25</equippedAngleOffset>
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>50</costStuffCount>
@@ -18,27 +17,27 @@
 			<MeleeCritChance>0.5</MeleeCritChance>
 			<MeleeParryChance>0.15</MeleeParryChance>
 			<MeleeDodgeChance>0.05</MeleeDodgeChance>
-		</equippedStatOffsets>		
+		</equippedStatOffsets>
 		<weaponTags>
-		  <li>MedievalMeleeDecent</li>
-		  <li>CE_OneHandedWeapon</li> 
+			<li>MedievalMeleeDecent</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<statBases>
-		  <WorkToMake>7800</WorkToMake>
-		  <Mass>1</Mass>
-		  <Bulk>5.5</Bulk>
-		  <MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
+			<WorkToMake>7800</WorkToMake>
+			<Mass>1</Mass>
+			<Bulk>5.5</Bulk>
+			<MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<stuffCategories>
-		  <li>Steeled</li>
+			<li>Steeled</li>
 		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
-		  <skillRequirements>
-			<Crafting>2</Crafting>
-		  </skillRequirements>
-		</recipeMaker>	
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>handle</label>
@@ -63,9 +62,6 @@
 				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 			</li>
 		</tools>
+	</ThingDef>
 
-  </ThingDef>
-  
 </Defs>
-
-

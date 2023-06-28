@@ -1,43 +1,42 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	 <!-- Machete -->
-    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>CE_MeleeWeapon_Machete</defName>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>CE_Melee_Machete</defName>
 		<label>machete</label>
 		<description>A short, broad blade suited for chopping or slashing. Though designed for agricultural purposes, it makes for a grisly weapon, commonly used in bush wars and rebellions.</description>
 		<graphicData>
-		  <texPath>Things/Weapons_Melee/Machete</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Weapons_Melee/Machete</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
-    <drawSize>0.8</drawSize>
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>50</costStuffCount>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.5</MeleeCritChance>
 			<MeleeParryChance>0.15</MeleeParryChance>
 			<MeleeDodgeChance>0.05</MeleeDodgeChance>
-		</equippedStatOffsets>		
+		</equippedStatOffsets>
 		<weaponTags>
-		  <li>MedievalMeleeDecent</li>
-		  <li>CE_OneHandedWeapon</li> 
+			<li>MedievalMeleeDecent</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<statBases>
-		  <WorkToMake>7800</WorkToMake>
-		  <Mass>1.1</Mass>
-		  <Bulk>3</Bulk>
-		  <MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
+			<WorkToMake>7800</WorkToMake>
+			<Mass>1.1</Mass>
+			<Bulk>3</Bulk>
+			<MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<stuffCategories>
-		  <li>Steeled</li>
+			<li>Steeled</li>
 		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
-		  <skillRequirements>
-			<Crafting>2</Crafting>
-		  </skillRequirements>
-		</recipeMaker>	
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>handle</label>
@@ -62,9 +61,6 @@
 				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 			</li>
 		</tools>
+	</ThingDef>
 
-  </ThingDef>
-  
 </Defs>
-
-
