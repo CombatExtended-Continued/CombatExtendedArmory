@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="MeleeWeaponMakeable_CEA">
+		<defName>CE_Melee_Pollaxe</defName>
+		<label>pollaxe</label>
+		<description>A medieval polearm consisting of a wooden haft mounted with a metallic head widely used by infantry to defeat the plate armor of that time. The head bore an axe blade, a hammer head and a spike projecting from the end of the haft.</description>
+		<possessionCount>1</possessionCount>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Weapons/Melee/Pollaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<costStuffCount>70</costStuffCount>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<Mass>2.0</Mass>
+			<Bulk>8</Bulk>
+			<MeleeCounterParryBonus>1.21</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-15</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic_Weapon</li>
+		</stuffCategories>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>2</power>
+				<chanceFactor>0.1</chanceFactor>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.27</cooldownTime>
+				<armorPenetrationBlunt>1.96</armorPenetrationBlunt>
+				<armorPenetrationSharp>3.92</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.73</cooldownTime>
+				<armorPenetrationBlunt>7.84</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>29</power>
+				<cooldownTime>2.37</cooldownTime>
+				<armorPenetrationBlunt>3.24</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.72</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeParryChance>1.1</MeleeParryChance>
+			<MeleeDodgeChance>0.67</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.1,1.1</DrawSize>
+				<DrawOffset>0,0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

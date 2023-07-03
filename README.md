@@ -3,7 +3,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 
 ## Currently included:
 
-### Weapons
+### Ranged Weapons
 - AK-12
 - AK-74 with Grenade Launcher
 - AKS-74u
@@ -44,6 +44,13 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - Tavor 7
 - Uzi
 - Winchester 1886
+
+### Melee Weapons
+- Bec De Corbin
+- Machete
+- Pollaxe
+- Quarterstaff
+- Saber
 
 ### Apparel
 - Composite Armor
