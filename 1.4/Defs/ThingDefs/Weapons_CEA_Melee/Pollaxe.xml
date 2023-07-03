@@ -10,8 +10,9 @@
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<graphicData>
-			<texPath>Things/Weapons_Melee/Pollaxe</texPath>
+			<texPath>Things/Weapons/Melee/Pollaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<weaponTags>
 			<li>MedievalMeleeAdvanced</li>

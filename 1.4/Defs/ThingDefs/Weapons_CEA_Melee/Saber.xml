@@ -10,8 +10,9 @@
 			<li>MeleePiercer</li>
 		</weaponClasses>
 		<graphicData>
-			<texPath>Things/Weapons_Melee/Saber</texPath>
+			<texPath>Things/Weapons/Melee/Saber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>

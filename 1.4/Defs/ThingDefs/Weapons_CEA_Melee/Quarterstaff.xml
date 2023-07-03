@@ -10,7 +10,7 @@
 			<li>MeleeBlunt</li>
 		</weaponClasses>
 		<graphicData>
-			<texPath>Things/Weapons_Melee/Quarterstaff</texPath>
+			<texPath>Things/Weapons/Melee/Quarterstaff</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
