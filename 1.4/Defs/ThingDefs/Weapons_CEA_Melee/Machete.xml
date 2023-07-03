@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="MeleeWeaponMakeable_CE">
+	<ThingDef ParentName="MeleeWeaponMakeable_CEA">
 		<defName>CE_Melee_Machete</defName>
 		<label>machete</label>
 		<description>A short, broad blade suited for chopping or slashing. Though designed for agricultural purposes, it makes for a grisly weapon, commonly used in bush wars and rebellions.</description>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="MeleeWeaponMakeable_CE">
+	<ThingDef ParentName="MeleeWeaponMakeable_CEA">
 		<defName>CE_Melee_Saber</defName>
 		<label>saber</label>
 		<description>A one-edged sword, usually slightly curved, used especially by cavalry.</description>
