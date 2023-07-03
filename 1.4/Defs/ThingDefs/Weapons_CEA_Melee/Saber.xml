@@ -56,10 +56,10 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>28</power>
-				<cooldownTime>1.25</cooldownTime>
-				<armorPenetrationBlunt>1.62</armorPenetrationBlunt>
-				<armorPenetrationSharp>0.36</armorPenetrationSharp>
+				<power>24</power>
+				<cooldownTime>1.22</cooldownTime>
+				<armorPenetrationBlunt>0.972</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.22</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 			</li>
 		</tools>
