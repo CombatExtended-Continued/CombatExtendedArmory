@@ -15,7 +15,7 @@
 			<li>ShortShots</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>10000</WorkToMake>
+			<WorkToMake>13000</WorkToMake>
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.05</ShotSpread>
 			<SwayFactor>1.29</SwayFactor>
@@ -25,7 +25,7 @@
 		</statBases>
 		<costList>
 			<Steel>55</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ComponentIndustrial>2</ComponentIndustrial>
 			<WoodLog>10</WoodLog>
 		</costList>
 		<verbs>

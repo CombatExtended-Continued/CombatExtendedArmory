@@ -16,7 +16,7 @@
 			<li>RangedLight</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>27000</WorkToMake>
+			<WorkToMake>26500</WorkToMake>
 			<Mass>2.80</Mass>
 			<Bulk>8.62</Bulk>
 			<ShotSpread>0.11</ShotSpread>
@@ -33,7 +33,7 @@
 		<costList>
 			<Steel>45</Steel>
 			<WoodLog>10</WoodLog>
-			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
