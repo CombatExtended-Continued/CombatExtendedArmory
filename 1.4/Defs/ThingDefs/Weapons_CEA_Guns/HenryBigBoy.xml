@@ -25,7 +25,7 @@
     <costList>
       <Steel>60</Steel>
       <WoodLog>10</WoodLog>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
