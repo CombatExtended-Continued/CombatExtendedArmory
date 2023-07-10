@@ -20,6 +20,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - Henry Big Boy
 - Henry Side Gate
 - Jericho 941
+- KelTec CP33
 - Kord
 - KS-23
 - Lewis gun
