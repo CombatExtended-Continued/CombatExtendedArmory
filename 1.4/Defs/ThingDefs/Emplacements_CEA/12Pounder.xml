@@ -13,7 +13,7 @@
     <description>12-pounder cannon mounted on a carriage.</description>
     <statBases>
       <SightsEfficiency>0.7</SightsEfficiency>
-      <ShotSpread>0.10</ShotSpread>
+      <ShotSpread>0.08</ShotSpread>
       <SwayFactor>0.75</SwayFactor>
       <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
       <Mass>100</Mass>
