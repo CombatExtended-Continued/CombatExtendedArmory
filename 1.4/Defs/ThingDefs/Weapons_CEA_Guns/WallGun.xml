@@ -43,7 +43,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_MiniCannonBall_Round</defaultProjectile>
         <warmupTime>3.1</warmupTime>
-        <range>40</range>
+        <range>62</range>
         <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
