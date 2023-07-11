@@ -44,6 +44,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - Taurus Judge
 - Tavor 7
 - Uzi
+- Wall Gun
 - Winchester 1886
 
 ### Melee Weapons

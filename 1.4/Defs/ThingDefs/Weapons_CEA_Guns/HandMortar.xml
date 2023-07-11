@@ -3,10 +3,11 @@
 
   <!-- ==================== Hand Mortar ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseMakeableGun">
     <defName>CE_Gun_HandMortar</defName>
     <label>hand mortar</label>
-    <description>A simple, locally produced break-action grenade launcher, capable of firing a variety of different projectiles.</description>
+    <description>A simple flintlock firearm and early predecessor of modern grenade launchers, capable of throwing fused grenades.</description>
+    <techLevel>Medieval</techLevel>
     <graphicData>
       <texPath>Things/Weapons/HandMortar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -107,6 +108,9 @@
         <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
       </li>
     </tools>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
         <DrawSize>0.95,0.95</DrawSize>
