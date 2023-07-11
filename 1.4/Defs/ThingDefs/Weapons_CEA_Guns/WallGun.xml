@@ -1,81 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Kord ==================== -->
+  <!-- ==================== Wall Gun ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_KordPortable</defName>
-    <label>Kord 6P50 machine gun</label>
-    <description>Ancient heavy machine gun in a portable configuration. Comes equipped with a scope.</description>
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>CE_Gun_WallGun</defName>
+    <label>wall gun</label>
+    <description>A massive smoothbore flintlock firearm capable of firing large caliber rounds, essentially a scaled-up version of the standard infantry musket designed to break the advance of enemy troops.</description>
+    <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Things/Weapons/Kord</texPath>
+      <texPath>Things/Weapons/WallGun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.33</generateCommonality>
     <weaponClasses>
+      <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>59500</WorkToMake>
-      <SightsEfficiency>2.12</SightsEfficiency>
-      <ShotSpread>0.02</ShotSpread>
-      <SwayFactor>3.19</SwayFactor>
-      <Bulk>20.80</Bulk>
-      <Mass>25.5</Mass>
-      <RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
+      <WorkToMake>19000</WorkToMake>
+      <SightsEfficiency>0.8</SightsEfficiency>
+      <ShotSpread>0.03</ShotSpread>
+      <SwayFactor>2.78</SwayFactor>
+      <Bulk>17.63</Bulk>
+      <Mass>23.13</Mass>
+      <RangedWeapon_Cooldown>1.23</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>150</Steel>
-      <ComponentIndustrial>9</ComponentIndustrial>
-      <Chemfuel>20</Chemfuel>
+      <Steel>130</Steel>
+      <WoodLog>25</WoodLog>
     </costList>
+    <weaponTags Inherit="False">
+      <li>Bipod_ATR</li>
+      <li>CE_AI_SR</li>
+    </weaponTags>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.76</recoilAmount>
+        <recoilAmount>2.42</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-        <warmupTime>1.4</warmupTime>
-        <range>75</range>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <burstShotCount>5</burstShotCount>
-        <soundCast>Shot_CE_BattleRifle</soundCast>
+        <defaultProjectile>Bullet_MiniCannonBall_Round</defaultProjectile>
+        <warmupTime>3.1</warmupTime>
+        <range>62</range>
+        <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>6</muzzleFlashScale>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <recoilPattern>Mounted</recoilPattern>
+        <muzzleFlashScale>14</muzzleFlashScale>
       </li>
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>50</magazineSize>
-        <reloadTime>7.8</reloadTime>
-        <ammoSet>AmmoSet_50BMG</ammoSet>
+        <magazineSize>1</magazineSize>
+        <AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
+        <reloadTime>7.9</reloadTime>
+        <ammoSet>AmmoSet_MiniCannonBall</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>TRUE</aiUseBurstMode>
-        <aiAimMode>SuppressFire</aiAimMode>
-        <aimedBurstShotCount>2</aimedBurstShotCount>
+        <aiAimMode>AimedShot</aiAimMode>
       </li>
     </comps>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <weaponTags>
-      <li>CE_AI_LMG</li>
-      <li>Bipod_LMG</li>
-    </weaponTags>
     <recipeMaker>
-      <researchPrerequisite Inherit="false" />
-      <researchPrerequisites>
-        <li>CE_TurretHeavyWeapons</li>
-        <li>PrecisionRifling</li>
-      </researchPrerequisites>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+      <researchPrerequisite>CE_Gunpowder</researchPrerequisite>
       <skillRequirements>
-        <Crafting>6</Crafting>
+        <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
     <tools>
@@ -111,10 +103,13 @@
         <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
       </li>
     </tools>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.25,1.25</DrawSize>
-        <DrawOffset>0.2,0.25</DrawOffset>
+        <DrawSize>1.3,1.3</DrawSize>
+        <DrawOffset>0.2,0.2</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
