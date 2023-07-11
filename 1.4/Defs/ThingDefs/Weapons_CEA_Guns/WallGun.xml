@@ -22,7 +22,7 @@
     <statBases>
       <WorkToMake>19000</WorkToMake>
       <SightsEfficiency>0.8</SightsEfficiency>
-      <ShotSpread>0.03</ShotSpread>
+      <ShotSpread>0.1</ShotSpread>
       <SwayFactor>2.78</SwayFactor>
       <Bulk>17.63</Bulk>
       <Mass>23.13</Mass>
@@ -43,7 +43,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_MiniCannonBall_Round</defaultProjectile>
         <warmupTime>3.1</warmupTime>
-        <range>62</range>
+        <range>55</range>
         <soundCast>Shot_CE_Musket</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
