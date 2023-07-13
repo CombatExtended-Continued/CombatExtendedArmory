@@ -1,110 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== SIG MCX ==================== -->
+	<!-- ==================== SIG MCX ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>CE_Gun_SigMCX</defName>
-    <label>SIG MCX</label>
-    <description>An outdated carbine design, featuring a short-stroke gas piston system to improve reliability and reduce recoil.</description>
-    <graphicData>
-      <texPath>Things/Weapons/MCX</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Interact_Rifle</soundInteract>
-    <statBases>
-      <WorkToMake>32000</WorkToMake>
-      <Mass>2.61</Mass>
-      <Bulk>7.30</Bulk>
-      <ShotSpread>0.09</ShotSpread>
-      <SwayFactor>1.17</SwayFactor>
-      <SightsEfficiency>1.00</SightsEfficiency>
-      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>40</Steel>
-      <Chemfuel>10</Chemfuel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.54</recoilAmount>
-        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_556x45mmNATO_FMJ_SB</defaultProjectile>
-        <burstShotCount>6</burstShotCount>
-        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-        <warmupTime>1.1</warmupTime>
-        <range>48</range>
-        <soundCast>Shot_CE_AssaultRifleSlow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>CE_AI_AR</li>
-    </weaponTags>
-    <comps>
-      <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>30</magazineSize>
-        <reloadTime>4.0</reloadTime>
-        <ammoSet>AmmoSet_556x45mmNATO_SB</ammoSet>
-      </li>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>true</aiUseBurstMode>
-        <aiAimMode>AimedShot</aiAimMode>
-        <aimedBurstShotCount>3</aimedBurstShotCount>
-      </li>
-    </comps>
-    <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>6</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <tools>
-      <li Class="CombatExtended.ToolCE">
-        <label>stock</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>1.55</cooldownTime>
-        <chanceFactor>1.5</chanceFactor>
-        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
-      </li>
-      <li Class="CombatExtended.ToolCE">
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>5</power>
-        <cooldownTime>2.02</cooldownTime>
-        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
-      </li>
-      <li Class="CombatExtended.ToolCE">
-        <label>muzzle</label>
-        <capacities>
-          <li>Poke</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>1.55</cooldownTime>
-        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-      </li>
-    </tools>
-    <modExtensions>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>0.82,0.88</DrawSize>
-        <DrawOffset>-0.05,0.0</DrawOffset>
-      </li>
-    </modExtensions>
-  </ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CE_Gun_SigMCX</defName>
+		<label>SIG MCX</label>
+		<description>An outdated carbine design, featuring a short-stroke gas piston system to improve reliability and reduce recoil.</description>
+		<graphicData>
+			<texPath>Things/Weapons/MCX</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>2.61</Mass>
+			<Bulk>7.30</Bulk>
+			<ShotSpread>0.09</ShotSpread>
+			<SwayFactor>1.17</SwayFactor>
+			<SightsEfficiency>1.00</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>40</Steel>
+			<Chemfuel>10</Chemfuel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.54</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_556x45mmNATO_FMJ_SB</defaultProjectile>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<warmupTime>1.1</warmupTime>
+				<range>48</range>
+				<soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>30</magazineSize>
+				<reloadTime>4.0</reloadTime>
+				<ammoSet>AmmoSet_556x45mmNATO_SB</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>true</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>0.82,0.88</DrawSize>
+				<DrawOffset>-0.05,0.0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
 
 </Defs>
