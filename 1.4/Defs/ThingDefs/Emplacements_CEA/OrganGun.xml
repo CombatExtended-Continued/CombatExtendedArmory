@@ -1,94 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <!-- ==================== Organ Gun ==================== -->
+	<!-- ==================== Organ Gun ==================== -->
 
-  <ThingDef ParentName="BaseTurretGun">
-    <defName>Gun_OrganGun</defName>
-    <label>organ gun</label>
-    <graphicData>
-      <texPath>Things/Building/Security/OrganGun/OrganGun_gun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <description>Organ Gun mounted on a carriage.</description>
-    <statBases>
-      <SightsEfficiency>0.7</SightsEfficiency>
-      <ShotSpread>0.10</ShotSpread>
-      <SwayFactor>1.0</SwayFactor>
-      <RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
-      <Mass>50</Mass>
-    </statBases>
-    <verbs>
-      <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.25</recoilAmount>
-        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MiniCannonBall_Round</defaultProjectile>
-        <warmupTime>2.0</warmupTime>
-        <range>48</range>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <burstShotCount>9</burstShotCount>
-        <soundCast>Shot_CE_Musket</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>12</muzzleFlashScale>
-        <recoilPattern>Mounted</recoilPattern>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-      </li>
-    </verbs>
-    <comps>
-      <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>9</magazineSize>
-        <reloadOneAtATime>True</reloadOneAtATime>
-        <reloadTime>3.0</reloadTime>
-        <ammoSet>AmmoSet_MiniCannonBall</ammoSet>
-      </li>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aimedBurstShotCount>3</aimedBurstShotCount>
-        <aiAimMode>SuppressFire</aiAimMode>
-      </li>
-    </comps>
-  </ThingDef>
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>Gun_OrganGun</defName>
+		<label>organ gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/OrganGun/OrganGun_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Organ Gun mounted on a carriage.</description>
+		<statBases>
+			<SightsEfficiency>0.7</SightsEfficiency>
+			<ShotSpread>0.10</ShotSpread>
+			<SwayFactor>1.0</SwayFactor>
+			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+			<Mass>50</Mass>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.25</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MiniCannonBall_Round</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>48</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>9</burstShotCount>
+				<soundCast>Shot_CE_Musket</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>9</magazineSize>
+				<reloadOneAtATime>True</reloadOneAtATime>
+				<reloadTime>3.0</reloadTime>
+				<ammoSet>AmmoSet_MiniCannonBall</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
 
-  <ThingDef ParentName="TurretMannedBuildableBase">
-    <defName>Turret_OrganGun</defName>
-    <label>organ gun</label>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    <graphicData>
-      <texPath>Things/Building/Security/OrganGun/OrganGun_base</texPath>
-      <drawSize>(2,2)</drawSize>
-      <shadowData>
-        <volume>(0.35,0.3,0.55)</volume>
-        <offset>(0,0,0)</offset>
-      </shadowData>
-    </graphicData>
-    <uiIconPath>Things/Building/Security/OrganGun/OrganGun_uiIcon</uiIconPath>
-    <statBases>
-      <WorkToBuild>6000</WorkToBuild>
-      <MaxHitPoints>125</MaxHitPoints>
-      <Mass>100</Mass>
-      <Bulk>80</Bulk>
-    </statBases>
-    <description>Organ Gun mounted on a carriage.</description>
-    <costList>
-      <Steel>125</Steel>
-      <WoodLog>80</WoodLog>
-    </costList>
-    <building>
-      <turretGunDef>Gun_OrganGun</turretGunDef>
-      <ai_combatDangerous>true</ai_combatDangerous>
-      <turretBurstCooldownTime>1.35</turretBurstCooldownTime>
-    </building>
-    <placeWorkers>
-      <li>PlaceWorker_TurretTop</li>
-      <li>PlaceWorker_ShowTurretRadius</li>
-    </placeWorkers>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <researchPrerequisites>
-      <li>CE_Gunpowder</li>
-    </researchPrerequisites>
-  </ThingDef>
+	<ThingDef ParentName="TurretMannedBuildableBase">
+		<defName>Turret_OrganGun</defName>
+		<label>organ gun</label>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Security/OrganGun/OrganGun_base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.35,0.3,0.55)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/OrganGun/OrganGun_uiIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>6000</WorkToBuild>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>100</Mass>
+			<Bulk>80</Bulk>
+		</statBases>
+		<description>Organ Gun mounted on a carriage.</description>
+		<costList>
+			<Steel>125</Steel>
+			<WoodLog>80</WoodLog>
+		</costList>
+		<building>
+			<turretGunDef>Gun_OrganGun</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>1.35</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites>
+			<li>CE_Gunpowder</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 </Defs>
