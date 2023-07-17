@@ -25,7 +25,7 @@
 				<warmupTime>2.5</warmupTime>
 				<minRange>8</minRange>
 				<range>86</range>
-				<burstShotCount/>
+				<burstShotCount />
 				<soundCast>120mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>20</muzzleFlashScale>

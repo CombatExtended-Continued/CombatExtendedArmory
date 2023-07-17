@@ -96,7 +96,7 @@
 		</placeWorkers>
 		<size>(1,1)</size>
 		<fillPercent>0.60</fillPercent>
-		<stuffCategories Inherit="False"/>
+		<stuffCategories Inherit="False" />
 		<researchPrerequisites Inherit="False">
 			<li>CE_Gunpowder</li>
 		</researchPrerequisites>
