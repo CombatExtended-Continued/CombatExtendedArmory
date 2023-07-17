@@ -22,7 +22,7 @@
 		</statBases>
 		<relicChance>2</relicChance>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li>
 				<compClass>CompEquippable</compClass>
 			</li>
@@ -34,7 +34,7 @@
 				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
-			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_Styleable" />
 		</comps>
 		<graphicData>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>

@@ -69,7 +69,7 @@
 			<li>Bipod_LMG</li>
 		</weaponTags>
 		<recipeMaker>
-			<researchPrerequisite Inherit="false"/>
+			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
 				<li>CE_TurretHeavyWeapons</li>
 				<li>PrecisionRifling</li>
