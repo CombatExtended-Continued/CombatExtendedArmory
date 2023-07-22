@@ -50,7 +50,7 @@
 		</weaponTags>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>60</magazineSize>
+				<magazineSize>30</magazineSize>
 				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
 			</li>
