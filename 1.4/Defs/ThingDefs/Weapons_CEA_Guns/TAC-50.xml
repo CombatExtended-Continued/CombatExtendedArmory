@@ -18,7 +18,7 @@
 		</weaponClasses>
 		<statBases>
 			<WorkToMake>44500</WorkToMake>
-			<SightsEfficiency>3.5</SightsEfficiency>
+			<SightsEfficiency>3.2</SightsEfficiency>
 			<ShotSpread>0.02</ShotSpread>
 			<SwayFactor>1.92</SwayFactor>
 			<Bulk>15.48</Bulk>
@@ -36,7 +36,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-				<warmupTime>4.05</warmupTime>
+				<warmupTime>3.8</warmupTime>
 				<range>86</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
