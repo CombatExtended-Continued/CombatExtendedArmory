@@ -24,7 +24,7 @@
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
-			<WoodLog>5</WoodLog>
+			<Chemfuel>5</Chemfuel>
 		</costList>
 		<weaponTags>
 			<li>CE_AI_AR</li>
