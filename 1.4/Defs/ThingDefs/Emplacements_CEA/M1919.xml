@@ -84,7 +84,7 @@
 		</placeWorkers>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<researchPrerequisites>
-			<li>GasOperation</li>
+			<li>BlowbackOperation</li>
 		</researchPrerequisites>
 	</ThingDef>
 
