@@ -4,7 +4,7 @@
 	<!-- ==================== Smoke bomb ========================== -->
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>Proj_CE_SmokeBomb</defName>
+		<defName>CE_Proj_SmokeBomb</defName>
 		<label>smoke bomb</label>
 		<graphicData>
 			<texPath>Things/Projectile/Grenades/oldSmoke</texPath>
@@ -33,7 +33,7 @@
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
-		<defName>Weapon_CE_SmokeBomb</defName>
+		<defName>CE_Weapon_SmokeBomb</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>smoke bomb</label>
 		<description>Instantly releases a small cloud of defensive smoke, providing concealment against gunfire. Will stun on a direct hit.</description>
@@ -73,7 +73,7 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>Proj_CE_SmokeBomb</defaultProjectile>
+				<defaultProjectile>CE_Proj_SmokeBomb</defaultProjectile>
 				<onlyManualCast>false</onlyManualCast>
 				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 			</li>
