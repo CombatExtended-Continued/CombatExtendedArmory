@@ -15,19 +15,19 @@
 			<SightsEfficiency>0.7</SightsEfficiency>
 			<ShotSpread>0.10</ShotSpread>
 			<SwayFactor>1.0</SwayFactor>
-			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 			<Mass>50</Mass>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.25</recoilAmount>
+				<recoilAmount>0.57</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_MiniCannonBall_Round</defaultProjectile>
-				<warmupTime>2.0</warmupTime>
-				<range>48</range>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>9</burstShotCount>
+				<defaultProjectile>Bullet_FastMusketBall</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>35</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
 				<soundCast>Shot_CE_Musket</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
@@ -39,14 +39,14 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>9</magazineSize>
+				<magazineSize>20</magazineSize>
 				<reloadOneAtATime>True</reloadOneAtATime>
-				<reloadTime>3.0</reloadTime>
-				<ammoSet>AmmoSet_MiniCannonBall</ammoSet>
+				<reloadTime>5.9</reloadTime>
+				<ammoSet>AmmoSet_FastMusketBall</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aimedBurstShotCount>3</aimedBurstShotCount>
-				<aiAimMode>SuppressFire</aiAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiAimMode>Snapshot</aiAimMode>
 			</li>
 		</comps>
 	</ThingDef>
@@ -72,13 +72,13 @@
 		</statBases>
 		<description>Organ Gun mounted on a carriage.</description>
 		<costList>
-			<Steel>125</Steel>
+			<Steel>150</Steel>
 			<WoodLog>80</WoodLog>
 		</costList>
 		<building>
 			<turretGunDef>Gun_OrganGun</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretBurstCooldownTime>1.35</turretBurstCooldownTime>
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
