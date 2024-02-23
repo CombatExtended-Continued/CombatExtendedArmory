@@ -37,8 +37,7 @@
 				<range>24</range>
 				<soundCast>Shot_Autopistol</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
-				<muzzleFlashScale>4</muzzleFlashScale>
-				<recoilPattern>Regular</recoilPattern>
+				<muzzleFlashScale>6</muzzleFlashScale>
 			</li>
 		</verbs>
 		<weaponTags>
@@ -48,7 +47,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
 				<AmmoGenPerMagOverride>5</AmmoGenPerMagOverride>
-				<reloadTime>0.85</reloadTime>
+				<reloadTime>2.6</reloadTime>
 				<ammoSet>AmmoSet_22LR</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -58,7 +57,7 @@
 			<li Class="CombatExtended.CompProperties_UnderBarrel">
 				<propsUnderBarrel>
 					<magazineSize>1</magazineSize>
-					<reloadTime>0.85</reloadTime>
+					<reloadTime>2.6</reloadTime>
 					<ammoSet>AmmoSet_20Gauge</ammoSet>
 				</propsUnderBarrel>
 				<verbPropsUnderBarrel>
@@ -70,7 +69,7 @@
 					<range>16</range>
 					<soundCast>Shot_Shotgun_NoRack</soundCast>
 					<soundCastTail>GunTail_Medium</soundCastTail>
-					<muzzleFlashScale>5</muzzleFlashScale>
+					<muzzleFlashScale>9</muzzleFlashScale>
 				</verbPropsUnderBarrel>
 				<propsFireModesUnderBarrel>
 					<aiUseBurstMode>FALSE</aiUseBurstMode>

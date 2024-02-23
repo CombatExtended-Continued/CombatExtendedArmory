@@ -39,7 +39,6 @@
 				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<recoilPattern>Regular</recoilPattern>
 			</li>
 		</verbs>
 		<thingSetMakerTags>
@@ -73,9 +72,12 @@
 					<defaultProjectile>Bullet_40x53mmVOG25Grenade_HE</defaultProjectile>
 					<warmupTime>1.1</warmupTime>
 					<range>40</range>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
 					<soundCast>InfernoCannon_Fire</soundCast>
 					<soundCastTail>GunTail_Medium</soundCastTail>
-					<muzzleFlashScale>5</muzzleFlashScale>
+					<muzzleFlashScale>9</muzzleFlashScale>
 				</verbPropsUnderBarrel>
 				<propsFireModesUnderBarrel>
 					<aiUseBurstMode>FALSE</aiUseBurstMode>

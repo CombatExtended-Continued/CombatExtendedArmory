@@ -40,7 +40,6 @@
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<recoilPattern>Regular</recoilPattern>
 			</li>
 		</verbs>
 		<weaponTags>

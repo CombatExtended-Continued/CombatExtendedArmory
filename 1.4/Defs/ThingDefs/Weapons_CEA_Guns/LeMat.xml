@@ -48,7 +48,8 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>9</magazineSize>
-				<reloadTime>7.65</reloadTime>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.85</reloadTime>
 				<ammoSet>AmmoSet_44Magnum</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes" />
@@ -67,11 +68,11 @@
 					<range>12</range>
 					<soundCast>Shot_Shotgun_NoRack</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
-					<muzzleFlashScale>5</muzzleFlashScale>
+					<muzzleFlashScale>9</muzzleFlashScale>
 				</verbPropsUnderBarrel>
 				<propsFireModesUnderBarrel>
 					<aiUseBurstMode>FALSE</aiUseBurstMode>
-					<aiAimMode>AimedShot</aiAimMode>
+					<aiAimMode>Snapshot</aiAimMode>
 					<aimedBurstShotCount>1</aimedBurstShotCount>
 				</propsFireModesUnderBarrel>
 			</li>

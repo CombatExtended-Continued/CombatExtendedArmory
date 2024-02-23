@@ -50,7 +50,6 @@
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<recoilPattern>Regular</recoilPattern>
 			</li>
 		</verbs>
 		<thingSetMakerTags>
@@ -63,7 +62,8 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>7</magazineSize>
-				<reloadTime>6.45</reloadTime>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.85</reloadTime>
 				<ammoSet>AmmoSet_12Gauge</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -73,7 +73,8 @@
 			<li Class="CombatExtended.CompProperties_UnderBarrel">
 				<propsUnderBarrel>
 					<magazineSize>7</magazineSize>
-					<reloadTime>6.45</reloadTime>
+					<reloadOneAtATime>true</reloadOneAtATime>
+					<reloadTime>0.85</reloadTime>
 					<ammoSet>AmmoSet_12Gauge_KSG_UB</ammoSet>
 				</propsUnderBarrel>
 				<verbPropsUnderBarrel>
