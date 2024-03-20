@@ -17,7 +17,7 @@
 		</weaponClasses>
 		<statBases>
 			<WorkToMake>38000</WorkToMake>
-			<SightsEfficiency>2.00</SightsEfficiency>
+			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.09</ShotSpread>
 			<SwayFactor>1.00</SwayFactor>
 			<Bulk>11.45</Bulk>

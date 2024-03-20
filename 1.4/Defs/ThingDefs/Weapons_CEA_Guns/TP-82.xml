@@ -1,81 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ==================== AK-74 GL ==================== -->
+	<!-- ==================== TP-82 Survival Pistol ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_AK74GL</defName>
-		<label>AK-74 + GP-25</label>
-		<description>Ancient military weapon chambered for an intermediate cartridge with an underbarrel 40mm grenade launcher. The simple design makes it easy to assemble and highly reliable.</description>
+		<defName>CE_Gun_TP_EightyTwo</defName>
+		<label>TP-82</label>
+		<description>Ancient survival weapon with two barrels capable of firing shotgun shells and a third chambered for an intermediate rifle cartridge.</description>
 		<graphicData>
-			<texPath>Things/Weapons/AK-74_GL</texPath>
+			<texPath>Things/Weapons/TP-82</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
+		<soundInteract>Interact_Autopistol</soundInteract>
 		<statBases>
-			<WorkToMake>27000</WorkToMake>
-			<Mass>4.57</Mass>
-			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-			<SightsEfficiency>1.00</SightsEfficiency>
-			<ShotSpread>0.08</ShotSpread>
-			<SwayFactor>1.25</SwayFactor>
-			<Bulk>12.03</Bulk>
+			<Mass>1.60</Mass>
+			<RangedWeapon_Cooldown>0.87</RangedWeapon_Cooldown>
+			<SightsEfficiency>0.70</SightsEfficiency>
+			<ShotSpread>0.11</ShotSpread>
+			<SwayFactor>1.73</SwayFactor>
+			<Bulk>3.60</Bulk>
+			<WorkToMake>4750</WorkToMake>
 		</statBases>
 		<costList>
-			<WoodLog>10</WoodLog>
-			<Steel>75</Steel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<WoodLog>5</WoodLog>
+			<Steel>30</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.18</recoilAmount>
+				<recoilAmount>3.63</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
-				<warmupTime>1.1</warmupTime>
-				<range>51</range>
-				<burstShotCount>6</burstShotCount>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>Shot_AssaultRifle</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
+				<defaultProjectile>Bullet_20Gauge_Buck</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>12</range>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>Shot_Shotgun_NoRack</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
 			<li>CE_AI_AR</li>
+			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>30</magazineSize>
-				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+				<magazineSize>2</magazineSize>
+				<AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.85</reloadTime>
+				<ammoSet>AmmoSet_20Gauge</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>TRUE</aiUseBurstMode>
-				<aiAimMode>AimedShot</aiAimMode>
-				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>1</aimedBurstShotCount>
 			</li>
 			<li Class="CombatExtended.CompProperties_UnderBarrel">
 				<propsUnderBarrel>
 					<magazineSize>1</magazineSize>
-					<reloadTime>3</reloadTime>
-					<ammoSet>AmmoSet_40x53mmVOG25Grenade</ammoSet>
+					<reloadTime>2.6</reloadTime>
+					<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
 				</propsUnderBarrel>
 				<verbPropsUnderBarrel>
-					<recoilAmount>2.71</recoilAmount>
+					<recoilAmount>2.01</recoilAmount>
 					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_40x53mmVOG25Grenade_HE</defaultProjectile>
+					<defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
 					<warmupTime>1.1</warmupTime>
-					<range>40</range>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-					</targetParams>
-					<soundCast>InfernoCannon_Fire</soundCast>
+					<range>12</range>
+					<soundCast>Shot_AssaultRifle</soundCast>
 					<soundCastTail>GunTail_Medium</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>
 				</verbPropsUnderBarrel>
@@ -87,9 +82,9 @@
 			</li>
 		</comps>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<tools>
@@ -127,8 +122,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.0,1.05</DrawSize>
-				<DrawOffset>0.05,0</DrawOffset>
+				<DrawSize>0.92,0.92</DrawSize>
+				<DrawOffset>0.0,0.0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>

@@ -1,42 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ==================== AK-74 GL ==================== -->
+	<!-- The gun doesn't like having the exact same AmmoSetDef in the underbarrel, so we cheat. -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_12Gauge_KSG_UB</defName>
+		<label>12 Gauge</label>
+		<ammoTypes>
+			<Ammo_12Gauge_Buck>Bullet_12Gauge_Buck</Ammo_12Gauge_Buck>
+			<Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
+			<Ammo_12Gauge_Beanbag>Bullet_12Gauge_Beanbag</Ammo_12Gauge_Beanbag>
+			<Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
+		</ammoTypes>
+		<similarTo>AmmoSet_Shotgun</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== KSG Shotgun ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_AK74GL</defName>
-		<label>AK-74 + GP-25</label>
-		<description>Ancient military weapon chambered for an intermediate cartridge with an underbarrel 40mm grenade launcher. The simple design makes it easy to assemble and highly reliable.</description>
+		<defName>CE_Gun_KSG</defName>
+		<label>KSG</label>
+		<description>Ancient pump shotgun with two tubes for shells, allowing the user to alternate ammo types without needing to reload.</description>
 		<graphicData>
-			<texPath>Things/Weapons/AK-74_GL</texPath>
+			<texPath>Things/Weapons/KSG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>27000</WorkToMake>
-			<Mass>4.57</Mass>
-			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>3.10</Mass>
+			<RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.00</SightsEfficiency>
-			<ShotSpread>0.08</ShotSpread>
-			<SwayFactor>1.25</SwayFactor>
-			<Bulk>12.03</Bulk>
+			<ShotSpread>0.14</ShotSpread>
+			<SwayFactor>0.97</SwayFactor>
+			<Bulk>6.60</Bulk>
 		</statBases>
 		<costList>
-			<WoodLog>10</WoodLog>
-			<Steel>75</Steel>
-			<ComponentIndustrial>7</ComponentIndustrial>
+			<Chemfuel>25</Chemfuel>
+			<Steel>55</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.18</recoilAmount>
+				<recoilAmount>3.10</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
-				<warmupTime>1.1</warmupTime>
-				<range>51</range>
-				<burstShotCount>6</burstShotCount>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>Shot_AssaultRifle</soundCast>
+				<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>16</range>
+				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -45,43 +56,41 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>IndustrialGunAdvanced</li>
 			<li>CE_AI_AR</li>
+			<li>IndustrialGunAdvanced</li>
 		</weaponTags>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>30</magazineSize>
-				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+				<magazineSize>7</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.85</reloadTime>
+				<ammoSet>AmmoSet_12Gauge</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>TRUE</aiUseBurstMode>
-				<aiAimMode>AimedShot</aiAimMode>
-				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiAimMode>Snapshot</aiAimMode>
 			</li>
 			<li Class="CombatExtended.CompProperties_UnderBarrel">
 				<propsUnderBarrel>
-					<magazineSize>1</magazineSize>
-					<reloadTime>3</reloadTime>
-					<ammoSet>AmmoSet_40x53mmVOG25Grenade</ammoSet>
+					<magazineSize>7</magazineSize>
+					<reloadOneAtATime>true</reloadOneAtATime>
+					<reloadTime>0.85</reloadTime>
+					<ammoSet>AmmoSet_12Gauge_KSG_UB</ammoSet>
 				</propsUnderBarrel>
 				<verbPropsUnderBarrel>
-					<recoilAmount>2.71</recoilAmount>
+					<recoilAmount>3.10</recoilAmount>
 					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_40x53mmVOG25Grenade_HE</defaultProjectile>
-					<warmupTime>1.1</warmupTime>
-					<range>40</range>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-					</targetParams>
-					<soundCast>InfernoCannon_Fire</soundCast>
+					<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+					<warmupTime>0.6</warmupTime>
+					<range>16</range>
+					<soundCast>Shot_Shotgun</soundCast>
 					<soundCastTail>GunTail_Medium</soundCastTail>
 					<muzzleFlashScale>9</muzzleFlashScale>
 				</verbPropsUnderBarrel>
 				<propsFireModesUnderBarrel>
 					<aiUseBurstMode>FALSE</aiUseBurstMode>
-					<aiAimMode>AimedShot</aiAimMode>
+					<aiAimMode>Snapshot</aiAimMode>
 					<aimedBurstShotCount>1</aimedBurstShotCount>
 				</propsFireModesUnderBarrel>
 			</li>

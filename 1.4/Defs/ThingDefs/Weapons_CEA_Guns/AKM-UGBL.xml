@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ==================== AK-74 GL ==================== -->
+	<!-- ==================== AKM GL ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_AK74GL</defName>
-		<label>AK-74 + GP-25</label>
+		<defName>CE_Gun_AKMGL</defName>
+		<label>AKM + GP-25</label>
 		<description>Ancient military weapon chambered for an intermediate cartridge with an underbarrel 40mm grenade launcher. The simple design makes it easy to assemble and highly reliable.</description>
 		<graphicData>
-			<texPath>Things/Weapons/AK-74_GL</texPath>
+			<texPath>Things/Weapons/AKM_GL</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>27000</WorkToMake>
-			<Mass>4.57</Mass>
+			<WorkToMake>28000</WorkToMake>
+			<Mass>4.8</Mass>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.00</SightsEfficiency>
-			<ShotSpread>0.08</ShotSpread>
-			<SwayFactor>1.25</SwayFactor>
+			<ShotSpread>0.09</ShotSpread>
+			<SwayFactor>1.36</SwayFactor>
 			<Bulk>12.03</Bulk>
 		</statBases>
 		<costList>
@@ -28,15 +28,15 @@
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.18</recoilAmount>
+				<recoilAmount>1.55</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
+				<defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
 				<warmupTime>1.1</warmupTime>
-				<range>51</range>
+				<range>44</range>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCast>Shot_CE_AssaultRifleSlow</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -52,7 +52,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>30</magazineSize>
 				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+				<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>TRUE</aiUseBurstMode>
@@ -127,8 +127,8 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawSize>1.0,1.05</DrawSize>
-				<DrawOffset>0.05,0</DrawOffset>
+				<DrawSize>1.00,1.00</DrawSize>
+				<DrawOffset>0.08,0.0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
