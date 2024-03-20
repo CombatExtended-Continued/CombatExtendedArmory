@@ -26,7 +26,6 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - Kord
 - KS-23
 - KSG
-- LeMat Revolver
 - Lewis gun
 - M1 Garand
 - M7
