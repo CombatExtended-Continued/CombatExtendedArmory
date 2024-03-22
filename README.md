@@ -47,6 +47,10 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - Wall Gun
 - Winchester 1886
 
+### Grenades
+
+- Satchel Charge
+
 ### Melee Weapons
 - Bec De Corbin
 - Machete
