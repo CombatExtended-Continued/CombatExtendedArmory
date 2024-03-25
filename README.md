@@ -50,6 +50,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 ### Grenades
 
 - Satchel Charge
+- Smoke Bomb
 
 ### Melee Weapons
 - Bec De Corbin
