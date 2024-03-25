@@ -54,7 +54,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/ShotgunTurret/ShotgunTurret_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>2500</WorkToBuild>
+			<WorkToBuild>12500</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>0.7</Flammability>
 			<Mass>30</Mass>
