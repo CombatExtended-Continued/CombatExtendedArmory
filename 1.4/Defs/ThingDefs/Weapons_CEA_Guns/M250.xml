@@ -70,7 +70,11 @@
 			<li>Bipod_LMG</li>
 		</weaponTags>
 		<recipeMaker>
-			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
