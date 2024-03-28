@@ -64,7 +64,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/PKM/PKM_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>27500</WorkToBuild>
+			<WorkToBuild>14000</WorkToBuild>
 			<Mass>12</Mass>
 			<Bulk>15</Bulk>
 		</statBases>

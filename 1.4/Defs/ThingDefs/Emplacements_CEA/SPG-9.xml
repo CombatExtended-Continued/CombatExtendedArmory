@@ -63,7 +63,7 @@
 		<uiIconPath>Things/Building/Security/SPG-9/SPG-9_uiIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToBuild>45000</WorkToBuild>
+			<WorkToBuild>22000</WorkToBuild>
 			<Mass>59.5</Mass>
 			<Bulk>35</Bulk>
 		</statBases>

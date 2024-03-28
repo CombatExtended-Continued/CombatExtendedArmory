@@ -64,7 +64,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/Vickers/Vickers_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>31500</WorkToBuild>
+			<WorkToBuild>16000</WorkToBuild>
 			<Mass>35</Mass>
 			<Bulk>45</Bulk>
 		</statBases>
