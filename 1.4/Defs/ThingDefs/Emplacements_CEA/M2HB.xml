@@ -65,7 +65,7 @@
 		<uiIconPath>Things/Building/Security/M2HB/M2HB_uiIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToBuild>50000</WorkToBuild>
+			<WorkToBuild>25000</WorkToBuild>
 			<Mass>38</Mass>
 			<Bulk>70</Bulk>
 		</statBases>

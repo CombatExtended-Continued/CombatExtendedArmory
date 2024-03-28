@@ -65,7 +65,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/OrganGun/OrganGun_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>6000</WorkToBuild>
+			<WorkToBuild>45000</WorkToBuild>
 			<MaxHitPoints>125</MaxHitPoints>
 			<Mass>100</Mass>
 			<Bulk>80</Bulk>

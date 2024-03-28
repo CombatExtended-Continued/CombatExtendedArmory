@@ -67,7 +67,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/Mk19/Mk19_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>40500</WorkToBuild>
+			<WorkToBuild>20000</WorkToBuild>
 			<Mass>35</Mass>
 			<Bulk>35</Bulk>
 		</statBases>
