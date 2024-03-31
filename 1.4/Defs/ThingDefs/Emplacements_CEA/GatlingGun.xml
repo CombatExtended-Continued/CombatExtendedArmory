@@ -64,7 +64,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/GatlingGun/GatlingGun_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>20000</WorkToBuild>
+			<WorkToBuild>10000</WorkToBuild>
 			<Mass>70</Mass>
 			<Bulk>70</Bulk>
 		</statBases>

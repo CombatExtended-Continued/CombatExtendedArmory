@@ -62,7 +62,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/12Pounder/12Pounder_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>4000</WorkToBuild>
+			<WorkToBuild>3000</WorkToBuild>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>200</Mass>
 			<Bulk>120</Bulk>
