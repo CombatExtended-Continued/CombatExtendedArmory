@@ -62,7 +62,7 @@
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<ShootingAccuracyTurret>0.5</ShootingAccuracyTurret>
 		</statBases>
-		<description>A portble automatic shotgun turret. Perfect for close quarter engagements and riot control.</description>
+		<description>A portable automatic shotgun turret. Perfect for close quarter engagements and riot control.</description>
 		<costList>
 			<Steel>100</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
