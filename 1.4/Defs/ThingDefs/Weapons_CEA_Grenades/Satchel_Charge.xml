@@ -7,7 +7,7 @@
 		<defName>CE_Proj_SatchelCharge</defName>
 		<label>satchel charge</label>
 		<graphicData>
-			<texPath>Things/Weapons/SatchelCharge/Projectile/SatchelCharge</texPath>
+			<texPath>Things/Projectiles/SatchelCharge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -30,7 +30,7 @@
 		<label>satchel charge</label>
 		<description>A satchel charge, a demolition device primarily used for combat and against heavy stationary tagets. The primary components of a satchel charge are a charge of a potent explosive, a carrying device functionally similar to a satchel or messenger bag, and a triggering mechanism.</description>
 		<graphicData>
-			<texPath>Things/Weapons/SatchelCharge/SatchelCharge</texPath>
+			<texPath>Things/Weapons/SatchelCharge</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>
