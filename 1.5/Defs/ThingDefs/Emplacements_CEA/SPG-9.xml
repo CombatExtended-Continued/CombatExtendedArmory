@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== SPG-9 ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>Gun_SPGNine</defName>
+		<label>SPG-9 recoilless gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/SPG-9/SPG-9_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<SightsEfficiency>2.16</SightsEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>2.5</SwayFactor>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<Mass>47</Mass>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<minRange>8</minRange>
+				<range>86</range>
+				<burstShotCount />
+				<soundCast>120mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>5</reloadTime>
+				<ammoSet>AmmoSet_SPG9Rocket</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretMannedBuildableBase">
+		<defName>Turret_SPGNine</defName>
+		<label>SPG-9 recoilless gun</label>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Security/SPG-9/SPG-9_base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.3,0.7)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/SPG-9/SPG-9_uiIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>22000</WorkToBuild>
+			<Mass>59.5</Mass>
+			<Bulk>35</Bulk>
+		</statBases>
+		<costList>
+			<Steel>250</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>Gun_SPGNine</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>1.5</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<size>(1,1)</size>
+		<interactionCellOffset>(-1,0,0)</interactionCellOffset>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase" Name="CE_ReinforcedWall">
+		<defName>CE_ReinforcedWall</defName>
+		<label>reinforced wall</label>
+		<description>A strong impassable wall reinforced with steel plates made to withstand lots of abuse and direct explosions. Capable of holding up a roof.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Structure/ReinforcedWall/ReinforcedWall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Structure/ReinforcedWall/ReinforcedWall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0.75</Flammability>
+			<WorkToBuild>300</WorkToBuild>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<costStuffCount>5</costStuffCount>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<building>
+			<paintable>true</paintable>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CE_ReinforcedWall">
+		<defName>CE_ReinforcedEmbrasure</defName>
+		<label>reinforced embrasure</label>
+		<description>A strong impassable wall reinforced with steel plates made to withstand lots of abuse and direct explosions. Capable of holding up a roof. Designed with tactical holes to see and fire through.</description>
+		<graphicData>
+			<texPath>Things/Building/Structure/ReinforcedEmbrasure/ReinforcedEmbrasure_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/Structure/ReinforcedEmbrasure/ReinforcedEmbrasure_MenuIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>350</WorkToBuild>
+		</statBases>
+		<fillPercent>0.7</fillPercent>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+	</ThingDef>
+
+</Defs>

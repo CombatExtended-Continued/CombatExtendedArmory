@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== M1919 ==================== -->
+
+	<ThingDef ParentName="BaseTurretGun">
+		<defName>Gun_M1919Browning</defName>
+		<label>M1919 machine gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/M1919/M1919_gun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>M1919 air cooled machine gun mounted on a tripod.</description>
+		<statBases>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>1.03</SwayFactor>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<Mass>15</Mass>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.82</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+				<warmupTime>1.3</warmupTime>
+				<range>62</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>MediumMG</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>250</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_3006Springfield</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TurretMannedBuildableBase">
+		<defName>Turret_M1919Browning</defName>
+		<label>M1919 machine gun</label>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Security/M1919/M1919_base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.45)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/M1919/M1919_uiIcon</uiIconPath>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<Mass>30</Mass>
+			<Bulk>30</Bulk>
+		</statBases>
+		<description>M1919 air cooled machine gun mounted on a tripod.</description>
+		<costList>
+			<Steel>160</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>Gun_M1919Browning</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>0.36</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites>
+			<li>GasOperation</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>
