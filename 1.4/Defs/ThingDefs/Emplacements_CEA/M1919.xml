@@ -64,7 +64,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/M1919/M1919_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>31500</WorkToBuild>
+			<WorkToBuild>16000</WorkToBuild>
 			<Mass>30</Mass>
 			<Bulk>30</Bulk>
 		</statBases>

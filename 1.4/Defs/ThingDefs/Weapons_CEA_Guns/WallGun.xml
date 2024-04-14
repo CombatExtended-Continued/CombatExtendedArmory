@@ -61,7 +61,7 @@
 			</li>
 		</comps>
 		<recipeMaker>
-			<recipeUsers>
+			<recipeUsers Inherit="False">
 				<li>FueledSmithy</li>
 				<li>ElectricSmithy</li>
 			</recipeUsers>

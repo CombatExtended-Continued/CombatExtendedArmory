@@ -54,7 +54,7 @@
 		</graphicData>
 		<uiIconPath>Things/Building/Security/ShotgunTurret/ShotgunTurret_uiIcon</uiIconPath>
 		<statBases>
-			<WorkToBuild>2500</WorkToBuild>
+			<WorkToBuild>7000</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>0.7</Flammability>
 			<Mass>30</Mass>
@@ -62,7 +62,7 @@
 			<AimingAccuracy>0.25</AimingAccuracy>
 			<ShootingAccuracyTurret>0.5</ShootingAccuracyTurret>
 		</statBases>
-		<description>A portble automatic shotgun turret. Perfect for close quarter engagements and riot control.</description>
+		<description>A portable automatic shotgun turret. Perfect for close quarter engagements and riot control.</description>
 		<costList>
 			<Steel>100</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
