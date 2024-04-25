@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ==================== AT4 ==================== -->
+	<!-- ==================== Carl Gustaf ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CE_Gun_CarlGustaf</defName>
