@@ -51,6 +51,7 @@
 		<designationCategory>Structure</designationCategory>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<blockLight>true</blockLight>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
 		<canOverlapZones>false</canOverlapZones>
 		<stuffCategories>
 			<li>Metallic</li>

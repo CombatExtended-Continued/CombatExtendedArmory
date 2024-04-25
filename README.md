@@ -11,6 +11,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - AT4
 - AVB-762
 - BAR
+- Carl Gustaf
 - Desert Eagle
 - DP-27
 - FightLite MCR
