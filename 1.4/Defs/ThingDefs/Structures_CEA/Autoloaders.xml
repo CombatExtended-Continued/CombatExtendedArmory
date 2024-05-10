@@ -4,13 +4,26 @@
   <ThingDef ParentName="BuildingBase">
     <defName>CE_AutoloaderManualHiCal</defName>
     <label>ammo crate</label>
-    <description>A neatly organized crate to store belts of high-caliber ammo for nearby turrets. Allows assigning another pawn to take over the reloading process of a turret, improving reload time and pawn safety.</description>
+    <description>A crate to store ammunition belts prepared for adjacent turrets. The colonist manning it can reload turrets directly from ammo in the crate, improving reload time and pawn safety.</description>
 
     <thingClass>CombatExtended.Building_AutoLoaderCE</thingClass>
     <tickerType>Normal</tickerType>
     <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/AutoloaderManualHiCal/AutoloaderManualHiCal_Full/AutoloaderManualHiCal_Full</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
 
     <comps>
+      <li Class="CompProperties_Forbiddable" />
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>400</magazineSize>
         <reloadTime>1.9</reloadTime>
@@ -87,18 +100,6 @@
       </li>
     </modExtensions>
 
-    <graphicData>
-      <texPath>Things/Building/Security/AutoloaderManualHiCal/AutoloaderManualHiCal_Full/AutoloaderManualHiCal_Full</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(1,1)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
