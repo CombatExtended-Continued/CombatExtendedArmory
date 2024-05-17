@@ -5,7 +5,6 @@
     <defName>CE_AutoloaderManualHiCal</defName>
     <label>ammo crate</label>
     <description>A crate to store ammunition belts prepared for adjacent turrets. The colonist manning it can reload turrets directly from ammo in the crate, improving reload time and pawn safety.</description>
-
     <thingClass>CombatExtended.Building_AutoLoaderCE</thingClass>
     <tickerType>Normal</tickerType>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -35,7 +34,6 @@
         <reloadTime>7.8</reloadTime>
         <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
       </li> -->
-
       <li Class="CompProperties_Mannable">
         <manWorkType>Hauling</manWorkType>
       </li>
@@ -80,7 +78,6 @@
             <cornerBR>Damage/Corner</cornerBR>
           </damageData>
         </halfFullGraphic>
-
         <emptyGraphic>
           <texPath>Things/Building/Security/AutoloaderManualHiCal/AutoloaderManualHiCal_Empty/AutoloaderManualHiCal_Empty</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
@@ -99,7 +96,6 @@
         <reloadingSustainer>CE_ManualAutoloaderAmbient</reloadingSustainer>
       </li>
     </modExtensions>
-
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
@@ -110,14 +106,11 @@
     <canOverlapZones>false</canOverlapZones>
     <pathCost>42</pathCost>
     <size>(1,1)</size>
-    <!-- <costList>
-      <Steel>200</Steel>
-    </costList> -->
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
     </stuffCategories>
-    <costStuffCount>100</costStuffCount>
+    <costStuffCount>55</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
@@ -137,6 +130,9 @@
     <thingCategories>
       <li>BuildingsMisc</li>
     </thingCategories>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>    
   </ThingDef>
 
   <SoundDef>
