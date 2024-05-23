@@ -80,7 +80,7 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>-0.2,0.0</DrawOffset>
+				<DrawOffset>-0.1,0.0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
