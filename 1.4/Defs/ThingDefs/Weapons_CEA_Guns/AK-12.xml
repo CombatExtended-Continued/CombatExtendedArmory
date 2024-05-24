@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CE_Gun_AKTwelve</defName>
 		<label>AK-12</label>
-		<description>Ancient assault rifle design with a special high capacity magazine.</description>
+		<description>Ancient assault rifle design firing an intermediate rifle cartridge.</description>
 		<graphicData>
 			<texPath>Things/Weapons/AK12</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
