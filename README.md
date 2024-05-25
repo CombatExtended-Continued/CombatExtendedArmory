@@ -31,7 +31,6 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - M1903
 - M1917
 - Madsen machine gun
-- MCX
 - MG 338
 - Micro Uzi
 - Mini-14
