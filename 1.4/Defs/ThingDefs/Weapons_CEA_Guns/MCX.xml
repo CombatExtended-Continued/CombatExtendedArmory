@@ -14,30 +14,30 @@
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
-			<WorkToMake>32000</WorkToMake>
+			<WorkToMake>29500</WorkToMake>
 			<Mass>2.61</Mass>
-			<Bulk>7.30</Bulk>
-			<ShotSpread>0.09</ShotSpread>
-			<SwayFactor>1.17</SwayFactor>
+			<Bulk>4.80</Bulk>
+			<ShotSpread>0.13</ShotSpread>
+			<SwayFactor>0.99</SwayFactor>
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>40</Steel>
-			<Chemfuel>10</Chemfuel>
+			<Steel>35</Steel>
+			<Chemfuel>5</Chemfuel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>1.54</recoilAmount>
+				<recoilAmount>1.68</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_556x45mmNATO_FMJ_SB</defaultProjectile>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<warmupTime>1.1</warmupTime>
+				<warmupTime>0.9</warmupTime>
 				<range>48</range>
-				<soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
