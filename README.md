@@ -11,6 +11,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - AT4
 - AVB-762
 - BAR
+- Boys anti-tank rifle
 - Carl Gustaf
 - Desert Eagle
 - DP-27
