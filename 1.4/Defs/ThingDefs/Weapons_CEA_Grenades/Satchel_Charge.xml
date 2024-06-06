@@ -13,7 +13,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<explosionRadius>5</explosionRadius>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>378</damageAmountBase>
+			<damageAmountBase>417</damageAmountBase>
 			<explosionDelay>180</explosionDelay>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<speed>12</speed>
@@ -22,6 +22,13 @@
 			<dangerFactor>2.5</dangerFactor>
 			<airborneSuppressionFactor>0.5</airborneSuppressionFactor>
 		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>9</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">

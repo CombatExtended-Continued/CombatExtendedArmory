@@ -3,7 +3,7 @@
 
 	<!-- ==================== Heavy Composite Helmet ==================== -->
 
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>CE_Apparel_HeavyCompositeHelmet</defName>
 		<label>heavy composite helmet</label>
 		<description>A thick, heavy composite helmet with faceshield and a rifle rated forehead plate, worn with a soft armor collar, mainly used by turret gunners.</description>
@@ -41,9 +41,6 @@
 			<AimingAccuracy>-0.1</AimingAccuracy>
 			<Suppressability>-0.10</Suppressability>
 		</equippedStatOffsets>
-		<thingCategories Inherit='False'>
-			<li>ArmorHeadgear</li>
-		</thingCategories>
 		<apparel>
 			<wornGraphicPath>Things/Apparel/HeavyCompositeHelmet/HeavyCompositeHelmet</wornGraphicPath>
 			<bodyPartGroups>
