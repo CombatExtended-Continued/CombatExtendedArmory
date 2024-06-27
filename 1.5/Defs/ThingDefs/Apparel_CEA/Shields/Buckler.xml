@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ShieldBase">
 		<defName>CE_Apparel_Buckler</defName>
 		<label>buckler</label>
-		<description>An extremely small metal shield, usually paired with a rapier or similiarly light sword. Too small to offer any meaningful protection from incoming projectiles, the buckler is instead designed to deflect and trap a foe's weaopon in close-quarters combat.</description>
+		<description>An extremely small metal shield, usually paired with a rapier or similiarly light sword. Too small to offer any meaningful protection from incoming projectiles, the buckler is instead designed to deflect and trap a foe's weapon in close-quarters combat.</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
 			<texPath>Things/Apparel/Shields/Buckler_Shield</texPath>
@@ -41,10 +41,36 @@
 			<MeleeParryChance>0.75</MeleeParryChance>
 		</equippedStatOffsets>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+ 	     	<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<tags>
 				<li>TribalShield</li>
 			</tags>
+			<renderNodeProperties>
+				<li>
+				<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
+				<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
+				<texPath>Things/Apparel/Shields/Buckler_Shield</texPath>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<parentTagDef>ApparelBody</parentTagDef>
+				<drawData>
+					<scale>0.8</scale>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataEast>
+						<layer>-5</layer>
+						<offset>(0, 0, -0.1)</offset>						
+					</dataEast>
+					<dataNorth>
+						<layer>-5</layer>
+						<offset>(0.15, 0, -0.1)</offset>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0.3, 0, -0.2)</offset>
+					</dataSouth>
+				</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<modExtensions>
 			<li Class="CombatExtended.ShieldDefExtension">

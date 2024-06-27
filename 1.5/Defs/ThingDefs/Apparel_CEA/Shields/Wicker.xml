@@ -39,10 +39,39 @@
 			<MeleeParryChance>0.80</MeleeParryChance>
 		</equippedStatOffsets>
 		<apparel>
-			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<tags>
 				<li>TribalShield</li>
 			</tags>
+			<renderNodeProperties>
+				<li>
+				<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
+				<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
+				<texPath>Things/Apparel/Shields/Wicker_Shield</texPath>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<parentTagDef>ApparelBody</parentTagDef>
+				<drawData>
+					<scale>0.7</scale>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataEast>
+						<layer>-5</layer>
+						<offset>(0, 0, -0.1)</offset>
+						<rotationOffset>30</rotationOffset>
+					</dataEast>
+					<dataWest>
+						<rotationOffset>-30</rotationOffset>
+					</dataWest>					
+					<dataNorth>
+						<layer>-5</layer>
+						<offset>(0.15, 0, -0.1)</offset>				
+					</dataNorth>
+					<dataSouth>
+						<offset>(0.2, 0, -0.15)</offset>
+					</dataSouth>
+				</drawData>
+				</li>
+			</renderNodeProperties>			
 		</apparel>
 		<modExtensions>
 			<li Class="CombatExtended.ShieldDefExtension">
@@ -56,7 +85,6 @@
 				<crouchCoverage>
 					<li>Legs</li>
 				</crouchCoverage>
-				<drawAsTall>false</drawAsTall>
 			</li>
 		</modExtensions>
 		<tradeTags>

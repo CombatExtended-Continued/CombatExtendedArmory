@@ -42,6 +42,36 @@
 			<tags>
 				<li>TribalShield</li>
 			</tags>
+			<renderNodeProperties>
+				<li>
+				<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
+				<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
+				<texPath>Things/Apparel/Shields/Pavise_Shield</texPath>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<parentTagDef>ApparelBody</parentTagDef>
+				<drawData>
+					<scale>0.7</scale>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataEast>
+						<layer>-5</layer>
+						<offset>(0, 0, -0.1)</offset>
+						<rotationOffset>45</rotationOffset>
+					</dataEast>
+					<dataWest>
+						<rotationOffset>-45</rotationOffset>
+					</dataWest>					
+					<dataNorth>
+						<layer>-5</layer>
+						<offset>(0.15, 0, -0.1)</offset>				
+					</dataNorth>
+					<dataSouth>
+						<offset>(0.25, 0, -0.2)</offset>
+					</dataSouth>
+				</drawData>
+				</li>
+			</renderNodeProperties>			
 		</apparel>
 		<modExtensions>
 			<li Class="CombatExtended.ShieldDefExtension">
@@ -54,7 +84,9 @@
 					<li>FullHead</li>
 					<li>Legs</li>
 				</shieldCoverage>
-				<drawAsTall>true</drawAsTall>
+				<crouchCoverage>
+					<li>Legs</li>
+				</crouchCoverage>				
 			</li>
 		</modExtensions>
 		<tradeTags>
