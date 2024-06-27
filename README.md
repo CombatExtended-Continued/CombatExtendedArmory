@@ -11,6 +11,8 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - AT4
 - AVB-762
 - BAR
+- Boys anti-tank rifle
+- Carl Gustaf
 - Desert Eagle
 - DP-27
 - FightLite MCR
@@ -30,11 +32,11 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - M1903
 - M1917
 - Madsen machine gun
-- MCX
 - MG 338
 - Micro Uzi
 - Mini-14
 - Mosin–Nagant
+- MosqueFAL
 - RPK-16
 - Sawed-off shotgun
 - SKS

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== 60mm Mortar ==================== -->
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_PortabletMortar</defName>
+		<label>60mm mortar</label>
+		<graphicData>
+			<texPath>Things/Building/Security/PortableMortar/PortableMortar_turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>60mm mortar gun.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>0.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<requireLineOfSight>false</requireLineOfSight>
+				<defaultProjectile>Bullet_60mmMortarShell_HE</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<minRange>20</minRange>
+				<range>400</range>
+				<soundCast>Mortar_LaunchA</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+				<circularError>1</circularError>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</chargeSpeeds>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_60mmMortarShell</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryBuilding">
+		<defName>Turret_PortableMortar</defName>
+		<label>60mm portable mortar</label>
+		<description>A compact small caliber field mortar for indirect fire at medium ranges.</description>
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		<uiIconPath>Things/Building/Security/PortableMortar/PortableMortar_uiIcon</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Security/PortableMortar/PortableMortar_base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.5)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>7000</WorkToBuild>
+			<Mass>15</Mass>
+			<Bulk>20</Bulk>
+		</statBases>
+		<costList>
+			<Steel>110</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<ComponentIndustrial>3</ComponentIndustrial>
+				<ReinforcedBarrel>1</ReinforcedBarrel>
+				<Steel>50</Steel>
+			</costList>
+		</costListForDifficulty>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<building>
+			<turretGunDef>Gun_PortabletMortar</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>2.0</turretBurstCooldownTime>
+			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<size>(1,1)</size>
+		<fillPercent>0.60</fillPercent>
+		<stuffCategories Inherit="False" />
+		<researchPrerequisites>
+			<li>Mortars</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Security</designationCategory>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== 12 Pounder Bombard ==================== -->
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_12PounderBombard</defName>
+		<label>12-pounder bombard</label>
+		<graphicData>
+			<texPath>Things/Building/Security/12PounderBombard/12PounderBombard_turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>12-pounder siege mortar mounted on a carriage.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>0.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<requireLineOfSight>false</requireLineOfSight>
+				<defaultProjectile>Bullet_CannonBall_Bursting_Mortar</defaultProjectile>
+				<warmupTime>4.5</warmupTime>
+				<minRange>11.9</minRange>
+				<range>100</range>
+				<soundCast>Shot_CE_Musket</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<indirectFirePenalty>0.25</indirectFirePenalty>
+				<circularError>1</circularError>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>20</li>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+				</chargeSpeeds>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>6.9</reloadTime>
+				<ammoSet>AmmoSet_CannonBall_Mortar</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryBuilding">
+		<defName>Turret_12PounderBombard</defName>
+		<label>12-pounder bombard</label>
+		<description>12-pounder siege mortar mounted on a carriage.</description>
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		<uiIconPath>Things/Building/Security/12PounderBombard/12PounderBombard_uiIcon</uiIconPath>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Security/12PounderBombard/12PounderBombard_base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.27,0.25,0.4)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>200</Mass>
+			<Bulk>120</Bulk>
+		</statBases>
+		<costList Inherit="False">
+			<Steel>200</Steel>
+			<WoodLog>150</WoodLog>
+		</costList>
+		<building>
+			<turretGunDef>Gun_12PounderBombard</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>2.0</turretBurstCooldownTime>
+			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<size>(1,1)</size>
+		<fillPercent>0.60</fillPercent>
+		<stuffCategories Inherit="False" />
+		<researchPrerequisites Inherit="False">
+			<li>CE_Gunpowder</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Security</designationCategory>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	</ThingDef>
+
+</Defs>
