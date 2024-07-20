@@ -68,7 +68,7 @@
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
 			<researchPrerequisites>
-				<li>CE_AdvancedLaunchers</li>
+				<li>CE_Launchers</li>
 				<li>CE_AdvancedNV</li>
 			</researchPrerequisites>
 			<skillRequirements>
