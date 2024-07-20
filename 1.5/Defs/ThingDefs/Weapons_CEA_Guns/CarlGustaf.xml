@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CE_Gun_CarlGustaf</defName>
 		<label>Carl Gustaf</label>
-		<description>A lightweight, low-cost recoilless rifle that uses a wide range of ammunition, extremely flexible and suitable for a wide variety of roles.</description>
+		<description>A lightweight, relatively low-cost recoilless rifle that uses a wide range of ammunition, extremely flexible and suitable for a wide variety of roles. Equiped with an advanced scope that comes with a laser rangefinder and an image intensification system.</description>
 		<graphicData>
 			<texPath>Things/Weapons/CarlGustaf</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -17,17 +17,22 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>22500</WorkToMake>
-			<SightsEfficiency>1.0</SightsEfficiency>
+			<WorkToMake>27500</WorkToMake>
+			<SightsEfficiency>2.18</SightsEfficiency>
 			<ShotSpread>0.2</ShotSpread>
 			<SwayFactor>1.61</SwayFactor>
 			<Bulk>10.50</Bulk>
 			<Mass>6.6</Mass>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>0.10</AimingAccuracy>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+		</equippedStatOffsets>
+		<generateCommonality>0.5</generateCommonality>
 		<costList>
 			<Steel>75</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<weaponTags>
 			<li>GunHeavy</li>
@@ -39,8 +44,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_84x246mmR_HEAT</defaultProjectile>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-				<warmupTime>1.9</warmupTime>
-				<range>55</range>
+				<warmupTime>2.05</warmupTime>
+				<range>68</range>
 				<minRange>8</minRange>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
@@ -61,9 +66,13 @@
 			</li>
 		</comps>
 		<recipeMaker>
-			<researchPrerequisite>CE_Launchers</researchPrerequisite>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>CE_AdvancedLaunchers</li>
+				<li>CE_AdvancedNV</li>
+			</researchPrerequisites>
 			<skillRequirements>
-				<Crafting>4</Crafting>
+				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
 		<tools>
