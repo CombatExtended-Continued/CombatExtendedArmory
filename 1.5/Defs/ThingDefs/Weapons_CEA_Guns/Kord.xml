@@ -67,7 +67,7 @@
 		</thingSetMakerTags>
 		<weaponTags>
 			<li>CE_AI_LMG</li>
-			<li>Bipod_LMG</li>
+			<li>Bipod_ATR</li>
 		</weaponTags>
 		<recipeMaker>
 			<researchPrerequisite Inherit="false" />
