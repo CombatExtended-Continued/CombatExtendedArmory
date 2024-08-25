@@ -62,6 +62,7 @@
 			<Steel>10</Steel>
 		</costList>
 		<building>
+			<supportsWallAttachments>true</supportsWallAttachments>
 			<paintable>true</paintable>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>
