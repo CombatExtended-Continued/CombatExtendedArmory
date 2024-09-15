@@ -80,6 +80,7 @@
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 		</building>
+		<designatorDropdown>CE_BlackpowderEmplacements</designatorDropdown>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>

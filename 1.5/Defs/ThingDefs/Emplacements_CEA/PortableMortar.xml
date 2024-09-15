@@ -102,6 +102,7 @@
 			<turretBurstCooldownTime>2.0</turretBurstCooldownTime>
 			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
 		</building>
+		<designatorDropdown>CE_MediumMannedTurrets</designatorDropdown>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
