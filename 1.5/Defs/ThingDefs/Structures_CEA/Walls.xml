@@ -66,6 +66,7 @@
 			<paintable>true</paintable>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>
+			<supportsWallAttachments>true</supportsWallAttachments>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
