@@ -81,7 +81,6 @@
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>0.40</turretBurstCooldownTime>
 		</building>
-		<designatorDropdown>CE_MediumMannedTurrets</designatorDropdown>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>

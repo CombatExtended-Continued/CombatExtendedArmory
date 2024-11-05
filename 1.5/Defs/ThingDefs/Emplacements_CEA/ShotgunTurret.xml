@@ -72,7 +72,6 @@
 			<turretGunDef>Gun_ShotgunTurret</turretGunDef>
 			<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
 		</building>
-		<designatorDropdown>CE_AutoTurrets</designatorDropdown>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>
