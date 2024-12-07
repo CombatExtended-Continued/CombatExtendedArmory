@@ -11,7 +11,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/FN57</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(0.95,0.95)</drawSize>
+			<drawSize>(0.75,0.75)</drawSize>
 		</graphicData>
 		<weaponClasses>
 			<li>RangedLight</li>
@@ -91,7 +91,7 @@
 		</tools>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>-0.02,0.0</DrawOffset>
+				<DrawOffset>0.0,0.0</DrawOffset>
 			</li>
 		</modExtensions>
 	</ThingDef>
