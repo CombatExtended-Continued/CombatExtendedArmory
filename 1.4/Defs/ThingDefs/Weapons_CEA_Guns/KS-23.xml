@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CE_Gun_KSTwentyThree</defName>
 		<label>KS-23</label>
-		<description>An ancient pump-action shogun with a rifled barrel, chambered in large 23mm caliber shells.</description>
+		<description>An ancient pump-action shotgun with a rifled barrel, chambered in large 23mm caliber shells.</description>
 		<graphicData>
 			<texPath>Things/Weapons/KS-23</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
