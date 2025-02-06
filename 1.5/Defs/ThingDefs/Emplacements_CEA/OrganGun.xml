@@ -10,6 +10,7 @@
 			<texPath>Things/Building/Security/OrganGun/OrganGun_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<description>Organ Gun mounted on a carriage.</description>
 		<statBases>
 			<SightsEfficiency>0.7</SightsEfficiency>
