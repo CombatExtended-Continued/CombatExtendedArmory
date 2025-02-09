@@ -6,6 +6,7 @@
 	<ThingDef ParentName="BaseTurretGun">
 		<defName>Gun_SPGNine</defName>
 		<label>SPG-9 recoilless gun</label>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<graphicData>
 			<texPath>Things/Building/Security/SPG-9/SPG-9_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
