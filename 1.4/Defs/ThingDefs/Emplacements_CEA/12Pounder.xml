@@ -11,6 +11,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>12-pounder cannon mounted on a carriage.</description>
+		<techLevel>Medieval</techLevel>
 		<statBases>
 			<SightsEfficiency>0.7</SightsEfficiency>
 			<ShotSpread>0.10</ShotSpread>
@@ -86,6 +87,7 @@
 		<researchPrerequisites>
 			<li>CE_Gunpowder</li>
 		</researchPrerequisites>
+		<techLevel>Medieval</techLevel>
 	</ThingDef>
 
 </Defs>

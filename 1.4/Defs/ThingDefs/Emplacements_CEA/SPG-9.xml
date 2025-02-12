@@ -6,6 +6,7 @@
 	<ThingDef ParentName="BaseTurretGun">
 		<defName>Gun_SPGNine</defName>
 		<label>SPG-9 recoilless gun</label>
+		<description>SPG-9 recoilless gun mounted on a tripod.</description>
 		<graphicData>
 			<texPath>Things/Building/Security/SPG-9/SPG-9_gun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
