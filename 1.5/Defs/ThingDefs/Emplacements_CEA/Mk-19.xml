@@ -11,7 +11,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>Mk 19 attached to a tripod.</description>
-		<techLevel>Industrial</techLevel>
 		<statBases>
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.15</ShotSpread>
@@ -91,7 +90,6 @@
 			<li>CE_TurretHeavyWeapons</li>
 			<li>CE_Launchers</li>
 		</researchPrerequisites>
-		<techLevel>Industrial</techLevel>
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 

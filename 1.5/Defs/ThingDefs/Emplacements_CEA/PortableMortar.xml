@@ -11,7 +11,6 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>60mm mortar gun.</description>
-		<techLevel>Industrial</techLevel>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
 			<SightsEfficiency>0.5</SightsEfficiency>
@@ -115,7 +114,6 @@
 		<researchPrerequisites>
 			<li>Mortars</li>
 		</researchPrerequisites>
-		<techLevel>Industrial</techLevel>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<designationCategory>Security</designationCategory>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
