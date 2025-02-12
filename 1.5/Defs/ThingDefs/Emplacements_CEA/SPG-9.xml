@@ -6,6 +6,7 @@
 	<ThingDef ParentName="BaseTurretGun">
 		<defName>Gun_SPGNine</defName>
 		<label>SPG-9 recoilless gun</label>
+		<techLevel>Industrial</techLevel>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<graphicData>
 			<texPath>Things/Building/Security/SPG-9/SPG-9_gun</texPath>
@@ -89,6 +90,7 @@
 		<researchPrerequisites>
 			<li>CE_TurretHeavyWeapons</li>
 		</researchPrerequisites>
+		<techLevel>Industrial</techLevel>
 		<designationCategory>Security</designationCategory>
 	</ThingDef>
 

@@ -11,6 +11,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>M1919 air cooled machine gun mounted on a tripod.</description>
+		<techLevel>Industrial</techLevel>
 		<statBases>
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>0.05</ShotSpread>
@@ -87,6 +88,7 @@
 		<researchPrerequisites>
 			<li>GasOperation</li>
 		</researchPrerequisites>
+		<techLevel>Industrial</techLevel>
 	</ThingDef>
 
 </Defs>
