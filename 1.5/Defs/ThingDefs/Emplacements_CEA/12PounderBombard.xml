@@ -11,6 +11,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>12-pounder siege mortar mounted on a carriage.</description>
+		<techLevel>Medieval</techLevel>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
 			<SightsEfficiency>0.5</SightsEfficiency>
@@ -101,6 +102,7 @@
 		<researchPrerequisites Inherit="False">
 			<li>CE_Gunpowder</li>
 		</researchPrerequisites>
+		<techLevel>Medieval</techLevel>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<designationCategory>Security</designationCategory>
