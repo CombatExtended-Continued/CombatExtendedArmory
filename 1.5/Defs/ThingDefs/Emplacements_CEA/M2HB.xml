@@ -4,7 +4,7 @@
 	<!-- ==================== M2HB ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>Gun_M2HB</defName>
+		<defName>CE_Gun_M2HB</defName>
 		<label>M2 Browning machine gun</label>
 		<graphicData>
 			<texPath>Things/Building/Security/M2HB/M2HB_gun</texPath>
@@ -51,7 +51,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
-		<defName>Turret_M2HB</defName>
+		<defName>CE_Turret_M2HB</defName>
 		<label>M2 Browning machine gun</label>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 		<graphicData>
@@ -75,7 +75,7 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<building>
-			<turretGunDef>Gun_M2HB</turretGunDef>
+			<turretGunDef>CE_Gun_M2HB</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>0.36</turretBurstCooldownTime>
 		</building>

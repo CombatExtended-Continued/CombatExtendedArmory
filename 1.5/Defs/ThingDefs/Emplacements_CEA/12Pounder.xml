@@ -4,7 +4,7 @@
 	<!-- ==================== 12 Pounder Cannon ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>Gun_TwelvePounder</defName>
+		<defName>CE_Gun_TwelvePounder</defName>
 		<label>12-pounder cannon</label>
 		<graphicData>
 			<texPath>Things/Building/Security/12Pounder/12Pounder_gun</texPath>
@@ -51,7 +51,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
-		<defName>Turret_TwelvePounder</defName>
+		<defName>CE_Turret_TwelvePounder</defName>
 		<label>12-pounder cannon</label>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<graphicData>
@@ -75,7 +75,7 @@
 			<WoodLog>150</WoodLog>
 		</costList>
 		<building>
-			<turretGunDef>Gun_TwelvePounder</turretGunDef>
+			<turretGunDef>CE_Gun_TwelvePounder</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>2.5</turretBurstCooldownTime>
 		</building>

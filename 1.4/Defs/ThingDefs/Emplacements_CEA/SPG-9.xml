@@ -4,7 +4,7 @@
 	<!-- ==================== SPG-9 ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>Gun_SPGNine</defName>
+		<defName>CE_Gun_SPGNine</defName>
 		<label>SPG-9 recoilless gun</label>
 		<description>SPG-9 recoilless gun mounted on a tripod.</description>
 		<graphicData>
@@ -50,7 +50,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
-		<defName>Turret_SPGNine</defName>
+		<defName>CE_Turret_SPGNine</defName>
 		<label>SPG-9 recoilless gun</label>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<graphicData>
@@ -73,7 +73,7 @@
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<building>
-			<turretGunDef>Gun_SPGNine</turretGunDef>
+			<turretGunDef>CE_Gun_SPGNine</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>1.5</turretBurstCooldownTime>
 		</building>

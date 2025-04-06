@@ -4,7 +4,7 @@
 	<!-- ==================== Organ Gun ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>Gun_OrganGun</defName>
+		<defName>CE_Gun_OrganGun</defName>
 		<label>organ gun</label>
 		<graphicData>
 			<texPath>Things/Building/Security/OrganGun/OrganGun_gun</texPath>
@@ -53,7 +53,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
-		<defName>Turret_OrganGun</defName>
+		<defName>CE_Turret_OrganGun</defName>
 		<label>organ gun</label>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<graphicData>
@@ -77,7 +77,7 @@
 			<WoodLog>80</WoodLog>
 		</costList>
 		<building>
-			<turretGunDef>Gun_OrganGun</turretGunDef>
+			<turretGunDef>CE_Gun_OrganGun</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 		</building>

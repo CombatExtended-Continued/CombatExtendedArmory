@@ -4,7 +4,7 @@
 	<!-- ==================== Mk-19 ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>Gun_MkNineteenGL</defName>
+		<defName>CE_Gun_MkNineteenGL</defName>
 		<label>Mk 19 grenade launcher</label>
 		<graphicData>
 			<texPath>Things/Building/Security/Mk19/Mk19_gun</texPath>
@@ -54,7 +54,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretMannedBuildableBase">
-		<defName>Turret_MkNineteenGL</defName>
+		<defName>CE_Turret_MkNineteenGL</defName>
 		<label>Mk 19 grenade launcher</label>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<graphicData>
@@ -77,7 +77,7 @@
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
 		<building>
-			<turretGunDef>Gun_MkNineteenGL</turretGunDef>
+			<turretGunDef>CE_Gun_MkNineteenGL</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>0.40</turretBurstCooldownTime>
 		</building>

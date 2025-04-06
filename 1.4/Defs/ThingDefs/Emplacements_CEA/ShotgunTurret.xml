@@ -4,7 +4,7 @@
 	<!-- ==================== Shotgun Turret ==================== -->
 
 	<ThingDef ParentName="BaseAutoTurretGun">
-		<defName>Gun_ShotgunTurret</defName>
+		<defName>CE_Gun_ShotgunTurret</defName>
 		<label>shotgun auto-turret gun</label>
 		<graphicData>
 			<texPath>Things/Building/Security/ShotgunTurret/ShotgunTurret_gun</texPath>
@@ -42,7 +42,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="TurretAutoBase">
-		<defName>Turret_ShotgunTurret</defName>
+		<defName>CE_Turret_ShotgunTurret</defName>
 		<label>shotgun auto-turret</label>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<graphicData>
@@ -69,7 +69,7 @@
 		</costList>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretGunDef>Gun_ShotgunTurret</turretGunDef>
+			<turretGunDef>CE_Gun_ShotgunTurret</turretGunDef>
 			<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
 		</building>
 		<placeWorkers>

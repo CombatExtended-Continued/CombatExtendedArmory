@@ -4,7 +4,7 @@
 	<!-- ==================== 12 Pounder Bombard ==================== -->
 
 	<ThingDef ParentName="BaseArtilleryWeapon">
-		<defName>Gun_12PounderBombard</defName>
+		<defName>CE_Gun_12PounderBombard</defName>
 		<label>12-pounder bombard</label>
 		<graphicData>
 			<texPath>Things/Building/Security/12PounderBombard/12PounderBombard_turret</texPath>
@@ -59,7 +59,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseArtilleryBuilding">
-		<defName>Turret_12PounderBombard</defName>
+		<defName>CE_Turret_12PounderBombard</defName>
 		<label>12-pounder bombard</label>
 		<description>12-pounder siege mortar mounted on a carriage.</description>
 		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
@@ -85,7 +85,7 @@
 			<WoodLog>150</WoodLog>
 		</costList>
 		<building>
-			<turretGunDef>Gun_12PounderBombard</turretGunDef>
+			<turretGunDef>CE_Gun_12PounderBombard</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>2.0</turretBurstCooldownTime>
 			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
