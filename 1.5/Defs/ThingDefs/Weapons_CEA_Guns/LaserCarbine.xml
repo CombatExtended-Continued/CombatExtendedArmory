@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Laser Ammo ==================== -->
+
+	<!-- === Ammo Set === -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_ArmoryLaserCarbine</defName>
+		<label>laser charge</label>
+		<ammoTypes>
+			<Ammo_LaserChargePack>Bullet_Laser_ArmoryLaserCarbine</Ammo_LaserChargePack>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- === Projectile === -->
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletYellow">
+		<defName>Bullet_Laser_ArmoryLaserCarbine</defName>
+		<label>laser beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>19</damageAmountBase>
+			<armorPenetrationSharp>22</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt> <!-- The overall pressure exerted by a laser beam striking something is, unsuprisingly, negligible. -->
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Laser Carbine ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CE_Gun_LaserCarbine</defName>
+		<label>LAS-40C</label>
+		<description>A pulsed-laser assault carbine. The focused lens used makes the weapon primarily effective at closer ranges.</description>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<graphicData>
+			<texPath>Things/Weapons/CE_LaserCarbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.03,1.03)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>0.06</ShotSpread> <!-- Falls off to around 9.5 damage on half-range and 6.5 at max range -->
+			<SwayFactor>1.11</SwayFactor>
+			<Bulk>6.5</Bulk>
+			<Mass>2.7</Mass>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>35</Steel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Chemfuel>10</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.01</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Laser_ArmoryLaserCarbine</defaultProjectile>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTime>0.8</warmupTime>
+				<range>51</range>
+				<soundCast>CE_Shot_LaserCarbine</soundCast>
+				<soundCastTail>CE_GunTail_Laser</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>45</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_ArmoryLaserCarbine</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisites>
+				<li>ChargedShot</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.06,0.01</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>
