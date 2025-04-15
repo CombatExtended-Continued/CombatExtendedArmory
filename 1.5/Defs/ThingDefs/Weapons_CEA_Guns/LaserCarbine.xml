@@ -65,7 +65,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Laser_ArmoryLaserCarbine</defaultProjectile>
 				<burstShotCount>5</burstShotCount>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<warmupTime>0.8</warmupTime>
 				<range>51</range>
 				<soundCast>CE_Shot_LaserCarbine</soundCast>
