@@ -39,7 +39,6 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - MosqueFAL
 - RPK-16
 - Sawed-off shotgun
-- SKS
 - SR-25
 - SRS
 - TAC-50
