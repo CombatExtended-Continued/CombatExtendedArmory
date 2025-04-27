@@ -7,7 +7,7 @@
 		<defName>Gun_PortabletMortar</defName>
 		<label>60mm mortar</label>
 		<graphicData>
-			<texPath>Things/Building/Security/PortableMortar/PortableMortar_turret</texPath>
+			<texPath>Things/Building/Security/PortableMortar/PortableMortar_Turret</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>60mm mortar gun.</description>
@@ -66,7 +66,7 @@
 		<uiIconScale>0.90</uiIconScale>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<graphicData>
-			<texPath>Things/Building/Security/PortableMortar/PortableMortar_base</texPath>
+			<texPath>Things/Building/Security/PortableMortar/PortableMortar_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
