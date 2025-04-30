@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- === GarandPing === -->
+  <SoundDef>
+    <defName>CE_Sound_GarandPing</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Interact/CE_GarandPing</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.9152174~1.042391</pitchRange>
+        <sustainLoop>False</sustainLoop>
+        <volumeRange>14~14</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

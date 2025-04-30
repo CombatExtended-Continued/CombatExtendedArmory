@@ -13,7 +13,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.2,1.2)</drawSize>
 		</graphicData>
-		<soundInteract>Interact_Rifle</soundInteract>
+		<soundInteract>CE_Sound_GarandPing</soundInteract>
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
 			<SightsEfficiency>1</SightsEfficiency>
