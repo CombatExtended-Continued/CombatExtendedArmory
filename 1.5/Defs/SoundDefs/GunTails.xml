@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <SoundDef>
+    <defName>CE_GunTail_Laser</defName>  
+    <context>MapOnly</context> 
+    <maxVoices>2</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>LaserCarbine/Gun_Tail_Laser</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>24.11765~30</volumeRange>      
+        <pitchRange>0.8852941~1.114706</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>
