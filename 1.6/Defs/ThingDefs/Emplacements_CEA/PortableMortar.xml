@@ -84,6 +84,7 @@
 			<Steel>110</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</costList>
+		<costStuffCount />
 		<costListForDifficulty>
 			<difficultyVar>classicMortars</difficultyVar>
 			<invert>true</invert>

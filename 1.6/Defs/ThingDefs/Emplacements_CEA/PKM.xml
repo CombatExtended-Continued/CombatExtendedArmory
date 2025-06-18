@@ -4,7 +4,7 @@
 	<!-- ==================== PKM ==================== -->
 
 	<ThingDef ParentName="BaseTurretGun">
-		<defName>CE_Gun_PKM</defName>
+		<defName>CE_EmplacementGun_PKM</defName>
 		<label>PKM machine gun</label>
 		<graphicData>
 			<texPath>Things/Building/Security/PKM/PKM_gun</texPath>

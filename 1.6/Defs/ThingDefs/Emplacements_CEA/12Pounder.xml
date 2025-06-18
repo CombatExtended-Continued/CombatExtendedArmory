@@ -74,6 +74,7 @@
 			<Steel>200</Steel>
 			<WoodLog>150</WoodLog>
 		</costList>
+		<costStuffCount />
 		<building>
 			<turretGunDef>CE_Gun_TwelvePounder</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
