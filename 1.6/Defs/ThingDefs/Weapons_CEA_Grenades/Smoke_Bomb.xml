@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==================== Smoke Bomb ========================== -->
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>CE_Proj_SmokeBomb</defName>
+		<label>smoke bomb</label>
+		<graphicData>
+			<texPath>Things/Projectiles/SmokeBomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<suppressionFactor>0.0</suppressionFactor>
+			<dangerFactor>0.0</dangerFactor>
+			<explosionDelay>0</explosionDelay>
+			<dropsCasings>false</dropsCasings>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<speed>15</speed>
+			<screenShakeFactor>0</screenShakeFactor>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>1</damageAmountBase>
+				<explosiveDamageType>Stun</explosiveDamageType>
+				<explosiveRadius>0.1</explosiveRadius>
+				<applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>CE_Weapon_SmokeBomb</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>smoke bomb</label>
+		<description>A primative smoke bomb that releases a small cloud of smokescreen, providing concealment against gunfire. Will stun for a brief moment on a direct hit.</description>
+		<graphicData>
+			<texPath>Things/Weapons/SmokeBomb</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Neolithic</techLevel>
+		<generateAllowChance>0.50</generateAllowChance>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<Mass>0.30</Mass>
+			<Bulk>0.50</Bulk>
+			<MarketValue>9.15</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_AI_SMOKE</li>
+			<li>GrenadeSmoke</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw smoke bomb</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>8</range>
+				<warmupTime>0.6</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>CE_Proj_SmokeBomb</defaultProjectile>
+				<onlyManualCast>false</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>3</damageAmountBase>
+				<explosiveDamageType>Smoke</explosiveDamageType>
+				<postExplosionGasType>BlindSmoke</postExplosionGasType>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeSmokeBomb</defName>
+		<label>make smoke bombs x10</label>
+		<description>Craft 10 smoke bombs.</description>
+		<jobString>Making smoke bombs.</jobString>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<workAmount>4000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Prometheum</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CE_Weapon_SmokeBomb>10</CE_Weapon_SmokeBomb>
+		</products>
+	</RecipeDef>
+
+</Defs>

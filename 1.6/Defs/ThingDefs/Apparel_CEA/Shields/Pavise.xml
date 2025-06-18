@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ShieldBase">
+		<defName>CE_Apparel_Pavise</defName>
+		<label>pavise</label>
+		<description>A large, heavy shield made of rough-hewn planks. Designed to protect archers and crossbowmen from incoming projectiles, it is extremely cumbersome in hand-to-hand combat.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/Shields/Pavise_Shield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<possessionCount>1</possessionCount>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<StuffEffectMultiplierArmor>15</StuffEffectMultiplierArmor><!--1.5mm RHA wood-->
+			<Mass>8</Mass>
+			<Bulk>15</Bulk>
+			<WornBulk>10</WornBulk>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed>-0.2</ReloadSpeed>
+			<MeleeHitChance>-4</MeleeHitChance>
+			<ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
+			<AimingAccuracy>-0.2</AimingAccuracy>
+			<Suppressability>-0.15</Suppressability>
+			<MeleeCritChance>-0.2</MeleeCritChance>
+			<MeleeParryChance>1.0</MeleeParryChance>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>TribalShield</li>
+			</tags>
+			<renderNodeProperties>
+				<li>
+					<nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
+					<workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
+					<texPath>Things/Apparel/Shields/Pavise_Shield</texPath>
+					<shaderTypeDef>CutoutComplex</shaderTypeDef>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<drawData>
+						<scale>0.7</scale>
+						<defaultData>
+							<layer>80</layer>
+						</defaultData>
+						<dataEast>
+							<layer>-5</layer>
+							<offset>(0, 0, -0.1)</offset>
+							<rotationOffset>45</rotationOffset>
+						</dataEast>
+						<dataWest>
+							<rotationOffset>-45</rotationOffset>
+						</dataWest>
+						<dataNorth>
+							<layer>-5</layer>
+							<offset>(0.15, 0, -0.1)</offset>
+						</dataNorth>
+						<dataSouth>
+							<offset>(0.2, 0, -0.1)</offset>
+						</dataSouth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.ShieldDefExtension">
+				<shieldCoverage>
+					<li>Hands</li>
+					<li>Arms</li>
+					<li>Shoulders</li>
+					<li>Torso</li>
+					<li>Neck</li>
+					<li>FullHead</li>
+					<li>Legs</li>
+				</shieldCoverage>
+				<crouchCoverage>
+					<li>Legs</li>
+				</crouchCoverage>
+			</li>
+		</modExtensions>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

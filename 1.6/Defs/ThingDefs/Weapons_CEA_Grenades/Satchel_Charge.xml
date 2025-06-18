@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Satchel Charge ==================== -->
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>CE_Proj_SatchelCharge</defName>
+		<label>satchel charge</label>
+		<graphicData>
+			<texPath>Things/Projectiles/SatchelCharge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>5</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>378</damageAmountBase>
+			<explosionDelay>180</explosionDelay>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<speed>12</speed>
+			<screenShakeFactor>0.5</screenShakeFactor>
+			<suppressionFactor>4.0</suppressionFactor>
+			<dangerFactor>2.5</dangerFactor>
+			<airborneSuppressionFactor>0.5</airborneSuppressionFactor>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>9</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>CE_Weapon_SatchelCharge</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>satchel charge</label>
+		<description>A satchel charge, a demolition device primarily used for combat and against heavy stationary tagets. The primary components of a satchel charge are a charge of a potent explosive, a carrying device functionally similar to a satchel or messenger bag, and a triggering mechanism.</description>
+		<graphicData>
+			<texPath>Things/Weapons/SatchelCharge</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<Mass>4.5</Mass>
+			<Bulk>4.72</Bulk>
+			<MarketValue>77.42</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw satchel charge</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>7</range>
+				<minRange>1.9</minRange>
+				<warmupTime>1.6</warmupTime>
+				<noiseRadius>8</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>CE_Proj_SatchelCharge</defaultProjectile>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<detonateProjectile>CE_Proj_SatchelCharge</detonateProjectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeSatchelCharge</defName>
+		<label>make satchel charges x5</label>
+		<description>Craft 5 satchel charges.</description>
+		<jobString>Making satchel charges.</jobString>
+		<researchPrerequisite>Machining</researchPrerequisite>
+		<workAmount>18200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>31</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Cloth</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CE_Weapon_SatchelCharge>5</CE_Weapon_SatchelCharge>
+		</products>
+	</RecipeDef>
+
+</Defs>
