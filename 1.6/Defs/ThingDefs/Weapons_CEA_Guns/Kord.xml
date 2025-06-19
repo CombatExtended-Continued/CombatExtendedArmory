@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Kord ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CE_Gun_KordPortable</defName>
+		<label>Kord 6P50 machine gun</label>
+		<description>Ancient heavy machine gun in a portable configuration. Comes equipped with a scope.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Kord</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.25,1.25)</drawSize>
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>59500</WorkToMake>
+			<SightsEfficiency>2.12</SightsEfficiency>
+			<ShotSpread>0.02</ShotSpread>
+			<SwayFactor>3.19</SwayFactor>
+			<Bulk>20.80</Bulk>
+			<Mass>25.5</Mass>
+			<RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>150</Steel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+			<Chemfuel>20</Chemfuel>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.76</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<range>75</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>6</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiAimMode>SuppressFire</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>CE_AI_LMG</li>
+			<li>Bipod_ATR</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>CE_TurretHeavyWeapons</li>
+				<li>PrecisionRifling</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.2,0.25</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

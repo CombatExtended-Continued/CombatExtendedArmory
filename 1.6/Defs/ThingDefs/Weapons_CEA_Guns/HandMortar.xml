@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Hand Mortar ==================== -->
+
+	<ThingDef ParentName="BaseMakeableGun">
+		<defName>CE_Gun_HandMortar</defName>
+		<label>hand mortar</label>
+		<description>A simple flintlock firearm and early predecessor of modern grenade launchers, capable of throwing fused grenades.</description>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Things/Weapons/HandMortar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.95,0.95)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.5</generateCommonality>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>6500</WorkToMake>
+			<SightsEfficiency>0.8</SightsEfficiency>
+			<ShotSpread>0.57</ShotSpread>
+			<SwayFactor>0.95</SwayFactor>
+			<Bulk>6.0</Bulk>
+			<Mass>3.5</Mass>
+			<RangedWeapon_Cooldown>1.06</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>35</Steel>
+			<WoodLog>10</WoodLog>
+		</costList>
+		<weaponTags Inherit="False">
+			<li>GunGrenadeLauncher</li>
+			<li>SimpleGun</li>
+			<li>CE_AI_AOE</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>3.34</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_MortarGrenade</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>1.4</warmupTime>
+				<range>40</range>
+				<minRange>5</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>Shot_CE_Musket</soundCast>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
+				<reloadTime>6.9</reloadTime>
+				<ammoSet>AmmoSet_MortarGrenade</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+		</comps>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

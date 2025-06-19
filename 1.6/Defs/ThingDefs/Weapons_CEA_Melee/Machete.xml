@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="MeleeWeaponMakeable_CEA">
+		<defName>CE_Melee_Machete</defName>
+		<label>machete</label>
+		<description>A short, broad blade suited for chopping or slashing. Though designed for agricultural purposes, it makes for a grisly weapon, commonly used in bush wars and rebellions.</description>
+		<possessionCount>1</possessionCount>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Weapons/Melee/Machete</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(0.8,0.8)</drawSize>
+		</graphicData>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>0.9</Mass>
+			<Bulk>4</Bulk>
+			<MeleeCounterParryBonus>0.25</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic_Weapon</li>
+		</stuffCategories>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>2</power>
+				<chanceFactor>0.1</chanceFactor>
+				<cooldownTime>1.46</cooldownTime>
+				<armorPenetrationBlunt>0.45</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.17</cooldownTime>
+				<armorPenetrationBlunt>1.152</armorPenetrationBlunt>
+				<armorPenetrationSharp>0.47</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.19</MeleeCritChance>
+			<MeleeParryChance>0.25</MeleeParryChance>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Heavy Composite Helmet ==================== -->
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>CE_Apparel_HeavyCompositeHelmet</defName>
+		<label>heavy composite helmet</label>
+		<description>A thick, heavy composite helmet with faceshield and a rifle rated forehead plate, worn with a soft armor collar, mainly used by turret gunners.</description>
+		<graphicData>
+			<texPath>Things/Apparel/HeavyCompositeHelmet/HeavyCompositeHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<generateCommonality>0.2</generateCommonality>
+		<recipeMaker>
+			<researchPrerequisite>FlakArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<DevilstrandCloth>30</DevilstrandCloth>
+			<Chemfuel>30</Chemfuel>
+		</costList>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Mass>5.0</Mass>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
+			<ArmorRating_Blunt>18</ArmorRating_Blunt>
+			<Bulk>6</Bulk>
+			<WornBulk>2</WornBulk>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingAccuracy>-0.1</AimingAccuracy>
+			<Suppressability>-0.10</Suppressability>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/HeavyCompositeHelmet/HeavyCompositeHelmet</wornGraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<layers>
+				<li>Overhead</li>
+				<li>StrappedHead</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+						<parts>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+						<parts>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+						<parts>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+						<parts>
+							<li>Jaw</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

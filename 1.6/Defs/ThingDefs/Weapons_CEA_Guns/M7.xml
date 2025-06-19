@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== M7 ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CE_Gun_MSeven</defName>
+		<label>M7</label>
+		<description>Ancient military battle rifle firing a full-power rifle cartridge.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<graphicData>
+			<texPath>Things/Weapons/M5</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.25,1.25)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>36000</WorkToMake>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>0.11</ShotSpread>
+			<SwayFactor>1.36</SwayFactor>
+			<Bulk>7.65</Bulk>
+			<Mass>4.46</Mass>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Chemfuel>5</Chemfuel>
+		</costList>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.89</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<warmupTime>1.0</warmupTime>
+				<range>59</range>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>3</muzzleFlashScale>
+			</li>
+		</verbs>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>20</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_277Fury</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.05,0.0</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

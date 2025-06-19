@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Henry Big Boy ==================== -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CE_Gun_BigBoy</defName>
+		<label>Henry Big Boy</label>
+		<description>An archaic design, this lever-action repeating rifle is quite popular among rimworld herders. Comes equipped with a scope.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Weapons/HenryBigBoy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.15,1.15)</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>15500</WorkToMake>
+			<Mass>4.30</Mass>
+			<Bulk>12.50</Bulk>
+			<ShotSpread>0.16</ShotSpread>
+			<SwayFactor>1.69</SwayFactor>
+			<SightsEfficiency>2.12</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<WoodLog>10</WoodLog>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>1.68</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_45Colt_HV_FMJ</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>35</range>
+				<soundCast>Shot_BoltActionRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>10</magazineSize>
+				<reloadOneAtATime>True</reloadOneAtATime>
+				<reloadTime>0.85</reloadTime>
+				<ammoSet>AmmoSet_45Colt_HV</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Gunsmithing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<chanceFactor>1.5</chanceFactor>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.02</cooldownTime>
+				<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.05,-0.05</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

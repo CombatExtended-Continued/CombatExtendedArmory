@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="MeleeWeaponMakeable_CEA">
+		<defName>CE_Melee_QuarterStaff</defName>
+		<label>quarterstaff</label>
+		<description>A shaped stick roughly six feet long, traditionally made from hardwood taken from the center of a tree and occasionally fitted with iron tips. While simple, it can be deadly in the right hands. Also useful when handling livestock or traversing rough terrain.</description>
+		<possessionCount>1</possessionCount>
+		<weaponClasses>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Weapons/Melee/Quarterstaff</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1.75</Mass>
+			<Bulk>8</Bulk>
+			<MeleeCounterParryBonus>1.76</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.21</cooldownTime>
+				<chanceFactor>1.33</chanceFactor>
+				<armorPenetrationBlunt>2.24</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.44</cooldownTime>
+				<armorPenetrationBlunt>1.26</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.19</MeleeCritChance>
+			<MeleeParryChance>1.54</MeleeParryChance>
+			<MeleeDodgeChance>0.83</MeleeDodgeChance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+</Defs>
