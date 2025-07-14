@@ -74,7 +74,7 @@
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
 		<building>
-			<turretGunDef>CE_Gun_PKM</turretGunDef>
+			<turretGunDef>CE_EmplacementGun_PKM</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>0.36</turretBurstCooldownTime>
 		</building>
