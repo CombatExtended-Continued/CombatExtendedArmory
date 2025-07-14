@@ -60,6 +60,16 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconPath>Things/Building/Structure/ReinforcedEmbrasure/ReinforcedEmbrasure_MenuIcon</uiIconPath>
+		<uiIconPathsStuff Inherit="False">
+			<li>
+				<appearance>Planks</appearance>
+				<iconPath>Things/Building/Embrasure/EmbrasurePlanks_MenuIcon</iconPath>
+			</li>
+			<li>
+				<appearance>Bricks</appearance>
+				<iconPath>Things/Building/Embrasure/EmbrasureBricks_MenuIcon</iconPath>
+			</li>
+		</uiIconPathsStuff>
 		<statBases>
 			<WorkToBuild>350</WorkToBuild>
 		</statBases>

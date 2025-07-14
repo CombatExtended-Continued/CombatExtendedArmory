@@ -4,7 +4,7 @@
 	<!-- ==================== 60mm Mortar ==================== -->
 
 	<ThingDef ParentName="BaseArtilleryWeapon">
-		<defName>CE_Gun_PortabletMortar</defName>
+		<defName>CE_Gun_PortableMortar</defName>
 		<label>60mm mortar</label>
 		<graphicData>
 			<texPath>Things/Building/Security/PortableMortar/PortableMortar_turret</texPath>
@@ -98,7 +98,7 @@
 			<li>CE_Turret</li>
 		</tradeTags>
 		<building>
-			<turretGunDef>CE_Gun_PortabletMortar</turretGunDef>
+			<turretGunDef>CE_Gun_PortableMortar</turretGunDef>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretBurstCooldownTime>2.0</turretBurstCooldownTime>
 			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
