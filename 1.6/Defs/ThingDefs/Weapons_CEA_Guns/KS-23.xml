@@ -41,7 +41,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
-				<warmupTime>0.6</warmupTime>
+				<warmupTime>0.9</warmupTime>
 				<range>20</range>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
