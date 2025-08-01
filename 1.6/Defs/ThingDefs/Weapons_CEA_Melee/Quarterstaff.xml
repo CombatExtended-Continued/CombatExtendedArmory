@@ -29,6 +29,7 @@
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
+		<relicChance>0</relicChance>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>shaft</label>
