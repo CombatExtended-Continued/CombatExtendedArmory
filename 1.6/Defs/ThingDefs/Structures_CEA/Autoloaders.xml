@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!--
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>CE_AutoloaderManualHiCal</defName>
 		<label>ammo crate</label>
-		<description>A crate to store ammunition belts prepared for adjacent turrets. The colonist manning it can reload turrets directly from ammo in the crate, improving reload time and pawn safety.</description>
+		<description>A versatile crate to hold ammunition belts prepared for adjacent turrets.\n\nThe colonist manning it can reload turrets directly from ammo in the crate, improving reload time keeping them out of the line of fire.</description>
 		<thingClass>CombatExtended.Building_AutoLoaderCE</thingClass>
 		<tickerType>Normal</tickerType>
 		<drawerType>MapMeshAndRealTime</drawerType>
@@ -23,31 +23,20 @@
 
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<compClass>CombatExtended.CompAmmoListUser</compClass>
+			<li Class="CombatExtended.CompProperties_AmmoListUser">
 				<magazineSize>400</magazineSize>
 				<reloadTime>7.8</reloadTime>
 				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
 				<additionalAmmoSets>
-					<li>AmmoSet_44Magnum</li>
-					<li>AmmoSet_556x45mmNATO</li>
-					<li>AmmoSet_145x114mm</li>
+					<li>AmmoSet_RifleIntermediate</li>
+					<li>AmmoSet_Rifle</li>
+					<li>AmmoSet_AntiMateriel</li>
+					<li>AmmoSet_Shotgun</li>
+					<li>AmmoSet_Pistol</li>
 				</additionalAmmoSets>
 			</li>
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Hauling</manWorkType>
-			</li>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>0.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-				<startWickOnDamageTaken>
-					<li>Bomb</li>
-					<li>Flame</li>
-				</startWickOnDamageTaken>
-				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
-				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-				<explodeOnKilled>True</explodeOnKilled>
-				<wickTicks>60~90</wickTicks>
 			</li>
 		</comps>
 
@@ -91,11 +80,12 @@
 					</damageData>
 				</emptyGraphic>
 				<allowedTurretTags>
-					<li>CE_TurretHeavy</li>
+				<!--	<li>CE_TurretHeavy</li> -->
 				</allowedTurretTags>
 				<reloadingSustainer>CE_ManualAutoloaderAmbient</reloadingSustainer>
 			</li>
 		</modExtensions>
+
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -154,5 +144,5 @@
 			</li>
 		</subSounds>
 	</SoundDef>
--->
+
 </Defs>
