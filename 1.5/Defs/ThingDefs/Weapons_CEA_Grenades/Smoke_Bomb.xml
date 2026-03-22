@@ -24,9 +24,9 @@
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>1</damageAmountBase>
+				<damageAmountBase>4</damageAmountBase>
 				<explosiveDamageType>Stun</explosiveDamageType>
-				<explosiveRadius>0.1</explosiveRadius>
+				<explosiveRadius>0.01</explosiveRadius>
 				<applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
 			</li>
 		</comps>
@@ -36,25 +36,23 @@
 		<defName>CE_Weapon_SmokeBomb</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>smoke bomb</label>
-		<description>A primative smoke bomb that releases a small cloud of smokescreen, providing concealment against gunfire. Will stun for a brief moment on a direct hit.</description>
+		<description>Instantly releases a small cloud of defensive smoke, providing concealment against gunfire. Will stun on a direct hit.</description>
 		<graphicData>
 			<texPath>Things/Weapons/SmokeBomb</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>
 		<techLevel>Neolithic</techLevel>
-		<generateAllowChance>0.50</generateAllowChance>
-		<stackLimit>25</stackLimit>
+		<stackLimit>50</stackLimit>
 		<statBases>
 			<Mass>0.30</Mass>
 			<Bulk>0.50</Bulk>
-			<MarketValue>9.15</MarketValue>
 			<SightsEfficiency>1.0</SightsEfficiency>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>CE_AI_SMOKE</li>
-			<li>GrenadeSmoke</li>
+			<li>CE_GrenadeNeolithic_Smoke</li>
 			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<thingCategories>
@@ -103,10 +101,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Cloth</li>
+						<li>WoodLog</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>15</count>
 			</li>
 			<li>
 				<filter>
@@ -116,20 +114,11 @@
 				</filter>
 				<count>2</count>
 			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Cloth</li>
+				<li>WoodLog</li>			
 				<li>Prometheum</li>
-				<li>WoodLog</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

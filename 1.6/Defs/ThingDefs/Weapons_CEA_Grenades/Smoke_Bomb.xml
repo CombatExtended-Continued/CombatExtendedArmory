@@ -24,7 +24,7 @@
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>5</damageAmountBase>
+				<damageAmountBase>4</damageAmountBase>
 				<explosiveDamageType>Stun</explosiveDamageType>
 				<explosiveRadius>0.01</explosiveRadius>
 				<applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
@@ -43,12 +43,10 @@
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>
 		<techLevel>Neolithic</techLevel>
-		<generateAllowChance>0.50</generateAllowChance>
-		<stackLimit>25</stackLimit>
+		<stackLimit>50</stackLimit>
 		<statBases>
 			<Mass>0.30</Mass>
 			<Bulk>0.50</Bulk>
-			<MarketValue>9.15</MarketValue>
 			<SightsEfficiency>1.0</SightsEfficiency>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
@@ -103,10 +101,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Cloth</li>
+						<li>WoodLog</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>15</count>
 			</li>
 			<li>
 				<filter>
@@ -116,20 +114,11 @@
 				</filter>
 				<count>2</count>
 			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>WoodLog</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Cloth</li>
+				<li>WoodLog</li>			
 				<li>Prometheum</li>
-				<li>WoodLog</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
