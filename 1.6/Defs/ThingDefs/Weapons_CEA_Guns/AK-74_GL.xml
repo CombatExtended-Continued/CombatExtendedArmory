@@ -60,6 +60,7 @@
 				<aimedBurstShotCount>3</aimedBurstShotCount>
 			</li>
 			<li Class="CombatExtended.CompProperties_UnderBarrel">
+				<requiresReload>true</requiresReload>
 				<propsUnderBarrel>
 					<magazineSize>1</magazineSize>
 					<reloadTime>3</reloadTime>
