@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>CE_AutoloaderManualHiCal</defName>
-		<label>ammo crate</label>
-		<description>A versatile crate to hold ammunition belts prepared for adjacent turrets.\n\nThe colonist manning it can reload turrets directly from ammo in the crate, improving reload time keeping them out of the line of fire.</description>
+	<ThingDef ParentName="BuildingBase" Name="CEA_AutoloaderBase" Abstract="True">
 		<thingClass>CombatExtended.Building_AutoLoaderCE</thingClass>
 		<tickerType>Normal</tickerType>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Building/Security/AutoloaderManualHiCal/AutoloaderManualHiCal_Full/AutoloaderManualHiCal_Full</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
 				<cornerBL>Damage/Corner</cornerBL>
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+			<paintable>true</paintable>
+		</building>
+		<designationCategory>Security</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>Machining</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CEA_AutoloaderBase">
+		<defName>CE_AutoloaderManualHiCal</defName>
+		<label>ammo crate</label>
+		<description>A versatile crate to hold ammunition belts prepared for adjacent turrets.\n\nThe colonist manning it can reload turrets directly from ammo in the crate, improving reload time and keeping them out of the line of fire.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/AutoloaderManualHiCal/AutoloaderManualHiCal_Full/AutoloaderManualHiCal_Full</texPath>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 
 		<comps>
@@ -85,29 +114,12 @@
 				<reloadingSustainer>CE_ManualAutoloaderAmbient</reloadingSustainer>
 			</li>
 		</modExtensions>
-
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.35</staticSunShadowHeight>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<fillPercent>0.5</fillPercent>
-		<canOverlapZones>false</canOverlapZones>
-		<pathCost>42</pathCost>
 		<size>(1,1)</size>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
-		<placeWorkers>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
-		<building>
-			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
-			<paintable>true</paintable>
-		</building>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>1800</WorkToBuild>
@@ -115,11 +127,6 @@
 			<Flammability>1</Flammability>
 			<ReloadSpeed>1</ReloadSpeed>
 		</statBases>
-		<designationCategory>Security</designationCategory>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-			<li>BuildingsMisc</li>
-		</thingCategories>
 		<researchPrerequisites>
 			<li>Machining</li>
 		</researchPrerequisites>
