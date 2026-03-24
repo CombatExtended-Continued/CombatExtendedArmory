@@ -34,7 +34,7 @@ CE Armory addon mod for Rimworld containing weapons, apparel, and various other 
 - Madsen machine gun
 - MG 338
 - Micro Uzi
-- Mosin–Nagant
+- Mosin-Nagant
 - MosqueFAL
 - RPK-16
 - Sawed-off shotgun
