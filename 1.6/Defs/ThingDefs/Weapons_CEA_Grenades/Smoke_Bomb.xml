@@ -26,7 +26,7 @@
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
 				<damageAmountBase>4</damageAmountBase>
 				<explosiveDamageType>Stun</explosiveDamageType>
-				<explosiveRadius>0.01</explosiveRadius>
+				<explosiveRadius>0.1</explosiveRadius>
 				<applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
 			</li>
 		</comps>
@@ -78,7 +78,7 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>3</damageAmountBase>
+				<damageAmountBase>2</damageAmountBase>
 				<explosiveDamageType>Smoke</explosiveDamageType>
 				<postExplosionGasType>BlindSmoke</postExplosionGasType>
 				<preExplosionSpawnChance>1</preExplosionSpawnChance>
@@ -117,7 +117,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>WoodLog</li>			
+				<li>WoodLog</li>
 				<li>Prometheum</li>
 			</thingDefs>
 		</fixedIngredientFilter>
