@@ -17,7 +17,7 @@
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>41000</WorkToMake>
+			<WorkToMake>35500</WorkToMake>
 			<SightsEfficiency>1.1</SightsEfficiency>
 			<ShotSpread>0.02</ShotSpread>
 			<SwayFactor>2.59</SwayFactor>
@@ -26,9 +26,9 @@
 			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>120</Steel>
+			<Steel>95</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
-			<Chemfuel>15</Chemfuel>
+			<Chemfuel>10</Chemfuel>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -36,9 +36,9 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-				<warmupTime>1.8</warmupTime>
-				<range>51</range>
-				<soundCast>autocannon_slow</soundCast>
+				<warmupTime>2.5</warmupTime>
+				<range>55</range>
+				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<targetParams>
