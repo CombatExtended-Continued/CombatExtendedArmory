@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<!-- ==================== M82A2 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TA_M82A2br</defName>
-		<label>Barrett M82A2 AMR</label>
-		<description>.</description>
+		<defName>CE_Gun_M82A2Barrett</defName>
+		<label>Barrett M82A2</label>
+		<description>Ancient over the shoulder mounted anti-material rifle. Semi automatic and fitted with a reflex slight, low range, high damage.</description>
 		<graphicData>
-			<texPath>Weapons/Ranged/TA_M82A2</texPath>
+			<texPath>Things/Weapons/M82A2Barrett</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.4,1.4)</drawSize>
 		</graphicData>
-		<modExtensions>			
-			<li Class="CombatExtended.GunDrawExtension">
-				<DrawOffset>0.1,0.08</DrawOffset>
-			</li>
-		</modExtensions>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>27000</WorkToMake>
+			<WorkToMake>41000</WorkToMake>
 			<SightsEfficiency>1.1</SightsEfficiency>
-			<ShotSpread>0.07</ShotSpread>
-			<SwayFactor>1.7</SwayFactor>
+			<ShotSpread>0.02</ShotSpread>
+			<SwayFactor>2.59</SwayFactor>
 			<Bulk>13</Bulk>
 			<Mass>12.9</Mass>
-			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>85</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>120</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
 			<Chemfuel>15</Chemfuel>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>2.67</recoilAmount>
+				<recoilAmount>2.51</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-				<warmupTime>1.1</warmupTime>
+				<warmupTime>1.8</warmupTime>
 				<range>51</range>
 				<soundCast>autocannon_slow</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>6</muzzleFlashScale>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>				
 			</li>
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>10</magazineSize>
-				<reloadTime>4</reloadTime>
+				<reloadTime>4.5</reloadTime>
 				<ammoSet>AmmoSet_50BMG</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -107,6 +106,11 @@
 				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		<modExtensions>			
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawOffset>0.1,0.08</DrawOffset>
+			</li>
+		</modExtensions>		
 	</ThingDef>
 
 </Defs>
