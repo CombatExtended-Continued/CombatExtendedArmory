@@ -1,70 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ==================== KS-23 ==================== -->
+	<!-- ==================== M250 ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_KSTwentyThree</defName>
-		<label>KS-23</label>
-		<description>An ancient pump-action shotgun with a rifled barrel, chambered in large 23mm caliber shells.</description>
+		<defName>CE_Gun_MTwoFifty</defName>
+		<label>M250</label>
+		<description>Ancient belt-fed general-purpose machine gun. Lots of firepower firing a full-power rifle cartridge.</description>
 		<graphicData>
-			<texPath>Things/Weapons/KS-23</texPath>
+			<texPath>Things/Weapons/M250</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.2,1.2)</drawSize>
+			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
-		<soundInteract>Interact_Shotgun</soundInteract>
+		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
-			<li>ShortShots</li>
+			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>10500</WorkToMake>
-			<Mass>3.85</Mass>
-			<Bulk>10.40</Bulk>
-			<ShotSpread>0.14</ShotSpread>
-			<SwayFactor>1.43</SwayFactor>
-			<SightsEfficiency>1.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>1.06</RangedWeapon_Cooldown>
+			<WorkToMake>46000</WorkToMake>
+			<SightsEfficiency>1.1</SightsEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1.21</SwayFactor>
+			<Bulk>12.13</Bulk>
+			<Mass>6.6</Mass>
+			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>55</Steel>
-			<WoodLog>10</WoodLog>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>70</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+			<Chemfuel>10</Chemfuel>
 		</costList>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-		</recipeMaker>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>3.89</recoilAmount>
+				<recoilAmount>1.52</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
-				<warmupTime>0.9</warmupTime>
-				<range>20</range>
-				<soundCast>Shot_Shotgun</soundCast>
+				<defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>65</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>Shot_CE_BattleRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>9</muzzleFlashScale>
+				<muzzleFlashScale>3</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>3</magazineSize>
-				<reloadOneAtATime>true</reloadOneAtATime>
-				<reloadTime>0.85</reloadTime>
-				<ammoSet>AmmoSet_23x75mmR</ammoSet>
+				<magazineSize>100</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_277Fury</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiAimMode>Snapshot</aiAimMode>
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>SuppressFire</aiAimMode>
+				<aimedBurstShotCount>5</aimedBurstShotCount>
 			</li>
 		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<weaponTags>
-			<li>ShortShots</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_LMG</li>
+			<li>Bipod_LMG</li>
 		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite Inherit="false" />
+			<researchPrerequisites>
+				<li>PrecisionRifling</li>
+				<li>CE_SimpleNV</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>stock</label>

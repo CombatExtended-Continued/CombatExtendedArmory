@@ -1,70 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ==================== KS-23 ==================== -->
+	<!-- ==================== SRS ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>CE_Gun_KSTwentyThree</defName>
-		<label>KS-23</label>
-		<description>An ancient pump-action shotgun with a rifled barrel, chambered in large 23mm caliber shells.</description>
+		<defName>CE_Gun_SRS</defName>
+		<label>SRS</label>
+		<description>Ancient bolt-action sniper rifle in bullpup design. Combines a powerful cartridge with a high-magnification scope for sniping at long range.</description>
+		<soundInteract>Interact_Rifle</soundInteract>
 		<graphicData>
-			<texPath>Things/Weapons/KS-23</texPath>
+			<texPath>Things/Weapons/SRS</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.2,1.2)</drawSize>
+			<drawSize>(1.12,1.12)</drawSize>
 		</graphicData>
-		<soundInteract>Interact_Shotgun</soundInteract>
 		<weaponClasses>
-			<li>ShortShots</li>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
 		</weaponClasses>
 		<statBases>
-			<WorkToMake>10500</WorkToMake>
-			<Mass>3.85</Mass>
-			<Bulk>10.40</Bulk>
-			<ShotSpread>0.14</ShotSpread>
-			<SwayFactor>1.43</SwayFactor>
-			<SightsEfficiency>1.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>1.06</RangedWeapon_Cooldown>
+			<WorkToMake>36000</WorkToMake>
+			<SightsEfficiency>3.0</SightsEfficiency>
+			<ShotSpread>0.04</ShotSpread>
+			<SwayFactor>1.13</SwayFactor>
+			<Bulk>10.50</Bulk>
+			<Mass>5.60</Mass>
+			<RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
 		</statBases>
 		<costList>
-			<Steel>55</Steel>
-			<WoodLog>10</WoodLog>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>60</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Chemfuel>10</Chemfuel>
 		</costList>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>Bipod_DMR</li>
+			<li>CE_AI_SR</li>
+		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<recoilAmount>3.89</recoilAmount>
+				<recoilAmount>2.34</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_23x75mmR_Buck</defaultProjectile>
-				<warmupTime>0.9</warmupTime>
-				<range>20</range>
-				<soundCast>Shot_Shotgun</soundCast>
+				<defaultProjectile>Bullet_338Norma_FMJ</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>81</range>
+				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>3</magazineSize>
-				<reloadOneAtATime>true</reloadOneAtATime>
-				<reloadTime>0.85</reloadTime>
-				<ammoSet>AmmoSet_23x75mmR</ammoSet>
+				<magazineSize>5</magazineSize>
+				<reloadTime>4</reloadTime>
+				<ammoSet>AmmoSet_338Norma</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiAimMode>Snapshot</aiAimMode>
+				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
-		<thingSetMakerTags>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
-		<weaponTags>
-			<li>ShortShots</li>
-		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>stock</label>

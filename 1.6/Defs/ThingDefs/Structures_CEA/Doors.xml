@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="DoorBase" Name="CE_ReinforcedDoorBase">
+		<defName>CE_ReinforcedDoor</defName>
+		<label>reinforced door</label>
+		<description>A door reinforced with steel plates. Stronger than normal doors. Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.75</Flammability>
+			<WorkToBuild>1500</WorkToBuild>
+			<DoorOpenSpeed>0.9</DoorOpenSpeed>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Structure/ReinforcedDoor/ReinforcedDoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Structure/ReinforcedDoor/ReinforcedDoor_MenuIcon</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thermobaric</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Bomb_Secondary</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Demolish</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CE_ReinforcedDoorBase">
+		<defName>CE_ReinforcedAutodoor</defName>
+		<label>reinforced autodoor</label>
+		<description>An autodoor reinforced with steel plates. Stronger than normal autodoors. Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<DoorOpenSpeed>0.9</DoorOpenSpeed>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Structure/ReinforcedAutoDoor/ReinforcedAutodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Structure/ReinforcedAutoDoor/ReinforcedAutodoor_MenuIcon</uiIconPath>
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable" />
+		</comps>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>
