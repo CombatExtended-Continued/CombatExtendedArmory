@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <SoundDef>
-    <defName>CE_Shot_LaserCarbine</defName>  
-    <context>MapOnly</context>  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>LaserCarbine/LaserShot</clipFolderPath>
-          </li>
-        </grains>
-      </li>
-    </subSounds>
-  </SoundDef>
+
+	<SoundDef>
+		<defName>CE_Shot_LaserCarbine</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>LaserCarbine/LaserShot</clipFolderPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+
 </Defs>
