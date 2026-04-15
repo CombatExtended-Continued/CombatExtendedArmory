@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- ==================== Mosin–Nagant ==================== -->
+	<!-- ==================== Mosin-Nagant ==================== -->
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CE_Gun_MosinNagant</defName>
-		<label>Mosin–Nagant</label>
+		<label>Mosin-Nagant</label>
 		<description>Ancient bolt-action rifle. Fires a full-power rifle cartridge and is one of the most mass-produced military bolt-action rifles in history.</description>
 		<possessionCount>1</possessionCount>
 		<graphicData>
