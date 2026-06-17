@@ -50,6 +50,34 @@
 			<li>CE_AI_AR</li>
 		</weaponTags>
 		<comps>
+			<li Class="CombatExtended.CompProperties_UnderBarrel">
+				<oneAmmoHolder>true</oneAmmoHolder>
+				<underBarrelLabel>switch to slow-firing mode</underBarrelLabel>
+				<standardLabel>switch to fast-firing mode</standardLabel>
+				<propsUnderBarrel>
+					<magazineSize>20</magazineSize>
+					<reloadTime>4</reloadTime>
+					<ammoSet>AmmoSet_3006Springfield</ammoSet>
+				</propsUnderBarrel>
+				<verbPropsUnderBarrel>
+					<recoilAmount>1.57</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>59</range>
+					<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+					<burstShotCount>6</burstShotCount>
+					<soundCast>Shot_CE_BattleRifle</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>9</muzzleFlashScale>
+				</verbPropsUnderBarrel>
+				<propsFireModesUnderBarrel>
+					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
+					<aimedBurstShotCount>2</aimedBurstShotCount>
+				</propsFireModesUnderBarrel>
+			</li>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>20</magazineSize>
 				<reloadTime>4</reloadTime>
