@@ -125,7 +125,7 @@
 			<WorkToBuild>1800</WorkToBuild>
 			<Mass>20</Mass>
 			<Flammability>1</Flammability>
-			<ReloadSpeed>1</ReloadSpeed>
+			<ReloadSpeed>1.2</ReloadSpeed>
 		</statBases>
 		<researchPrerequisites>
 			<li>Machining</li>
@@ -231,7 +231,7 @@
 			<WorkToBuild>1800</WorkToBuild>
 			<Mass>20</Mass>
 			<Flammability>1</Flammability>
-			<ReloadSpeed>1</ReloadSpeed>
+			<ReloadSpeed>1.2</ReloadSpeed>
 		</statBases>
 		<researchPrerequisites>
 			<li>Machining</li>
