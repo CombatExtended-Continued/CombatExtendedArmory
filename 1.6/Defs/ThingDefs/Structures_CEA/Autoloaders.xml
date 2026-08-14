@@ -135,7 +135,7 @@
 	<ThingDef ParentName="CEA_AutoloaderBase">
 		<defName>CE_AutoloaderElectric</defName>
 		<label>autoloader</label>
-		<description>An automatic reloading system designed to ressuply adjacent turrets.\n\nIt can reload turrets directly from ammo in the crate, improving reload time and ammo capacity.</description>
+		<description>An automatic reloading system designed to resupply adjacent turrets.\n\nIt can reload turrets directly from ammo in the loader, improving reload time and ammo capacity.</description>
 		<graphicData>
 			<texPath>Things/Building/Security/AutoloaderElectric/AutoloaderElectric_Full/AutoloaderElectric_Full</texPath>
 			<drawSize>(1,2)</drawSize>
@@ -182,7 +182,7 @@
 					<texPath>Things/Building/Security/AutoloaderElectric/AutoloaderElectric_Full/AutoloaderElectric_Full</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1,2)</drawSize>
+					<drawSize>(1,2)</drawSize>
 					<damageData>
 						<cornerTL>Damage/Corner</cornerTL>
 						<cornerTR>Damage/Corner</cornerTR>
@@ -195,7 +195,7 @@
 					<texPath>Things/Building/Security/AutoloaderElectric/AutoloaderElectric_Half/AutoloaderElectric_Half</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1,2)</drawSize>
+					<drawSize>(1,2)</drawSize>
 					<damageData>
 						<cornerTL>Damage/Corner</cornerTL>
 						<cornerTR>Damage/Corner</cornerTR>
@@ -207,7 +207,7 @@
 					<texPath>Things/Building/Security/AutoloaderElectric/AutoloaderElectric_Empty/AutoloaderElectric_Empty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1,2)</drawSize>
+					<drawSize>(1,2)</drawSize>
 					<damageData>
 						<cornerTL>Damage/Corner</cornerTL>
 						<cornerTR>Damage/Corner</cornerTR>
