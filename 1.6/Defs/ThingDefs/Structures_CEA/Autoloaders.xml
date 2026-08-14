@@ -227,7 +227,7 @@
 		</stuffCategories>
 		<costStuffCount>55</costStuffCount>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>300</MaxHitPoints>
 			<WorkToBuild>1800</WorkToBuild>
 			<Mass>20</Mass>
 			<Flammability>1</Flammability>
