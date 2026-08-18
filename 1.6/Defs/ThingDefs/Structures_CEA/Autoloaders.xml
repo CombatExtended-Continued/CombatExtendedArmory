@@ -125,7 +125,113 @@
 			<WorkToBuild>1800</WorkToBuild>
 			<Mass>20</Mass>
 			<Flammability>1</Flammability>
-			<ReloadSpeed>1</ReloadSpeed>
+			<ReloadSpeed>1.05</ReloadSpeed>
+		</statBases>
+		<researchPrerequisites>
+			<li>Machining</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="CEA_AutoloaderBase">
+		<defName>CE_AutoloaderElectric</defName>
+		<label>autoloader</label>
+		<description>An automatic reloading system designed to resupply adjacent turrets.\n\nIt can reload turrets directly from ammo in the loader, improving reload time and ammo capacity.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/AutoloaderElectric/AutoloaderElectric_Full/AutoloaderElectric_Full</texPath>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<!-- <uiIconOffset>(0, 0.15)</uiIconOffset> -->
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CombatExtended.CompProperties_AmmoListUser">
+				<magazineSize>400</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+				<additionalAmmoSets>
+					<li>AmmoSet_Shotgun</li>
+					<li>AmmoSet_Pistol</li>
+					<li>AmmoSet_PistolMagnum</li>
+					<li>AmmoSet_RifleIntermediate</li>
+					<li>AmmoSet_Rifle</li>
+					<li>AmmoSet_RifleMagnum</li>
+
+					<li>AmmoSet_AntiMateriel</li>
+					<li>AmmoSet_Autocannon</li>
+
+					<li>AmmoSet_LauncherGrenade</li>
+					<li>AmmoSet_LightCannon</li>
+					<li>AmmoSet_HeavyCannon</li>
+					<li>AmmoSet_ArtilleryShell</li>
+
+					<li>AmmoSet_ChargedPistol</li>
+					<li>AmmoSet_ChargedRifle</li>
+					<li>AmmoSet_ChargedHeavy</li>
+					<li>AmmoSet_ChargedShotgun</li>
+	
+				</additionalAmmoSets>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+		</comps>
+
+		<modExtensions>
+			<li Class="CombatExtended.ModExtension_AutoLoaderGraphics">
+				<fullGraphic>
+					<texPath>Things/Building/Security/AutoloaderElectric/AutoloaderElectric_Full/AutoloaderElectric_Full</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(1,2)</drawSize>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+				</fullGraphic>
+
+				<halfFullGraphic>
+					<texPath>Things/Building/Security/AutoloaderElectric/AutoloaderElectric_Half/AutoloaderElectric_Half</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(1,2)</drawSize>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+				</halfFullGraphic>
+				<emptyGraphic>
+					<texPath>Things/Building/Security/AutoloaderElectric/AutoloaderElectric_Empty/AutoloaderElectric_Empty</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(1,2)</drawSize>
+					<damageData>
+						<cornerTL>Damage/Corner</cornerTL>
+						<cornerTR>Damage/Corner</cornerTR>
+						<cornerBL>Damage/Corner</cornerBL>
+						<cornerBR>Damage/Corner</cornerBR>
+					</damageData>
+				</emptyGraphic>
+				<allowedTurretTags>
+				<!--	<li>CE_TurretHeavy</li> -->
+				</allowedTurretTags>
+				<reloadingSustainer>CE_ManualAutoloaderAmbient</reloadingSustainer>
+			</li>
+		</modExtensions>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>55</costStuffCount>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1</Flammability>
+			<ReloadSpeed>1.1</ReloadSpeed>
 		</statBases>
 		<researchPrerequisites>
 			<li>Machining</li>
