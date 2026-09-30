@@ -54,7 +54,7 @@
 		</statBases>
 		<weaponTags>
 			<li>CE_AI_SMOKE</li>
-			<li>GrenadeSmoke</li>
+			<li>CE_GrenadeNeolithic_Smoke</li>
 			<li>CE_OneHandedWeapon</li>
 		</weaponTags>
 		<thingCategories>
