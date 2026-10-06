@@ -13,6 +13,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.1,1.1)</drawSize>
 		</graphicData>
+		<uiIconScale>0.91</uiIconScale>
 		<statBases>
 			<WorkToMake>37500</WorkToMake>
 			<Mass>4.10</Mass>

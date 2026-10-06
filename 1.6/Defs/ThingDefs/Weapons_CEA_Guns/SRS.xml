@@ -13,6 +13,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.12,1.12)</drawSize>
 		</graphicData>
+		<uiIconScale>0.89</uiIconScale>
 		<weaponClasses>
 			<li>LongShots</li>
 			<li>RangedHeavy</li>

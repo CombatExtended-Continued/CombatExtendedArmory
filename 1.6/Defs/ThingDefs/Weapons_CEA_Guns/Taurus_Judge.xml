@@ -12,6 +12,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(0.92,0.92)</drawSize>
 		</graphicData>
+		<uiIconScale>1.09</uiIconScale>
 		<possessionCount>1</possessionCount>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<weaponClasses>

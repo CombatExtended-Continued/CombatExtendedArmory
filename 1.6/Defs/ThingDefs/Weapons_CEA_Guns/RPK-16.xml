@@ -12,6 +12,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.26,1.26)</drawSize>
 		</graphicData>
+		<uiIconScale>0.79</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>

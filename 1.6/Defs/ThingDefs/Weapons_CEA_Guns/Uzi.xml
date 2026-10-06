@@ -13,6 +13,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(0.8,0.8)</drawSize>
 		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
 		<weaponClasses>
 			<li>RangedLight</li>
 		</weaponClasses>
