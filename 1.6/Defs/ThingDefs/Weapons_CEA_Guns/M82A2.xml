@@ -12,6 +12,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.4,1.4)</drawSize>
 		</graphicData>
+		<uiIconScale>0.71</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -43,7 +44,7 @@
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
-				</targetParams>				
+				</targetParams>
 			</li>
 		</verbs>
 		<comps>
@@ -106,11 +107,11 @@
 				<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<modExtensions>			
+		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawOffset>0.1,0.08</DrawOffset>
 			</li>
-		</modExtensions>		
+		</modExtensions>
 	</ThingDef>
 
 </Defs>

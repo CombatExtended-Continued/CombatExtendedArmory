@@ -12,6 +12,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.55,1.55)</drawSize>
 		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
 			<li>LongShots</li>

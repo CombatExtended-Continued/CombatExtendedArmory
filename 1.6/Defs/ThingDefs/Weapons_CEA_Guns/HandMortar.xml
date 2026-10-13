@@ -13,6 +13,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(0.95,0.95)</drawSize>
 		</graphicData>
+		<uiIconScale>1.05</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<generateCommonality>0.5</generateCommonality>
 		<weaponClasses>

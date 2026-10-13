@@ -12,6 +12,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.11,1.11)</drawSize>
 		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
 			<WorkToMake>29000</WorkToMake>

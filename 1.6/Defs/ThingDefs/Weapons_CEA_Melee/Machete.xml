@@ -15,6 +15,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(0.8,0.8)</drawSize>
 		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
 			<li>CE_OneHandedWeapon</li>

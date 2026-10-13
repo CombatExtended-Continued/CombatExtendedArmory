@@ -12,6 +12,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<weaponClasses>
